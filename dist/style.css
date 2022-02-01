@@ -135,7 +135,7 @@ td {
   font-style: normal;
   font-display: swap; }
 
-.rufina-148-bold {
+.rufina-148-bold, .home-banner__content-title {
   font-family: "Rufina";
   font-weight: bold;
   font-style: normal;
@@ -160,7 +160,7 @@ td {
   font-style: normal;
   font-size: 68px; }
 
-.rufina-48-bold {
+.rufina-48-bold, .home-banner__content-scroll {
   font-family: "Rufina";
   font-weight: bold;
   font-style: normal;
@@ -190,7 +190,7 @@ td {
   font-style: normal;
   font-size: 24px; }
 
-.lato-24-normal, .header__right-info, .footer__top-subscribe-email, .footer__bottom-copyright,
+.lato-24-normal, .header__right-info, .home-banner__content-text, .footer__top-subscribe-email, .footer__bottom-copyright,
 .section-text {
   font-family: "Lato";
   font-weight: normal;
@@ -445,6 +445,48 @@ td {
   transform: translateY(-50%) rotate(90deg);
   cursor: pointer; }
 
+.home-banner {
+  height: 150vh;
+  margin-bottom: 150px; }
+
+.home-banner__wrapper {
+  position: relative;
+  padding-top: 150px; }
+
+.home-banner__content {
+  max-width: 1057px;
+  width: 100%; }
+
+.home-banner__content-title {
+  margin-bottom: 50px; }
+
+.home-banner__content-text {
+  max-width: 565px;
+  width: 100%;
+  margin-bottom: 50px; }
+
+.home-banner__content-scroll {
+  display: inline-block;
+  transform: rotate(90deg);
+  position: relative;
+  top: 50px;
+  left: -50px; }
+  .home-banner__content-scroll::after {
+    content: "";
+    top: 50%;
+    left: 120%;
+    position: absolute;
+    width: 406px;
+    border: 2px dashed #fff; }
+
+.home-banner__img-box {
+  max-width: 1138px;
+  width: 100%;
+  position: absolute;
+  top: 285px;
+  right: 100px;
+  z-index: -1; }
+
 .footer {
   padding: 128px 0 64px; }
 
@@ -484,10 +526,6 @@ td {
   color: #fff;
   background-color: transparent;
   margin-right: 28px; }
-
-.footer__top-subscribe-btn {
-  background-color: #5e6600;
-  border: 2px solid #5e6600; }
 
 .footer__bottom {
   margin-top: 48px;
@@ -530,6 +568,14 @@ td {
     .btn--full:hover {
       background-color: #fff;
       color: #233000; } }
+
+.btn--light {
+  background-color: #5e6600;
+  border: 2px solid #5e6600; }
+  @media only screen and (min-width: 768px) {
+    .btn--light:hover {
+      background-color: #fff;
+      color: #5e6600; } }
 
 .contact {
   max-width: 210px;

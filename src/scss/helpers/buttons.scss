@@ -38,3 +38,13 @@
     color: $main;
   }
 }
+
+.btn--light {
+  background-color: $green;
+  border: 2px solid $green;
+
+  @include hover {
+    background-color: $white;
+    color: $green;
+  }
+}
