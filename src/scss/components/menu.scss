@@ -1,0 +1,56 @@
+.menu {
+  background-color: $white;
+  color: $black;
+  padding: 128px 0 256px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 880px;
+    height: 946px;
+    background: url("/src/images/menu-img.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.menu__content {
+  max-width: 532px;
+  width: 100%;
+  margin-bottom: 158px;
+}
+
+.menu__content-title {
+  margin-bottom: 18px;
+}
+
+.menu__items {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-gap: 60px;
+}
+
+.menu__item {
+  max-width: 792px;
+  width: 100%;
+}
+
+.menu__item-price {
+  @extend .rufina-48-bold;
+  display: block;
+  margin-bottom: 36px;
+}
+
+.menu__item-title {
+  @extend .rufina-68-bold;
+  margin-bottom: 24px;
+  border-top: 4px dashed $black;
+  padding-top: 24px;
+}
+
+.menu__item-text {
+  @extend .lato-24-normal;
+}

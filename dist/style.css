@@ -154,13 +154,13 @@ td {
   font-style: normal;
   font-size: 88px; }
 
-.rufina-68-bold, .nav__item, .diet__left-title {
+.rufina-68-bold, .nav__item, .diet__left-title, .menu__item-title {
   font-family: "Rufina";
   font-weight: bold;
   font-style: normal;
   font-size: 68px; }
 
-.rufina-48-bold, .home-banner__content-scroll {
+.rufina-48-bold, .home-banner__content-scroll, .menu__item-price {
   font-family: "Rufina";
   font-weight: bold;
   font-style: normal;
@@ -190,7 +190,7 @@ td {
   font-style: normal;
   font-size: 24px; }
 
-.lato-24-normal, .header__right-info, .home-banner__content-text, .diet__left-text, .diet__right-text, .footer__top-subscribe-email, .footer__bottom-copyright,
+.lato-24-normal, .header__right-info, .home-banner__content-text, .diet__left-text, .diet__right-text, .menu__item-text, .footer__top-subscribe-email, .footer__bottom-copyright,
 .section-text {
   font-family: "Lato";
   font-weight: normal;
@@ -521,6 +521,48 @@ td {
 .diet__right-img-box {
   max-width: 508px;
   width: 100%; }
+
+.menu {
+  background-color: #fff;
+  color: #000;
+  padding: 128px 0 256px;
+  position: relative; }
+  .menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 880px;
+    height: 946px;
+    background: url(e8dba6b70a82aa8d0f2b.png);
+    background-repeat: no-repeat; }
+
+.menu__content {
+  max-width: 532px;
+  width: 100%;
+  margin-bottom: 158px; }
+
+.menu__content-title {
+  margin-bottom: 18px; }
+
+.menu__items {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-gap: 60px; }
+
+.menu__item {
+  max-width: 792px;
+  width: 100%; }
+
+.menu__item-price {
+  display: block;
+  margin-bottom: 36px; }
+
+.menu__item-title {
+  margin-bottom: 24px;
+  border-top: 4px dashed #000;
+  padding-top: 24px; }
 
 .footer {
   padding: 128px 0 64px; }
