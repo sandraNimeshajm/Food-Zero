@@ -154,7 +154,7 @@ td {
   font-style: normal;
   font-size: 88px; }
 
-.rufina-68-bold, .nav__item {
+.rufina-68-bold, .nav__item, .diet__left-title {
   font-family: "Rufina";
   font-weight: bold;
   font-style: normal;
@@ -190,7 +190,7 @@ td {
   font-style: normal;
   font-size: 24px; }
 
-.lato-24-normal, .header__right-info, .home-banner__content-text, .footer__top-subscribe-email, .footer__bottom-copyright,
+.lato-24-normal, .header__right-info, .home-banner__content-text, .diet__left-text, .diet__right-text, .footer__top-subscribe-email, .footer__bottom-copyright,
 .section-text {
   font-family: "Lato";
   font-weight: normal;
@@ -486,6 +486,41 @@ td {
   top: 285px;
   right: 100px;
   z-index: -1; }
+
+.diet {
+  padding-bottom: 256px; }
+
+.diet__wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.diet__left {
+  margin-right: 24px; }
+
+.diet__left-img-box {
+  max-width: 792px;
+  width: 100%;
+  margin-bottom: 54px; }
+
+.diet__left-content {
+  max-width: 565px;
+  width: 100%; }
+
+.diet__left-title {
+  max-width: 493px;
+  width: 100%;
+  margin-bottom: 54px; }
+
+.diet__right {
+  max-width: 508px;
+  width: 100%; }
+
+.diet__right-text {
+  margin-bottom: 84px; }
+
+.diet__right-img-box {
+  max-width: 508px;
+  width: 100%; }
 
 .footer {
   padding: 128px 0 64px; }

@@ -1,0 +1,49 @@
+.diet {
+  padding-bottom: 256px;
+}
+
+.diet__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.diet__left {
+  margin-right: 24px;
+}
+
+.diet__left-img-box {
+  max-width: 792px;
+  width: 100%;
+  margin-bottom: 54px;
+}
+
+.diet__left-content {
+  max-width: 565px;
+  width: 100%;
+}
+
+.diet__left-title {
+  @extend .rufina-68-bold;
+  max-width: 493px;
+  width: 100%;
+  margin-bottom: 54px;
+}
+
+.diet__left-text {
+  @extend .lato-24-normal;
+}
+
+.diet__right {
+  max-width: 508px;
+  width: 100%;
+}
+
+.diet__right-text {
+  @extend .lato-24-normal;
+  margin-bottom: 84px;
+}
+
+.diet__right-img-box {
+  max-width: 508px;
+  width: 100%;
+}
