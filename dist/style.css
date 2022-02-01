@@ -564,6 +564,45 @@ td {
   border-top: 4px dashed #000;
   padding-top: 24px; }
 
+.cook {
+  background-color: #ebf0e4;
+  padding-top: 256px; }
+
+.cook__wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative; }
+  .cook__wrapper::before, .cook__wrapper::after {
+    content: "";
+    position: absolute; }
+  .cook__wrapper::before {
+    top: 0;
+    left: 0;
+    width: 406px;
+    height: 372px;
+    background: url(d9cc4c3150bcdfdacdbf.png);
+    background-repeat: no-repeat; }
+  .cook__wrapper::after {
+    bottom: 0;
+    right: 0;
+    width: 503px;
+    height: 464px;
+    background: url(6ad3eb5d196b590b8ce0.png);
+    background-repeat: no-repeat; }
+
+.cook__img-box {
+  max-width: 935px;
+  width: 100%;
+  margin-right: 24px; }
+
+.cook__content-box {
+  max-width: 649px;
+  width: 100%;
+  color: #000; }
+
+.cook__content-title {
+  margin-bottom: 16px; }
+
 .footer {
   padding: 128px 0 64px; }
 

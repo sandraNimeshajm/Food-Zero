@@ -1,0 +1,50 @@
+.cook {
+  background-color: $green-lighter;
+  padding-top: 256px;
+}
+
+.cook__wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+    width: 406px;
+    height: 372px;
+    background: url("/src/images/cook-leaf-left.png");
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    bottom: 0;
+    right: 0;
+    width: 503px;
+    height: 464px;
+    background: url("/src/images/cook-leaf-right.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.cook__img-box {
+  max-width: 935px;
+  width: 100%;
+  margin-right: 24px;
+}
+
+.cook__content-box {
+  max-width: 649px;
+  width: 100%;
+  color: $black;
+}
+
+.cook__content-title {
+  margin-bottom: 16px;
+}
