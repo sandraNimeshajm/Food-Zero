@@ -1,0 +1,50 @@
+.contact {
+  max-width: 210px;
+  width: 100%;
+  margin-right: 24px;
+}
+
+.contact__title {
+  @extend .rufina-32-bold;
+  margin-bottom: 55px;
+}
+
+.contact__info-item {
+  @extend .lato-18-normal;
+  margin-bottom: 28px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contact__info {
+  color: $white;
+  text-decoration: none;
+}
+
+.social__items {
+  display: flex;
+  align-items: center;
+}
+
+.social__item {
+  max-width: 28px;
+  width: 100%;
+  height: 28px;
+  margin-right: 26px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__item-link {
+  svg {
+    transition: transform 0.3s;
+
+    @include hover {
+      transform: scale(1.5);
+    }
+  }
+}

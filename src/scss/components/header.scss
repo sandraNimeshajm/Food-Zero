@@ -1,0 +1,259 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 48px 0;
+  width: 100%;
+  z-index: 99;
+  transition: background-color 0.3s, transform 0.3s;
+
+  &.not-top {
+    background-color: $green-light;
+  }
+
+  &.hide {
+    transform: translateY(-100%);
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__left-logo-box {
+  max-width: 307px;
+  width: 100%;
+  height: 115px;
+  margin-right: 45px;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__right-info {
+  @extend .lato-24-normal;
+  color: $white;
+  text-decoration: none;
+  margin-right: 26px;
+}
+
+/* HAMBURGER MENU */
+.header__left-menu {
+  position: relative;
+  width: 46px;
+  height: 28px;
+  cursor: pointer;
+
+  &.active {
+    span {
+      transform: rotate(138deg);
+
+      &::before {
+        transform: rotate(-95deg);
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.header__content-close-btn {
+  position: absolute;
+  top: 90px;
+  left: 64px;
+  z-index: 30;
+  cursor: pointer;
+
+  svg {
+    fill: $white;
+
+    path {
+      fill: $white;
+    }
+  }
+}
+
+.header__left-menu-line {
+  width: 100%;
+  height: 2px;
+  background-color: $white;
+  display: block;
+  margin-top: 12px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    background-color: $white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    background-color: $white;
+  }
+}
+
+.header__content {
+  background: url("/src/images/nav-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 20;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: -180%;
+  padding: 200px 100px;
+  transition: right 0.3s;
+
+  .contact {
+    margin-right: 0;
+    position: relative;
+    z-index: 20;
+
+    .contact__title {
+      border-bottom: 4px dashed $white;
+      padding-bottom: 8px;
+      margin-bottom: 38px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $main;
+    opacity: 0.8;
+    z-index: 1;
+  }
+
+  &.active {
+    right: 0;
+  }
+}
+
+.header__content-wrapper {
+  max-width: 1482px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+/* NAVIGATION */
+
+.nav {
+  position: relative;
+  z-index: 20;
+}
+
+.nav__items {
+  margin-right: 24px;
+}
+
+.nav__item {
+  @extend .rufina-68-bold;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: -30px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $white;
+    transition: background-color 0.3s;
+  }
+
+  &:hover::before {
+    background-color: $green-light;
+  }
+}
+
+.nav__item-link {
+  position: relative;
+  color: $white;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  @include hover {
+    color: $green-light;
+  }
+}
+
+.nav__subitem {
+  @extend .rufina-26-bold;
+  text-transform: capitalize;
+  margin-bottom: 6px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.nav__subitem-link {
+  color: $white;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  @include hover {
+    color: $green-light;
+  }
+}
+
+.nav__subitems {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s;
+}
+
+.nav__subitems-expanding {
+  &[data-open="opened"] {
+    svg {
+      transform: rotate(-90deg);
+    }
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    right: -64px;
+    width: 30px;
+    height: 12px;
+    transform: translateY(-50%) rotate(90deg);
+    cursor: pointer;
+  }
+}

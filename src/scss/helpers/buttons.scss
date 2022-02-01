@@ -1,0 +1,40 @@
+.btn {
+  @extend .rufina-32-bold;
+  display: inline-block;
+  color: $white;
+  margin: 0;
+  border: 0;
+  padding: 20px 46px;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  text-align: center;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.btn--ghost {
+  background-color: transparent;
+  border: 2px solid $white;
+  transition: background-color 0.3s, color 0.3s;
+
+  @include hover {
+    background-color: $white;
+    color: $main;
+  }
+}
+
+.btn--full {
+  background-color: $main;
+  color: $white;
+  border: 2px solid $main;
+  transition: background-color 0.3s, color 0.3s;
+
+  @include hover {
+    background-color: $white;
+    color: $main;
+  }
+}
