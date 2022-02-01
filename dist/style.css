@@ -60,7 +60,13 @@ li {
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
-  vertical-align: middle; }
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+  object-fit: cover; }
+
+svg {
+  width: 100%; }
 
 button,
 input,
@@ -160,7 +166,7 @@ td {
   font-style: normal;
   font-size: 68px; }
 
-.rufina-48-bold, .home-banner__content-scroll, .menu__item-price, .features__item-content-title {
+.rufina-48-bold, .home-banner__content-scroll, .menu__item-price, .features__item-content-title, .blog-post__content-bottom-title {
   font-family: "Rufina";
   font-weight: bold;
   font-style: normal;
@@ -172,7 +178,7 @@ td {
   font-style: normal;
   font-size: 32px; }
 
-.rufina-26-bold, .nav__subitem {
+.rufina-26-bold, .nav__subitem, .blog-post__item-btn-text {
   font-family: "Rufina";
   font-weight: bold;
   font-style: normal;
@@ -190,14 +196,14 @@ td {
   font-style: normal;
   font-size: 24px; }
 
-.lato-24-normal, .header__right-info, .home-banner__content-text, .diet__left-text, .diet__right-text, .menu__item-text, .features__item-content-text, .footer__top-subscribe-email, .footer__bottom-copyright,
+.lato-24-normal, .header__right-info, .home-banner__content-text, .diet__left-text, .diet__right-text, .menu__item-text, .features__item-content-text, .blog-post__content-bottom-btn-text, .footer__top-subscribe-email, .footer__bottom-copyright,
 .section-text {
   font-family: "Lato";
   font-weight: normal;
   font-style: normal;
   font-size: 24px; }
 
-.lato-22-normal {
+.lato-22-normal, .blog-post__content-bottom-text {
   font-family: "Lato";
   font-weight: normal;
   font-style: normal;
@@ -209,7 +215,7 @@ td {
   font-style: normal;
   font-size: 20px; }
 
-.lato-18-normal, .contact__info-item {
+.lato-18-normal, .blog-post__content-top, .contact__info-item {
   font-family: "Lato";
   font-weight: normal;
   font-style: normal;
@@ -640,6 +646,102 @@ td {
 
 .features__item-content-title {
   margin-bottom: 39px; }
+
+.blog-post {
+  background-color: #fff;
+  padding: 128px 0 256px; }
+
+.blog-post__items {
+  display: flex;
+  align-items: center;
+  grid-gap: 60px; }
+
+.blog-post__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.blog-post__item-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 7px 53px;
+  background-color: #5e6600;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  top: 12px;
+  right: 12px; }
+
+.blog-post__item-btn-text {
+  color: #fff; }
+
+.blog-post__item-img-box {
+  max-width: 792px;
+  width: 100%;
+  margin-bottom: 68px;
+  position: relative; }
+
+.blog-post__content-box {
+  max-width: 610px;
+  width: 100%; }
+
+.blog-post__content-top {
+  display: flex;
+  align-items: center;
+  color: #5e6600;
+  margin-bottom: 48px; }
+
+.blog-post__content-top-img-box {
+  max-width: 60px;
+  width: 100%;
+  margin-right: 14px; }
+
+.blog-post__content-top-text {
+  position: relative;
+  margin-right: 14px;
+  display: inline-flex;
+  align-items: center; }
+  .blog-post__content-top-text:last-child {
+    margin-right: 0; }
+    .blog-post__content-top-text:last-child::after {
+      display: none; }
+  .blog-post__content-top-text::after {
+    content: "";
+    display: inline-block;
+    margin-left: 14px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #5e6600; }
+
+.blog-post__content-bottom {
+  color: #000; }
+
+.blog-post__content-bottom-title {
+  margin-bottom: 36px;
+  border-bottom: 4px dashed #000;
+  padding-bottom: 18px; }
+
+.blog-post__content-bottom-text {
+  margin-bottom: 46px; }
+
+.blog-post__content-bottom-btn-link {
+  display: flex;
+  align-items: center;
+  color: #000;
+  text-decoration: none; }
+  @media only screen and (min-width: 768px) {
+    .blog-post__content-bottom-btn-link:hover .blog-post__content-bottom-btn-arrow {
+      transform: translateX(30%); } }
+
+.blog-post__content-bottom-btn-text {
+  margin-right: 10px; }
+
+.blog-post__content-bottom-btn-arrow {
+  width: 46px;
+  height: 26px;
+  transition: transform 0.3s; }
 
 .footer {
   padding: 128px 0 64px; }

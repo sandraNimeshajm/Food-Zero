@@ -1,0 +1,125 @@
+.blog-post {
+  background-color: $white;
+  padding: 128px 0 256px;
+}
+
+.blog-post__items {
+  display: flex;
+  align-items: center;
+  grid-gap: 60px;
+}
+
+.blog-post__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog-post__item-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 7px 53px;
+  background-color: $green;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.blog-post__item-btn-text {
+  @extend .rufina-26-bold;
+  color: $white;
+}
+
+.blog-post__item-img-box {
+  max-width: 792px;
+  width: 100%;
+  margin-bottom: 68px;
+  position: relative;
+}
+
+.blog-post__content-box {
+  max-width: 610px;
+  width: 100%;
+}
+
+.blog-post__content-top {
+  @extend .lato-18-normal;
+  display: flex;
+  align-items: center;
+  color: $green;
+  margin-bottom: 48px;
+}
+
+.blog-post__content-top-img-box {
+  max-width: 60px;
+  width: 100%;
+  margin-right: 14px;
+}
+
+.blog-post__content-top-text {
+  position: relative;
+  margin-right: 14px;
+  display: inline-flex;
+  align-items: center;
+
+  &:last-child {
+    margin-right: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    margin-left: 14px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: $green;
+  }
+}
+
+.blog-post__content-bottom {
+  color: $black;
+}
+
+.blog-post__content-bottom-title {
+  @extend .rufina-48-bold;
+  margin-bottom: 36px;
+  border-bottom: 4px dashed $black;
+  padding-bottom: 18px;
+}
+
+.blog-post__content-bottom-text {
+  @extend .lato-22-normal;
+  margin-bottom: 46px;
+}
+
+.blog-post__content-bottom-btn-link {
+  display: flex;
+  align-items: center;
+  color: $black;
+  text-decoration: none;
+
+  @include hover {
+    .blog-post__content-bottom-btn-arrow {
+      transform: translateX(30%);
+    }
+  }
+}
+
+.blog-post__content-bottom-btn-text {
+  @extend .lato-24-normal;
+  margin-right: 10px;
+}
+
+.blog-post__content-bottom-btn-arrow {
+  width: 46px;
+  height: 26px;
+  transition: transform 0.3s;
+}
