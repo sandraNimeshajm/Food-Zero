@@ -166,7 +166,7 @@ td {
   font-style: normal;
   font-size: 68px; }
 
-.rufina-48-bold, .home-banner__content-scroll, .menu__item-price, .features__item-content-title, .blog-post__content-bottom-title {
+.rufina-48-bold, .home-banner__content-scroll, .menu__item-price, .features__item-content-title, .blog-post__content-bottom-title, .meal-category__item-tag-text {
   font-family: "Rufina";
   font-weight: bold;
   font-style: normal;
@@ -454,7 +454,7 @@ td {
   cursor: pointer; }
 
 .home-banner {
-  height: 150vh;
+  height: 130vh;
   margin-bottom: 150px; }
 
 .home-banner__wrapper {
@@ -788,6 +788,59 @@ td {
     width: 386px;
     border: 0;
     background-color: transparent; }
+
+.meal-category {
+  padding: 128px 0;
+  background-color: #fff; }
+
+.meal-category__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.meal-category__content {
+  max-width: 1101px;
+  width: 100%;
+  color: #000;
+  text-align: center;
+  margin-bottom: 126px; }
+
+.meal-category__content-title {
+  margin-bottom: 18px; }
+
+.meal-category__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  grid-gap: 60px; }
+
+.meal-category__item {
+  max-width: 508px;
+  width: 100%;
+  position: relative; }
+  .meal-category__item:last-child {
+    margin-right: 0; }
+
+.meal-category__item-tag {
+  position: relative;
+  display: flex;
+  align-items: center; }
+
+.meal-category__item-tag-text {
+  color: #000;
+  left: 48px; }
+
+.meal-category__item-tag-arrow {
+  width: 46px;
+  height: 26px;
+  right: 48px; }
+
+.meal-category__item-tag-text,
+.meal-category__item-tag-arrow {
+  position: absolute;
+  top: 48px; }
 
 .footer {
   padding: 128px 0 64px; }
