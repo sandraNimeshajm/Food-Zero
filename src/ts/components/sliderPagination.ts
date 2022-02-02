@@ -7,7 +7,6 @@ const sliderPagination = () => {
 
   const currentSlide = document.querySelector(".js-testimonials-current");
   currentSlide.innerHTML = current;
-  console.log(current);
 
   const maxSlide = document.querySelector(".js-testimonials-max");
   maxSlide.innerHTML = max;
@@ -20,8 +19,6 @@ const sliderPagination = () => {
       return;
     }
     current--;
-    console.log(current);
-
     currentSlide.innerHTML = current;
   });
 
@@ -30,8 +27,6 @@ const sliderPagination = () => {
       return;
     }
     current++;
-    console.log(current);
-
     currentSlide.innerHTML = current;
   });
 };
