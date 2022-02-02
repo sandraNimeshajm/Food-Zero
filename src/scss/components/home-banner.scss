@@ -1,11 +1,11 @@
 .home-banner {
-  height: 130vh;
+  height: 150vh;
   margin-bottom: 150px;
+  padding-top: 300px;
 }
 
 .home-banner__wrapper {
   position: relative;
-  padding-top: 150px;
 }
 
 .home-banner__content {
@@ -46,7 +46,7 @@
   max-width: 1138px;
   width: 100%;
   position: absolute;
-  top: 285px;
+  top: 140px;
   right: 100px;
   z-index: -1;
 }

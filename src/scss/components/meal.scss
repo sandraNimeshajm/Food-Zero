@@ -1,0 +1,59 @@
+.meal {
+  background-color: $white;
+  color: $black;
+  padding: 122px 0 140px;
+
+  .menu__items {
+    display: block;
+  }
+  .menu__item {
+    margin-bottom: 58px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.meal-starters {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 516px;
+    height: 438px;
+    background-image: url("/src/images/meal-blueberry.png");
+    background-repeat: no-repeat;
+  }
+}
+.meal__wrapper {
+  max-width: 1804px;
+}
+
+.meal__content {
+  max-width: 748px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 81px;
+}
+
+.meal__content-title {
+  margin-bottom: 18px;
+}
+
+.meal__menu {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.meal__menu-img-box {
+  max-width: 792px;
+  width: 100%;
+  margin-right: 100px;
+}
