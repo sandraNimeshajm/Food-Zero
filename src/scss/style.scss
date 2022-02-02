@@ -7,6 +7,7 @@
 
 /* Components */
 
+@import "swiper/swiper-bundle";
 @import "./components/header";
 @import "./components/home-banner";
 @import "./components/diet";
@@ -16,6 +17,7 @@
 @import "./components/blog-post";
 @import "./components/form-reservation";
 @import "./components/meal-category";
+@import "./components/testimonials";
 @import "./components/footer";
 
 /* Helpers */
