@@ -196,7 +196,9 @@ td {
   font-style: normal;
   font-size: 24px; }
 
-.lato-24-normal, .header__right-info, .home-banner__content-text, .diet__left-text, .diet__right-text, .menu__item-text, .features__item-content-text, .blog-post__content-bottom-btn-text, .footer__top-subscribe-email, .footer__bottom-copyright,
+.lato-24-normal, .header__right-info, .home-banner__content-text, .diet__left-text, .diet__right-text, .menu__item-text, .features__item-content-text, .blog-post__content-bottom-btn-text, .form-reservation__item, .form-reservation__item .form-reservation__item-date,
+.form-reservation__item .form-reservation__item-time,
+.form-reservation__item .form-reservation__item-person, .footer__top-subscribe-email, .footer__bottom-copyright,
 .section-text {
   font-family: "Lato";
   font-weight: normal;
@@ -742,6 +744,50 @@ td {
   width: 46px;
   height: 26px;
   transition: transform 0.3s; }
+
+.form-reservation {
+  background-color: #ebf0e4;
+  padding: 256px 0; }
+
+.form-reservation__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.form-reservation__content {
+  max-width: 1008px;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  margin-bottom: 132px; }
+
+.form-reservation__content-title {
+  margin-bottom: 18px; }
+
+.form-reservation__items {
+  display: flex;
+  align-items: center;
+  margin-bottom: 133px; }
+
+.form-reservation__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 516px;
+  width: 100%;
+  height: 96px;
+  border: 2px solid #000;
+  margin-right: 48px;
+  padding: 40px 30px; }
+  .form-reservation__item:last-child {
+    margin-right: 0; }
+  .form-reservation__item .form-reservation__item-date,
+  .form-reservation__item .form-reservation__item-time,
+  .form-reservation__item .form-reservation__item-person {
+    width: 386px;
+    border: 0;
+    background-color: transparent; }
 
 .footer {
   padding: 128px 0 64px; }

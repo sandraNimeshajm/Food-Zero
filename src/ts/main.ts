@@ -1,9 +1,9 @@
 import stickyHeader from "./components/stickyHeader";
 import hamburgerMenu from "./components/hamburgerMenu";
 import dropDownMenu from "./components/dropDownMenu";
-import date from "./components/date";
+import year from "./components/year";
 
 stickyHeader();
 hamburgerMenu();
 dropDownMenu();
-date();
+year();

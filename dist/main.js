@@ -10,16 +10,6 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/ts/components/date.ts":
-/*!***********************************!*\
-  !*** ./src/ts/components/date.ts ***!
-  \***********************************/
-/***/ (function(__unused_webpack_module, exports) {
-
-eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nvar date = function () {\r\n    var dateFooter = new Date().getFullYear();\r\n    document.querySelector(\".year\").innerHTML = dateFooter.toString();\r\n};\r\nexports[\"default\"] = date;\r\n\n\n//# sourceURL=webpack://food-zero/./src/ts/components/date.ts?");
-
-/***/ }),
-
 /***/ "./src/ts/components/dropDownMenu.ts":
 /*!*******************************************!*\
   !*** ./src/ts/components/dropDownMenu.ts ***!
@@ -50,13 +40,23 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n
 
 /***/ }),
 
+/***/ "./src/ts/components/year.ts":
+/*!***********************************!*\
+  !*** ./src/ts/components/year.ts ***!
+  \***********************************/
+/***/ (function(__unused_webpack_module, exports) {
+
+eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nvar year = function () {\r\n    var dateFooter = new Date().getFullYear();\r\n    document.querySelector(\".year\").innerHTML = dateFooter.toString();\r\n};\r\nexports[\"default\"] = year;\r\n\n\n//# sourceURL=webpack://food-zero/./src/ts/components/year.ts?");
+
+/***/ }),
+
 /***/ "./src/ts/main.ts":
 /*!************************!*\
   !*** ./src/ts/main.ts ***!
   \************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nvar stickyHeader_1 = __webpack_require__(/*! ./components/stickyHeader */ \"./src/ts/components/stickyHeader.ts\");\r\nvar hamburgerMenu_1 = __webpack_require__(/*! ./components/hamburgerMenu */ \"./src/ts/components/hamburgerMenu.ts\");\r\nvar dropDownMenu_1 = __webpack_require__(/*! ./components/dropDownMenu */ \"./src/ts/components/dropDownMenu.ts\");\r\nvar date_1 = __webpack_require__(/*! ./components/date */ \"./src/ts/components/date.ts\");\r\n(0, stickyHeader_1.default)();\r\n(0, hamburgerMenu_1.default)();\r\n(0, dropDownMenu_1.default)();\r\n(0, date_1.default)();\r\n\n\n//# sourceURL=webpack://food-zero/./src/ts/main.ts?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nvar stickyHeader_1 = __webpack_require__(/*! ./components/stickyHeader */ \"./src/ts/components/stickyHeader.ts\");\r\nvar hamburgerMenu_1 = __webpack_require__(/*! ./components/hamburgerMenu */ \"./src/ts/components/hamburgerMenu.ts\");\r\nvar dropDownMenu_1 = __webpack_require__(/*! ./components/dropDownMenu */ \"./src/ts/components/dropDownMenu.ts\");\r\nvar year_1 = __webpack_require__(/*! ./components/year */ \"./src/ts/components/year.ts\");\r\n(0, stickyHeader_1.default)();\r\n(0, hamburgerMenu_1.default)();\r\n(0, dropDownMenu_1.default)();\r\n(0, year_1.default)();\r\n\n\n//# sourceURL=webpack://food-zero/./src/ts/main.ts?");
 
 /***/ })
 
