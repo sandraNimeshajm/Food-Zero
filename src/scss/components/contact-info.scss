@@ -1,0 +1,45 @@
+.contact-info {
+  background-color: $white;
+  padding: 256px 0 128px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 128px;
+    left: 55%;
+    transform: translateX(-50%);
+    width: 446px;
+    height: 391px;
+    background-image: url("/src/images/contact-orange.png");
+    z-index: 1;
+  }
+}
+
+.contact-info__wrapper {
+  max-width: 1700px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.contact-info__img-box {
+  max-width: 792px;
+  width: 100%;
+  margin-right: 200px;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-info__text-box {
+  max-width: 507px;
+  width: 100%;
+}
+
+.contact-info__text {
+  @extend .rufina-32-bold;
+  color: $black;
+}
+
+.contact-info__text--green {
+  color: $green-light;
+}

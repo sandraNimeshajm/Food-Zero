@@ -172,7 +172,7 @@ td {
   font-style: normal;
   font-size: 48px; }
 
-.rufina-32-bold, .testimonials__slider-item-bottom-name, .testimonials__slider-pagination-number, .footer__top-subscribe-title, .banner__open-time-top-title, .btn, .contact__title,
+.rufina-32-bold, .testimonials__slider-item-bottom-name, .testimonials__slider-pagination-number, .footer__top-subscribe-title, .banner__open-time-top-title, .contact-info__text, .btn, .contact__title,
 .page-text {
   font-family: "Rufina";
   font-weight: bold;
@@ -1626,6 +1626,43 @@ button.swiper-pagination-bullet {
   max-width: 792px;
   width: 100%;
   margin-right: 100px; }
+
+.contact-info {
+  background-color: #fff;
+  padding: 256px 0 128px;
+  position: relative; }
+  .contact-info::after {
+    content: "";
+    position: absolute;
+    top: 128px;
+    left: 55%;
+    transform: translateX(-50%);
+    width: 446px;
+    height: 391px;
+    background-image: url(bf2931b5351109d85995.png);
+    z-index: 1; }
+
+.contact-info__wrapper {
+  max-width: 1700px;
+  display: flex;
+  align-items: flex-end; }
+
+.contact-info__img-box {
+  max-width: 792px;
+  width: 100%;
+  margin-right: 200px;
+  position: relative;
+  z-index: 2; }
+
+.contact-info__text-box {
+  max-width: 507px;
+  width: 100%; }
+
+.contact-info__text {
+  color: #000; }
+
+.contact-info__text--green {
+  color: #9caa00; }
 
 /* Helpers */
 .btn {
