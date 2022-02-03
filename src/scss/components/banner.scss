@@ -1,5 +1,5 @@
 .banner {
-  background-image: url("/src/images/banner.jpg");
+  background-image: url("/src/images/banner-menu.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,6 +25,7 @@
 }
 
 .banner__wrapper {
+  position: relative;
   z-index: 20;
 }
 
@@ -35,4 +36,50 @@
 
 .banner__content-title {
   margin-bottom: 50px;
+}
+
+/*BANNER CONTACT*/
+
+.banner-contact {
+  background-image: url("/src/images/banner-contact.jpg");
+
+  .banner__content {
+    max-width: 915px;
+    margin-bottom: 93px;
+  }
+}
+
+.banner__open-time {
+  position: absolute;
+  right: 140px;
+  max-width: 696px;
+  width: 100%;
+}
+
+.banner__open-time-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 38px;
+  border-bottom: 2px dashed $white;
+  padding-bottom: 38px;
+}
+
+.banner__open-time-top-title {
+  @extend .rufina-32-bold;
+}
+
+.banner__open-time-top-text {
+  @extend .lato-24-normal;
+}
+
+.banner__open-time-bottom-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner__open-time-bottom-item-text {
+  @extend .lato-24-normal;
+  display: block;
 }

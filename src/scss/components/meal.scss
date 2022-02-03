@@ -14,12 +14,6 @@
       margin-bottom: 0;
     }
   }
-
-  .menu__item-price {
-    position: relative;
-    right: -85%;
-    top: 0;
-  }
 }
 
 .meal-starters {
@@ -41,6 +35,10 @@
   .meal__menu-img-box {
     margin-right: 0;
   }
+
+  .menu__items {
+    margin-right: 100px;
+  }
 }
 
 .meal-pastries-and-drinks {
@@ -57,10 +55,6 @@
     background-image: url("/src/images/meal-avocado.png");
     background-repeat: no-repeat;
   }
-}
-
-.menu__items {
-  margin-right: 100px;
 }
 
 .meal__wrapper {

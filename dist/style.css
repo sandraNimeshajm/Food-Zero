@@ -172,7 +172,7 @@ td {
   font-style: normal;
   font-size: 48px; }
 
-.rufina-32-bold, .testimonials__slider-item-bottom-name, .testimonials__slider-pagination-number, .footer__top-subscribe-title, .btn, .contact__title,
+.rufina-32-bold, .testimonials__slider-item-bottom-name, .testimonials__slider-pagination-number, .footer__top-subscribe-title, .banner__open-time-top-title, .btn, .contact__title,
 .page-text {
   font-family: "Rufina";
   font-weight: bold;
@@ -199,7 +199,7 @@ td {
 
 .lato-24-normal, .header__right-info, .home-banner__content-text, .diet__left-text, .diet__right-text, .menu__item-text, .features__item-content-text, .blog-post__content-bottom-btn-text, .form-reservation__item, .form-reservation__item .form-reservation__item-date,
 .form-reservation__item .form-reservation__item-time,
-.form-reservation__item .form-reservation__item-person, .footer__top-subscribe-email, .footer__bottom-copyright,
+.form-reservation__item .form-reservation__item-person, .footer__top-subscribe-email, .footer__bottom-copyright, .banner__open-time-top-text, .banner__open-time-bottom-item-text,
 .section-text {
   font-family: "Lato";
   font-weight: normal;
@@ -1099,7 +1099,10 @@ button.swiper-pagination-bullet {
 
 .menu__item-price {
   display: block;
-  margin-bottom: 36px; }
+  margin-bottom: 36px;
+  position: relative;
+  right: -85%;
+  top: 0; }
 
 .menu__item-title {
   margin-bottom: 24px;
@@ -1518,6 +1521,7 @@ button.swiper-pagination-bullet {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)); }
 
 .banner__wrapper {
+  position: relative;
   z-index: 20; }
 
 .banner__content {
@@ -1526,6 +1530,35 @@ button.swiper-pagination-bullet {
 
 .banner__content-title {
   margin-bottom: 50px; }
+
+/*BANNER CONTACT*/
+.banner-contact {
+  background-image: url(954d2607ec95c03ab616.jpg); }
+  .banner-contact .banner__content {
+    max-width: 915px;
+    margin-bottom: 93px; }
+
+.banner__open-time {
+  position: absolute;
+  right: 140px;
+  max-width: 696px;
+  width: 100%; }
+
+.banner__open-time-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 38px;
+  border-bottom: 2px dashed #fff;
+  padding-bottom: 38px; }
+
+.banner__open-time-bottom-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.banner__open-time-bottom-item-text {
+  display: block; }
 
 .meal {
   background-color: #fff;
@@ -1537,10 +1570,6 @@ button.swiper-pagination-bullet {
     margin-bottom: 58px; }
     .meal .menu__item:last-child {
       margin-bottom: 0; }
-  .meal .menu__item-price {
-    position: relative;
-    right: -85%;
-    top: 0; }
 
 .meal-starters {
   position: relative; }
@@ -1557,6 +1586,9 @@ button.swiper-pagination-bullet {
 .meal-mains .meal__menu-img-box {
   margin-right: 0; }
 
+.meal-mains .menu__items {
+  margin-right: 100px; }
+
 .meal-pastries-and-drinks {
   position: relative; }
   .meal-pastries-and-drinks::after {
@@ -1569,9 +1601,6 @@ button.swiper-pagination-bullet {
     height: 415px;
     background-image: url(e63e4bafadc062bb07be.png);
     background-repeat: no-repeat; }
-
-.menu__items {
-  margin-right: 100px; }
 
 .meal__wrapper {
   max-width: 1804px; }
