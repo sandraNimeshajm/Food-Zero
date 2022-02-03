@@ -1557,14 +1557,27 @@ button.swiper-pagination-bullet {
 .meal-mains .meal__menu-img-box {
   margin-right: 0; }
 
-.meal-mains .menu__items {
+.meal-pastries-and-drinks {
+  position: relative; }
+  .meal-pastries-and-drinks::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 348px;
+    height: 415px;
+    background-image: url(e63e4bafadc062bb07be.png);
+    background-repeat: no-repeat; }
+
+.menu__items {
   margin-right: 100px; }
 
 .meal__wrapper {
   max-width: 1804px; }
 
 .meal__content {
-  max-width: 748px;
+  max-width: 922px;
   width: 100%;
   display: flex;
   flex-direction: column;

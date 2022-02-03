@@ -41,10 +41,26 @@
   .meal__menu-img-box {
     margin-right: 0;
   }
+}
 
-  .menu__items {
-    margin-right: 100px;
+.meal-pastries-and-drinks {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 348px;
+    height: 415px;
+    background-image: url("/src/images/meal-avocado.png");
+    background-repeat: no-repeat;
   }
+}
+
+.menu__items {
+  margin-right: 100px;
 }
 
 .meal__wrapper {
@@ -52,7 +68,7 @@
 }
 
 .meal__content {
-  max-width: 748px;
+  max-width: 922px;
   width: 100%;
   display: flex;
   flex-direction: column;
