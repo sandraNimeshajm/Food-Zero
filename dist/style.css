@@ -1664,6 +1664,21 @@ button.swiper-pagination-bullet {
 .contact-info__text--green {
   color: #9caa00; }
 
+.contact-info--reverse {
+  padding: 128px 0 192px; }
+  .contact-info--reverse::after {
+    display: none; }
+  .contact-info--reverse .contact-info__wrapper {
+    max-width: 1800px;
+    align-items: center; }
+  .contact-info--reverse .contact-info__img-box {
+    margin-right: 0; }
+  .contact-info--reverse .contact-info__text-box {
+    max-width: 748px;
+    margin-right: 60px; }
+  .contact-info--reverse .contact-info__text {
+    margin-bottom: 53px; }
+
 /* Helpers */
 .btn {
   display: inline-block;
@@ -1704,6 +1719,16 @@ button.swiper-pagination-bullet {
     .btn--light:hover {
       background-color: #fff;
       color: #5e6600; } }
+
+.btn--white {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  transition: background-color 0.3s, color 0.3s; }
+  @media only screen and (min-width: 768px) {
+    .btn--white:hover {
+      background-color: #000;
+      color: #fff; } }
 
 .contact {
   max-width: 210px;

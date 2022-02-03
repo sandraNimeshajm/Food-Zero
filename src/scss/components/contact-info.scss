@@ -43,3 +43,29 @@
 .contact-info__text--green {
   color: $green-light;
 }
+
+.contact-info--reverse {
+  padding: 128px 0 192px;
+
+  &::after {
+    display: none;
+  }
+
+  .contact-info__wrapper {
+    max-width: 1800px;
+    align-items: center;
+  }
+
+  .contact-info__img-box {
+    margin-right: 0;
+  }
+
+  .contact-info__text-box {
+    max-width: 748px;
+    margin-right: 60px;
+  }
+
+  .contact-info__text {
+    margin-bottom: 53px;
+  }
+}
