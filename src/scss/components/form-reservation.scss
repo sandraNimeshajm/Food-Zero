@@ -53,3 +53,82 @@
     background-color: transparent;
   }
 }
+
+/* CONTACT PAGE */
+
+.form-reservation--contact {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    width: 511px;
+    height: 346px;
+    background-image: url("/src/images/contact-mint.png");
+  }
+  .form-reservation__wrapper {
+    align-items: stretch;
+  }
+
+  .form-reservation__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto 132px;
+  }
+
+  .form-reservation__items {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .form-reservation__item {
+    justify-content: space-between;
+    margin-bottom: 46px;
+  }
+
+  .form-reservation__item-date,
+  .form-reservation__item-time,
+  .form-reservation__item-person {
+    width: 100%;
+  }
+
+  .form-reservation__item--full-width {
+    .form-reservation__item {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  .form-reservation__item--half-width {
+    display: flex;
+
+    .form-reservation__item {
+      max-width: 799px;
+      width: 100%;
+    }
+  }
+
+  .form-reservation__item-name,
+  .form-reservation__item-email,
+  .form-reservation__item-phone {
+    @extend .lato-24-normal;
+    border: 0;
+    background-color: transparent;
+
+    &::placeholder {
+      color: $black;
+    }
+  }
+
+  .form-reservation__btn {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    max-width: 327px;
+  }
+}

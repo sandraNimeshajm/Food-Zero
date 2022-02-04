@@ -199,7 +199,9 @@ td {
 
 .lato-24-normal, .header__right-info, .home-banner__content-text, .diet__left-text, .diet__right-text, .menu__item-text, .features__item-content-text, .blog-post__content-bottom-btn-text, .form-reservation__item, .form-reservation__item .form-reservation__item-date,
 .form-reservation__item .form-reservation__item-time,
-.form-reservation__item .form-reservation__item-person, .footer__top-subscribe-email, .footer__bottom-copyright, .banner__open-time-top-text, .banner__open-time-bottom-item-text,
+.form-reservation__item .form-reservation__item-person, .form-reservation--contact .form-reservation__item-name,
+.form-reservation--contact .form-reservation__item-email,
+.form-reservation--contact .form-reservation__item-phone, .footer__top-subscribe-email, .footer__bottom-copyright, .banner__open-time-top-text, .banner__open-time-bottom-item-text,
 .section-text {
   font-family: "Lato";
   font-weight: normal;
@@ -1326,6 +1328,59 @@ button.swiper-pagination-bullet {
     border: 0;
     background-color: transparent; }
 
+/* CONTACT PAGE */
+.form-reservation--contact {
+  position: relative; }
+  .form-reservation--contact::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    width: 511px;
+    height: 346px;
+    background-image: url(0f7fabbfb443a3f29044.png); }
+  .form-reservation--contact .form-reservation__wrapper {
+    align-items: stretch; }
+  .form-reservation--contact .form-reservation__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto 132px; }
+  .form-reservation--contact .form-reservation__items {
+    display: block;
+    margin-bottom: 0; }
+  .form-reservation--contact .form-reservation__item {
+    justify-content: space-between;
+    margin-bottom: 46px; }
+  .form-reservation--contact .form-reservation__item-date,
+  .form-reservation--contact .form-reservation__item-time,
+  .form-reservation--contact .form-reservation__item-person {
+    width: 100%; }
+  .form-reservation--contact .form-reservation__item--full-width .form-reservation__item {
+    max-width: 100%;
+    width: 100%; }
+  .form-reservation--contact .form-reservation__item--half-width {
+    display: flex; }
+    .form-reservation--contact .form-reservation__item--half-width .form-reservation__item {
+      max-width: 799px;
+      width: 100%; }
+  .form-reservation--contact .form-reservation__item-name,
+  .form-reservation--contact .form-reservation__item-email,
+  .form-reservation--contact .form-reservation__item-phone {
+    border: 0;
+    background-color: transparent; }
+    .form-reservation--contact .form-reservation__item-name::placeholder,
+    .form-reservation--contact .form-reservation__item-email::placeholder,
+    .form-reservation--contact .form-reservation__item-phone::placeholder {
+      color: #000; }
+  .form-reservation--contact .form-reservation__btn {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    max-width: 327px; }
+
 .meal-category {
   padding: 128px 0;
   background-color: #fff; }
@@ -1714,7 +1769,8 @@ button.swiper-pagination-bullet {
 
 .btn--light {
   background-color: #5e6600;
-  border: 2px solid #5e6600; }
+  border: 2px solid #5e6600;
+  transition: background-color 0.3s, color 0.3s; }
   @media only screen and (min-width: 768px) {
     .btn--light:hover {
       background-color: #fff;
