@@ -1586,7 +1586,7 @@ button.swiper-pagination-bullet {
 .banner__content-title {
   margin-bottom: 50px; }
 
-/*BANNER CONTACT*/
+/* BANNER CONTACT */
 .banner-contact {
   background-image: url(954d2607ec95c03ab616.jpg); }
   .banner-contact .banner__content {
@@ -1614,6 +1614,15 @@ button.swiper-pagination-bullet {
 
 .banner__open-time-bottom-item-text {
   display: block; }
+
+/* BANNER ABOUT */
+.banner-about {
+  background-image: url(00f2c9737a7db7fb3529.jpg); }
+  .banner-about .banner__content {
+    max-width: 915px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto; }
 
 .meal {
   background-color: #fff;
