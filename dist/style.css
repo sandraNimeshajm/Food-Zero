@@ -160,7 +160,7 @@ td {
   font-style: normal;
   font-size: 88px; }
 
-.rufina-68-bold, .nav__item, .diet__left-title, .menu__item-title {
+.rufina-68-bold, .nav__item, .diet__left-title, .menu__item-title, .staff__item-left-title {
   font-family: "Rufina";
   font-weight: bold;
   font-style: normal;
@@ -201,7 +201,7 @@ td {
 .form-reservation__item .form-reservation__item-time,
 .form-reservation__item .form-reservation__item-person, .form-reservation--contact .form-reservation__item-name,
 .form-reservation--contact .form-reservation__item-email,
-.form-reservation--contact .form-reservation__item-phone, .footer__top-subscribe-email, .footer__bottom-copyright, .banner__open-time-top-text, .banner__open-time-bottom-item-text,
+.form-reservation--contact .form-reservation__item-phone, .footer__top-subscribe-email, .footer__bottom-copyright, .banner__open-time-top-text, .banner__open-time-bottom-item-text, .staff__item-left-text, .staff__item-right-text,
 .section-text {
   font-family: "Lato";
   font-weight: normal;
@@ -1666,9 +1666,6 @@ button.swiper-pagination-bullet {
     background-image: url(e63e4bafadc062bb07be.png);
     background-repeat: no-repeat; }
 
-.meal__wrapper {
-  max-width: 1804px; }
-
 .meal__content {
   max-width: 922px;
   width: 100%;
@@ -1698,8 +1695,8 @@ button.swiper-pagination-bullet {
   .contact-info::after {
     content: "";
     position: absolute;
-    top: 128px;
-    left: 55%;
+    top: 130px;
+    left: 52%;
     transform: translateX(-50%);
     width: 446px;
     height: 391px;
@@ -1707,7 +1704,6 @@ button.swiper-pagination-bullet {
     z-index: 1; }
 
 .contact-info__wrapper {
-  max-width: 1700px;
   display: flex;
   align-items: flex-end; }
 
@@ -1733,7 +1729,6 @@ button.swiper-pagination-bullet {
   .contact-info--reverse::after {
     display: none; }
   .contact-info--reverse .contact-info__wrapper {
-    max-width: 1800px;
     align-items: center; }
   .contact-info--reverse .contact-info__img-box {
     margin-right: 0; }
@@ -1751,7 +1746,7 @@ button.swiper-pagination-bullet {
     content: "";
     position: absolute;
     top: 60px;
-    left: 40%;
+    left: 38%;
     transform: translateX(-50%);
     width: 355px;
     height: 300px;
@@ -1759,7 +1754,6 @@ button.swiper-pagination-bullet {
     background-repeat: no-repeat; }
 
 .our-story__wrapper {
-  max-width: 1770px;
   display: flex;
   align-items: center; }
 
@@ -1775,6 +1769,55 @@ button.swiper-pagination-bullet {
 .our-story__img-box {
   max-width: 792px;
   width: 100%; }
+
+.staff {
+  background-color: #fff;
+  padding-top: 128px;
+  padding-bottom: 256px; }
+
+.staff__item {
+  display: flex;
+  justify-content: space-between; }
+
+.staff__item-left {
+  max-width: 726px;
+  width: 100%;
+  margin-right: 100px; }
+
+.staff__item-left-title {
+  color: #000;
+  margin-bottom: 24px;
+  text-align: center; }
+
+.staff__item-left-text {
+  color: #000;
+  margin-bottom: 24px;
+  text-align: center; }
+
+.staff__item-left-img-box {
+  max-width: 726px;
+  width: 100%; }
+
+.staff__item-right {
+  width: 100%; }
+
+.staff__item-right-text {
+  max-width: 510px;
+  width: 100%;
+  transform: translateY(155px);
+  color: #000; }
+
+.staff__item--reverse {
+  margin-top: -400px; }
+  .staff__item--reverse .staff__item-left {
+    margin-right: 0; }
+  .staff__item--reverse .staff__item-right {
+    align-self: flex-end;
+    margin-right: 100px; }
+  .staff__item--reverse .staff__item-right-text {
+    text-align: right;
+    margin-left: auto;
+    transform: translateY(0); }
 
 /* Helpers */
 .btn {

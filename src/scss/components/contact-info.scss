@@ -6,8 +6,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 128px;
-    left: 55%;
+    top: 130px;
+    left: 52%;
     transform: translateX(-50%);
     width: 446px;
     height: 391px;
@@ -17,7 +17,6 @@
 }
 
 .contact-info__wrapper {
-  max-width: 1700px;
   display: flex;
   align-items: flex-end;
 }
@@ -52,7 +51,6 @@
   }
 
   .contact-info__wrapper {
-    max-width: 1800px;
     align-items: center;
   }
 

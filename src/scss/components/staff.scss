@@ -1,0 +1,65 @@
+.staff {
+  background-color: $white;
+  padding-top: 128px;
+  padding-bottom: 256px;
+}
+
+.staff__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.staff__item-left {
+  max-width: 726px;
+  width: 100%;
+  margin-right: 100px;
+}
+
+.staff__item-left-title {
+  @extend .rufina-68-bold;
+  color: $black;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.staff__item-left-text {
+  @extend .lato-24-normal;
+  color: $black;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.staff__item-left-img-box {
+  max-width: 726px;
+  width: 100%;
+}
+
+.staff__item-right {
+  width: 100%;
+}
+
+.staff__item-right-text {
+  @extend .lato-24-normal;
+  max-width: 510px;
+  width: 100%;
+  transform: translateY(155px);
+  color: $black;
+}
+
+.staff__item--reverse {
+  margin-top: -400px;
+  .staff__item-left {
+    margin-right: 0;
+  }
+
+  .staff__item-right {
+    align-self: flex-end;
+    margin-right: 100px;
+  }
+
+  .staff__item-right-text {
+    text-align: right;
+    margin-left: auto;
+    transform: translateY(0);
+  }
+}
