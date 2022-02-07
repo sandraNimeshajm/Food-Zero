@@ -46,6 +46,8 @@
   },
   "dependencies": {
     "gsap": "^3.7.1",
+    "jquery": "^3.6.0",
+    "magnific-popup": "^1.1.0",
     "swiper": "^6.8.4",
     "three": "^0.131.1"
   }

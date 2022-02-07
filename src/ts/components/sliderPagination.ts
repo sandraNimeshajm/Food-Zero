@@ -2,10 +2,14 @@
 
 const sliderPagination = () => {
   const slides = [...document.querySelectorAll(".js-testimonials-slide")];
+
   let current = 1;
   const max = slides.length;
 
   const currentSlide = document.querySelector(".js-testimonials-current");
+
+  if (!currentSlide) return;
+
   currentSlide.innerHTML = current;
 
   const maxSlide = document.querySelector(".js-testimonials-max");
