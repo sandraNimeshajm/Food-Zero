@@ -96,3 +96,26 @@
     margin-left: auto;
   }
 }
+
+//BANNER SMALL
+.banner--small {
+  height: 850px;
+}
+
+//BANNER BLOGS ONE COLUMN
+
+.banner-blogs-one-column {
+  background-image: url("/src/images/banner-blogs-one-column.jpg");
+
+  .banner__content {
+    max-width: 1304px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .banner__content-title {
+    @extend .rufina-108-bold;
+  }
+}

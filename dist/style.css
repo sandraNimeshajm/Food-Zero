@@ -147,7 +147,7 @@ td {
   font-style: normal;
   font-size: 148px; }
 
-.rufina-108-bold,
+.rufina-108-bold, .banner-blogs-one-column .banner__content-title,
 .section-title {
   font-family: "Rufina";
   font-weight: bold;
@@ -1995,6 +1995,18 @@ img.mfp-img {
     flex-direction: column;
     margin-left: auto; }
 
+.banner--small {
+  height: 850px; }
+
+.banner-blogs-one-column {
+  background-image: url(bf4bdd49fe430019e820.jpg); }
+  .banner-blogs-one-column .banner__content {
+    max-width: 1304px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; }
+
 .meal {
   background-color: #fff;
   color: #000;
@@ -2117,7 +2129,7 @@ img.mfp-img {
     content: "";
     position: absolute;
     top: 60px;
-    left: 38%;
+    left: 40%;
     transform: translateX(-50%);
     width: 355px;
     height: 300px;
@@ -2311,7 +2323,7 @@ img.mfp-img {
 
 .process__item {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0 auto 100px; }
   .process__item:last-child {
     margin-bottom: 0; }
@@ -2337,8 +2349,9 @@ img.mfp-img {
   .process__item--pickled .process__img-box {
     margin-right: 0;
     margin-bottom: 46px; }
-  .process__item--pickled .process__content-box {
-    max-width: 545px; }
+  .process__item--pickled .process__content-text {
+    max-width: 415px;
+    width: 100%; }
 
 .process__item--bake {
   flex-direction: column-reverse;

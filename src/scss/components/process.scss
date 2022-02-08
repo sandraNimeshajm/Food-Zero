@@ -37,7 +37,7 @@
 
 .process__item {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0 auto 100px;
 
   &:last-child {
@@ -74,8 +74,9 @@
     margin-bottom: 46px;
   }
 
-  .process__content-box {
-    max-width: 545px;
+  .process__content-text {
+    max-width: 415px;
+    width: 100%;
   }
 }
 
