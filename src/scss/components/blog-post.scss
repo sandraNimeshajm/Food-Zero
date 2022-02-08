@@ -1,6 +1,6 @@
 .blog-post {
   background-color: $white;
-  padding: 128px 0 256px;
+  padding: 128px 0;
 }
 
 .blog-post__items {
@@ -122,4 +122,29 @@
   width: 46px;
   height: 26px;
   transition: transform 0.3s;
+}
+
+/* BLOG POST ONE COLUMN */
+
+.blog-post-one-column {
+  .blog-post__items {
+    flex-direction: column;
+    grid-gap: 100px;
+  }
+
+  .blog-post__item {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .blog-post__item-img-box {
+    margin-bottom: 0;
+    margin-right: 24px;
+  }
 }

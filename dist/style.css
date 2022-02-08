@@ -1455,7 +1455,7 @@ img.mfp-img {
 .menu__content {
   max-width: 532px;
   width: 100%;
-  margin-bottom: 158px; }
+  margin-bottom: 180px; }
 
 .menu__content-title {
   margin-bottom: 18px; }
@@ -1464,17 +1464,17 @@ img.mfp-img {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  grid-gap: 60px; }
+  grid-gap: 120px; }
 
 .menu__item {
-  max-width: 792px;
+  max-width: 700px;
   width: 100%; }
 
 .menu__item-price {
   display: block;
   margin-bottom: 36px;
   position: relative;
-  right: -85%;
+  right: -90%;
   top: 0; }
 
 .menu__item-title {
@@ -1561,7 +1561,7 @@ img.mfp-img {
 
 .blog-post {
   background-color: #fff;
-  padding: 128px 0 256px; }
+  padding: 128px 0; }
 
 .blog-post__items {
   display: flex;
@@ -1654,6 +1654,23 @@ img.mfp-img {
   width: 46px;
   height: 26px;
   transition: transform 0.3s; }
+
+/* BLOG POST ONE COLUMN */
+.blog-post-one-column .blog-post__items {
+  flex-direction: column;
+  grid-gap: 100px; }
+
+.blog-post-one-column .blog-post__item {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; }
+  .blog-post-one-column .blog-post__item:last-child {
+    margin-bottom: 0; }
+
+.blog-post-one-column .blog-post__item-img-box {
+  margin-bottom: 0;
+  margin-right: 24px; }
 
 .form-reservation {
   background-color: #ebf0e4;
@@ -1780,7 +1797,7 @@ img.mfp-img {
   grid-gap: 60px; }
 
 .meal-category__item {
-  max-width: 508px;
+  max-width: 470px;
   width: 100%;
   position: relative; }
   .meal-category__item:last-child {
