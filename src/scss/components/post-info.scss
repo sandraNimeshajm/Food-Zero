@@ -1,0 +1,266 @@
+.post-info {
+  padding: 128px 0;
+  background-color: $white;
+
+  .blog-post__content-top-text {
+    &::after {
+      background-color: $grey;
+    }
+  }
+}
+
+.post-info__wrapper {
+  display: flex;
+  color: $black;
+}
+
+.post-info__content {
+  max-width: 1220px;
+  width: 100%;
+  margin-right: 60px;
+}
+.post-info__content-text {
+  margin-bottom: 86px;
+}
+
+.post-info__content-text--small {
+  margin-bottom: 150px;
+}
+
+.post-info__content-text--big {
+  margin-bottom: 142px;
+}
+
+.post-info__content-items {
+  display: flex;
+  margin-bottom: 72px;
+}
+
+.post-info__content-item--big {
+  max-width: 792px;
+  margin-right: 60px;
+}
+
+.post-info__content-item--small {
+  max-width: 366px;
+}
+
+.post-info__content-item {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.post-info__content-quote {
+  max-width: 992px;
+  width: 100%;
+  margin: 0 auto 138px;
+}
+
+.post-info__content-quote-title {
+  @extend .lato-38-bold;
+  color: $green;
+  font-style: italic;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 282px;
+    height: 234px;
+    background-image: url("/src/images/testimonials-quotation-marks.png");
+  }
+}
+
+.post-info__content-tags {
+  display: flex;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.post-info__content-tags-title {
+  margin-right: 18px;
+}
+
+.post-info__content-tag {
+  @extend .lato-18-normal;
+  margin-right: 18px;
+  position: relative;
+  padding: 10px 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42px;
+    border: 2px solid $black;
+  }
+}
+.post-info__content-author {
+  display: flex;
+  align-items: center;
+}
+
+.post-info__content-author-img-box {
+  max-width: 220px;
+  width: 100%;
+  margin-right: 60px;
+}
+
+.post-info__content-author-text-box {
+  max-width: 795px;
+  width: 100%;
+}
+
+.post-info__content-author-text-title {
+  margin-bottom: 28px;
+}
+
+.post-info__sidebar {
+  max-width: 366px;
+  width: 100%;
+}
+
+.post-info__sidebar-search-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid $black;
+  padding-bottom: 8px;
+  margin-bottom: 184px;
+
+  svg {
+    width: unset;
+  }
+}
+
+.post-info__sidebar-categories {
+  margin-bottom: 150px;
+}
+
+.post-info__sidebar-title {
+  margin-bottom: 38px;
+  border-bottom: 4px dashed $black;
+  padding-bottom: 8px;
+}
+
+.post-info__sidebar-category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-info__sidebar-category-text {
+  margin-bottom: 28px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.post-info__sidebar-comments {
+  margin-bottom: 150px;
+}
+
+.post-info__sidebar-comment {
+  @extend .lato-14-normal;
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.post-info__sidebar-comment-text {
+  margin-right: 6px;
+}
+
+.post-info__sidebar-comment-text--grey {
+  color: $grey;
+}
+
+.post-info__sidebar-archives {
+  margin-bottom: 150px;
+}
+
+.post-info__sidebar-archive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.post-info__sidebar-archive-text {
+  margin-bottom: 38px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.post-info__sidebar-recent {
+  margin-bottom: 150px;
+}
+
+.post-info__sidebar-recent-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.post-info__sidebar-recent-item-img-box {
+  max-width: 82px;
+  width: 100%;
+  margin-right: 26px;
+}
+
+.post-info__sidebar-recent-item-content-box {
+  max-width: 366px;
+  width: 100%;
+}
+.post-info__sidebar-recent-item-title {
+  @extend .lato-20-normal;
+}
+
+.post-info__sidebar-recent-item-text {
+  @extend .lato-14-normal;
+  color: $grey;
+}
+
+.post-info__sidebar-tag-box-top {
+  display: flex;
+  margin-bottom: 22px;
+}
+
+.post-info__sidebar-tag-box-bottom {
+  display: flex;
+}
+
+.post-info__sidebar-tag {
+  @extend .lato-18-normal;
+  position: relative;
+  padding: 10px 20px;
+  margin-right: 18px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42px;
+    border: 2px solid $black;
+  }
+}

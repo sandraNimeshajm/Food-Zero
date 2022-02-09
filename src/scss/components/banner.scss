@@ -100,12 +100,6 @@
 //BANNER SMALL
 .banner--small {
   height: 850px;
-}
-
-//BANNER BLOGS ONE COLUMN
-
-.banner-blogs-one-column {
-  background-image: url("/src/images/banner-blogs-one-column.jpg");
 
   .banner__content {
     max-width: 1304px;
@@ -114,8 +108,57 @@
     align-items: center;
     margin: 0 auto;
   }
+}
+
+//BANNER BLOGS ONE COLUMN
+
+.banner-blogs-one-column {
+  background-image: url("/src/images/banner-blogs-one-column.jpg");
 
   .banner__content-title {
     @extend .rufina-108-bold;
+  }
+}
+
+/* BANNER SINGLE POST */
+
+.banner-single-post {
+  background-image: url("/src/images/banner-single-post.jpg");
+
+  .banner__wrapper {
+    transform: translateY(80px);
+  }
+}
+
+.banner__content-title {
+  @extend .rufina-88-bold;
+}
+
+.banner__content {
+  position: relative;
+}
+
+.blog-post__item-btn {
+  top: -60px;
+  left: 0;
+  background-color: transparent;
+  border: 2px solid $white;
+  max-width: 203px;
+  width: 100%;
+}
+
+.blog-post__content-top {
+  width: 100%;
+  color: $white;
+  margin-bottom: 0;
+
+  .blog-post__content-top-text {
+    &::after {
+      background-color: $white;
+    }
+  }
+
+  .blog-post__content-top-img-box {
+    max-width: 96px;
   }
 }

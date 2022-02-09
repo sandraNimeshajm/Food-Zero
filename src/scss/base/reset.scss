@@ -8,6 +8,7 @@ body {
 }
 
 body {
+  @extend .lato-24-normal;
   background-color: $main;
   color: $white;
 

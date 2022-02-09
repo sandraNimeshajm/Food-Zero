@@ -154,7 +154,7 @@ td {
   font-style: normal;
   font-size: 108px; }
 
-.rufina-88-bold, .process__content-title {
+.rufina-88-bold, .banner__content-title, .process__content-title {
   font-family: "Rufina";
   font-weight: bold;
   font-style: normal;
@@ -191,13 +191,19 @@ td {
   font-style: normal;
   font-size: 66px; }
 
+.lato-38-bold, .post-info__content-quote-title {
+  font-family: "Lato";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 38px; }
+
 .lato-24-bold {
   font-family: "Lato";
   font-weight: bold;
   font-style: normal;
   font-size: 24px; }
 
-.lato-24-normal, .header__right-info, .home-banner__content-text, .diet__left-text, .diet__right-text, .menu__item-text, .features__item-content-text, .blog-post__content-bottom-btn-text, .blog-post__two-columns .blog-post__button-prev,
+.lato-24-normal, body, .header__right-info, .home-banner__content-text, .diet__left-text, .diet__right-text, .menu__item-text, .features__item-content-text, .blog-post__content-bottom-btn-text, .blog-post__two-columns .blog-post__button-prev,
 .blog-post__two-columns .blog-post__button-next, .blog-post__two-columns .blog-post__pagination, .form-reservation__item, .form-reservation__item .form-reservation__item-date,
 .form-reservation__item .form-reservation__item-time,
 .form-reservation__item .form-reservation__item-person, .form-reservation--contact .form-reservation__item-name,
@@ -215,19 +221,19 @@ td {
   font-style: normal;
   font-size: 22px; }
 
-.lato-20-normal {
+.lato-20-normal, .post-info__sidebar-recent-item-title {
   font-family: "Lato";
   font-weight: normal;
   font-style: normal;
   font-size: 20px; }
 
-.lato-18-normal, .blog-post__content-top, .testimonials__slider-item-bottom-job, .contact__info-item {
+.lato-18-normal, .blog-post__content-top, .testimonials__slider-item-bottom-job, .post-info__content-tag, .post-info__sidebar-tag, .contact__info-item {
   font-family: "Lato";
   font-weight: normal;
   font-style: normal;
   font-size: 18px; }
 
-.lato-14-normal, .footer__top-subscribe-text {
+.lato-14-normal, .footer__top-subscribe-text, .post-info__sidebar-comment, .post-info__sidebar-recent-item-text {
   font-family: "Lato";
   font-weight: normal;
   font-style: normal;
@@ -2070,15 +2076,41 @@ img.mfp-img {
 
 .banner--small {
   height: 850px; }
-
-.banner-blogs-one-column {
-  background-image: url(bf4bdd49fe430019e820.jpg); }
-  .banner-blogs-one-column .banner__content {
+  .banner--small .banner__content {
     max-width: 1304px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto; }
+
+.banner-blogs-one-column {
+  background-image: url(bf4bdd49fe430019e820.jpg); }
+
+/* BANNER SINGLE POST */
+.banner-single-post {
+  background-image: url(a83665865e2aafc4de4c.jpg); }
+  .banner-single-post .banner__wrapper {
+    transform: translateY(80px); }
+
+.banner__content {
+  position: relative; }
+
+.blog-post__item-btn {
+  top: -60px;
+  left: 0;
+  background-color: transparent;
+  border: 2px solid #fff;
+  max-width: 203px;
+  width: 100%; }
+
+.blog-post__content-top {
+  width: 100%;
+  color: #fff;
+  margin-bottom: 0; }
+  .blog-post__content-top .blog-post__content-top-text::after {
+    background-color: #fff; }
+  .blog-post__content-top .blog-post__content-top-img-box {
+    max-width: 96px; }
 
 .meal {
   background-color: #fff;
@@ -2436,6 +2468,205 @@ img.mfp-img {
 
 .process__content-title {
   margin-bottom: 28px; }
+
+.post-info {
+  padding: 128px 0;
+  background-color: #fff; }
+  .post-info .blog-post__content-top-text::after {
+    background-color: #b0b0b0; }
+
+.post-info__wrapper {
+  display: flex;
+  color: #000; }
+
+.post-info__content {
+  max-width: 1220px;
+  width: 100%;
+  margin-right: 60px; }
+
+.post-info__content-text {
+  margin-bottom: 86px; }
+
+.post-info__content-text--small {
+  margin-bottom: 150px; }
+
+.post-info__content-text--big {
+  margin-bottom: 142px; }
+
+.post-info__content-items {
+  display: flex;
+  margin-bottom: 72px; }
+
+.post-info__content-item--big {
+  max-width: 792px;
+  margin-right: 60px; }
+
+.post-info__content-item--small {
+  max-width: 366px; }
+
+.post-info__content-item {
+  width: 100%;
+  margin-bottom: 60px; }
+
+.post-info__content-quote {
+  max-width: 992px;
+  width: 100%;
+  margin: 0 auto 138px; }
+
+.post-info__content-quote-title {
+  color: #5e6600;
+  font-style: italic;
+  position: relative; }
+  .post-info__content-quote-title::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 282px;
+    height: 234px;
+    background-image: url(d6814cfb11f7b8fa2906.png); }
+
+.post-info__content-tags {
+  display: flex;
+  align-items: center;
+  margin-bottom: 150px; }
+
+.post-info__content-tags-title {
+  margin-right: 18px; }
+
+.post-info__content-tag {
+  margin-right: 18px;
+  position: relative;
+  padding: 10px 20px; }
+  .post-info__content-tag:last-child {
+    margin-right: 0; }
+  .post-info__content-tag::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42px;
+    border: 2px solid #000; }
+
+.post-info__content-author {
+  display: flex;
+  align-items: center; }
+
+.post-info__content-author-img-box {
+  max-width: 220px;
+  width: 100%;
+  margin-right: 60px; }
+
+.post-info__content-author-text-box {
+  max-width: 795px;
+  width: 100%; }
+
+.post-info__content-author-text-title {
+  margin-bottom: 28px; }
+
+.post-info__sidebar {
+  max-width: 366px;
+  width: 100%; }
+
+.post-info__sidebar-search-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #000;
+  padding-bottom: 8px;
+  margin-bottom: 184px; }
+  .post-info__sidebar-search-box svg {
+    width: unset; }
+
+.post-info__sidebar-categories {
+  margin-bottom: 150px; }
+
+.post-info__sidebar-title {
+  margin-bottom: 38px;
+  border-bottom: 4px dashed #000;
+  padding-bottom: 8px; }
+
+.post-info__sidebar-category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.post-info__sidebar-category-text {
+  margin-bottom: 28px; }
+  .post-info__sidebar-category-text:last-child {
+    margin-bottom: 0; }
+
+.post-info__sidebar-comments {
+  margin-bottom: 150px; }
+
+.post-info__sidebar-comment {
+  margin-bottom: 24px; }
+  .post-info__sidebar-comment:last-child {
+    margin-bottom: 0; }
+
+.post-info__sidebar-comment-text {
+  margin-right: 6px; }
+
+.post-info__sidebar-comment-text--grey {
+  color: #b0b0b0; }
+
+.post-info__sidebar-archives {
+  margin-bottom: 150px; }
+
+.post-info__sidebar-archive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.post-info__sidebar-archive-text {
+  margin-bottom: 38px; }
+  .post-info__sidebar-archive-text:last-child {
+    margin-bottom: 0; }
+
+.post-info__sidebar-recent {
+  margin-bottom: 150px; }
+
+.post-info__sidebar-recent-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px; }
+  .post-info__sidebar-recent-item:last-child {
+    margin-bottom: 0; }
+
+.post-info__sidebar-recent-item-img-box {
+  max-width: 82px;
+  width: 100%;
+  margin-right: 26px; }
+
+.post-info__sidebar-recent-item-content-box {
+  max-width: 366px;
+  width: 100%; }
+
+.post-info__sidebar-recent-item-text {
+  color: #b0b0b0; }
+
+.post-info__sidebar-tag-box-top {
+  display: flex;
+  margin-bottom: 22px; }
+
+.post-info__sidebar-tag-box-bottom {
+  display: flex; }
+
+.post-info__sidebar-tag {
+  position: relative;
+  padding: 10px 20px;
+  margin-right: 18px; }
+  .post-info__sidebar-tag:last-child {
+    margin-right: 0; }
+  .post-info__sidebar-tag::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42px;
+    border: 2px solid #000; }
 
 /* Helpers */
 .btn {
