@@ -771,6 +771,40 @@
           </div>
         </div>
       </section>
+
+      <section class="comments-form">
+        <div class="comments-form__wrapper wrapper">
+          <h5 class="comments-form__title page-text">Leave A Reply</h5>
+          <form action="" class="comments-form__items">
+            <div class="comments-form__item">
+              <label class="comment-form__item-title" for="comment"
+                >Comment</label
+              >
+              <textarea
+                class="comment-form__item-textarea"
+                name="comment"
+                id="comment"
+              ></textarea>
+            </div>
+
+            <div class="comments-form__item comments-form__item--required">
+              <label class="comment-form__item-title" for="name">Name</label>
+              <input class="comment-form__item-input" type="text" required />
+            </div>
+            <div class="comments-form__item comments-form__item--required">
+              <label class="comment-form__item-title" for="email">Email</label>
+              <input class="comment-form__item-input" type="email" required />
+            </div>
+            <div class="comments-form__item">
+              <label class="comment-form__item-title" for="website"
+                >Website</label
+              >
+              <input class="comment-form__item-input" type="text" />
+            </div>
+            <button class="btn btn--white" type="submit">Post Comment</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
