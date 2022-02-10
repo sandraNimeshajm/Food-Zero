@@ -24,16 +24,26 @@ const slider = () => {
     spaceBetween: 30,
 
     navigation: {
-      nextEl: ".blog-post__button-next",
-      prevEl: ".blog-post__button-prev",
+      nextEl: ".js-blog-post-next",
+      prevEl: ".js-blog-post-prev",
     },
 
     pagination: {
-      el: ".blog-post__pagination",
+      el: ".js-blog-post-pagination",
       clickable: true,
       renderBullet: function (index, className) {
         return '<span class="' + className + '">' + (index + 1) + "</span>";
       },
+    },
+  });
+
+  const allPostsSlider = new Swiper(".js-all-posts-slider", {
+    slidesPerView: 2,
+    spaceBetween: 20,
+
+    navigation: {
+      nextEl: ".js-all-posts-next",
+      prevEl: ".js-all-posts-prev",
     },
   });
 };

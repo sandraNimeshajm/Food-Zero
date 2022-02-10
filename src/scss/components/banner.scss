@@ -128,37 +128,37 @@
   .banner__wrapper {
     transform: translateY(80px);
   }
-}
 
-.banner__content-title {
-  @extend .rufina-88-bold;
-}
-
-.banner__content {
-  position: relative;
-}
-
-.blog-post__item-btn {
-  top: -60px;
-  left: 0;
-  background-color: transparent;
-  border: 2px solid $white;
-  max-width: 203px;
-  width: 100%;
-}
-
-.blog-post__content-top {
-  width: 100%;
-  color: $white;
-  margin-bottom: 0;
-
-  .blog-post__content-top-text {
-    &::after {
-      background-color: $white;
-    }
+  .banner__content-title {
+    @extend .rufina-88-bold;
   }
 
-  .blog-post__content-top-img-box {
-    max-width: 96px;
+  .banner__content {
+    position: relative;
+  }
+
+  .blog-post__item-btn {
+    top: -60px;
+    left: 0;
+    background-color: transparent;
+    border: 2px solid $white;
+    max-width: 203px;
+    width: 100%;
+  }
+
+  .blog-post__content-top {
+    width: 100%;
+    color: $white;
+    margin-bottom: 0;
+
+    .blog-post__content-top-text {
+      &::after {
+        background-color: $white;
+      }
+    }
+
+    .blog-post__content-top-img-box {
+      max-width: 96px;
+    }
   }
 }
