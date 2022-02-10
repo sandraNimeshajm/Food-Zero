@@ -1,0 +1,72 @@
+.comments {
+  padding-bottom: 256px;
+  background-color: $white;
+}
+
+.comments__title {
+  @extend .rufina-48-bold;
+  color: $black;
+  text-align: center;
+  margin-bottom: 86px;
+}
+
+.comments__wrapper {
+  max-width: 1394px;
+}
+
+.comments__items {
+  color: $black;
+  border-bottom: 4px dashed $black;
+  padding-bottom: 128px;
+}
+
+.comments__item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.comments__item-left {
+  display: flex;
+}
+
+.comments__item-left--sub-comment {
+  transform: translateX(116px);
+
+  .comments__item-left-content-box {
+    max-width: 940px;
+    width: 100%;
+  }
+}
+
+.comments__item-left-img-box {
+  max-width: 82px;
+  width: 100%;
+  margin-right: 34px;
+}
+
+.comments__item-left-content-text {
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.comment__item-right {
+  position: relative;
+  z-index: 10;
+}
+
+.comments__item-right-btn {
+  color: $black;
+  transition: color 0.3s;
+
+  @include hover {
+    color: $grey;
+  }
+}

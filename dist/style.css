@@ -166,7 +166,7 @@ td {
   font-style: normal;
   font-size: 68px; }
 
-.rufina-48-bold, .home-banner__content-scroll, .menu__item-price, .features__item-content-title, .blog-post__content-bottom-title, .meal-category__item-tag-text, .testimonials__slider-item-title {
+.rufina-48-bold, .home-banner__content-scroll, .menu__item-price, .features__item-content-title, .blog-post__content-bottom-title, .meal-category__item-tag-text, .testimonials__slider-item-title, .comments__title {
   font-family: "Rufina";
   font-weight: bold;
   font-style: normal;
@@ -2718,6 +2718,60 @@ img.mfp-img {
 .all-posts__btn-prev-arrow {
   margin-right: 25px; }
 
+.comments {
+  padding-bottom: 256px;
+  background-color: #fff; }
+
+.comments__title {
+  color: #000;
+  text-align: center;
+  margin-bottom: 86px; }
+
+.comments__wrapper {
+  max-width: 1394px; }
+
+.comments__items {
+  color: #000;
+  border-bottom: 4px dashed #000;
+  padding-bottom: 128px; }
+
+.comments__item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px; }
+  .comments__item:last-child {
+    margin-bottom: 0; }
+
+.comments__item-left {
+  display: flex; }
+
+.comments__item-left--sub-comment {
+  transform: translateX(116px); }
+  .comments__item-left--sub-comment .comments__item-left-content-box {
+    max-width: 940px;
+    width: 100%; }
+
+.comments__item-left-img-box {
+  max-width: 82px;
+  width: 100%;
+  margin-right: 34px; }
+
+.comments__item-left-content-text {
+  margin-bottom: 14px; }
+  .comments__item-left-content-text:last-child {
+    margin-bottom: 0; }
+
+.comment__item-right {
+  position: relative;
+  z-index: 10; }
+
+.comments__item-right-btn {
+  color: #000;
+  transition: color 0.3s; }
+  @media only screen and (min-width: 768px) {
+    .comments__item-right-btn:hover {
+      color: #b0b0b0; } }
+
 /* Helpers */
 .btn {
   display: inline-block;
@@ -2804,4 +2858,10 @@ img.mfp-img {
   @media only screen and (min-width: 768px) {
     .social__item-link svg:hover {
       transform: scale(1.5); } }
+
+.bold {
+  font-weight: 700; }
+
+.grey {
+  color: #b0b0b0; }
 
