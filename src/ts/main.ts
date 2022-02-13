@@ -5,6 +5,7 @@ import slider from "./components/slider";
 import sliderPagination from "./components/sliderPagination";
 import year from "./components/year";
 import popUp from "./components/popUp";
+import filterItems from "./components/filterItems";
 
 stickyHeader();
 hamburgerMenu();
@@ -13,3 +14,4 @@ slider();
 sliderPagination();
 year();
 popUp();
+filterItems();

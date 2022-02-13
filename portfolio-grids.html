@@ -63,7 +63,9 @@
                       >
                     </li>
                     <li class="nav__subitem | js-nav-subitem">
-                      <a href="blogs-two-columns.html" class="nav__subitem-link"
+                      <a
+                        href="blogs-two-columns.html;"
+                        class="nav__subitem-link"
                         >2 Columns</a
                       >
                     </li>
@@ -202,412 +204,214 @@
     </header>
 
     <main>
-      <section class="banner banner--small banner-blogs-one-column">
+      <section class="banner banner-portfolio-grids">
         <div class="banner__wrapper wrapper">
           <div class="banner__content">
-            <h1 class="page-title banner__content-title">
-              Blog List - Two Columns
-            </h1>
-            <p class="banner__content-text page-text">
-              It is an easy way to create your beautiful blog daily
-            </p>
+            <h1 class="page-title banner__content-title">Portfolio - Grids</h1>
           </div>
         </div>
       </section>
 
-      <section class="blog-post__two-columns blog-post">
-        <div
-          class="blog-post__wrapper wrapper swiper-container | js-blog-post-slider"
-        >
-          <div class="blog-post__items swiper-wrapper">
-            <div class="blog-post__item swiper-slide">
-              <div class="blog-post__item-img-box">
-                <a href="javascript;" class="blog-post__item-btn">
-                  <span class="blog-post__item-btn-text">Fashion</span>
-                </a>
+      <section class="grid">
+        <div class="grid__wrapper wrapper">
+          <div class="grid__btn-box">
+            <a
+              href="javascript:;"
+              class="grid__btn active | js-filter-btn"
+              data-filter="all"
+              >All</a
+            >
+            <a
+              href="javascript:;"
+              class="grid__btn | js-filter-btn"
+              data-filter="starters"
+              >Starters</a
+            >
+            <a
+              href="javascript:;"
+              class="grid__btn | js-filter-btn"
+              data-filter="cold-dishes"
+              >Cold dishes</a
+            >
+            <a
+              href="javascript:;"
+              class="grid__btn | js-filter-btn"
+              data-filter="lunch"
+              >Lunch</a
+            >
+            <a
+              href="javascript:;"
+              class="grid__btn | js-filter-btn"
+              data-filter="dinner"
+              >Dinner</a
+            >
+            <a
+              href="javascript:;"
+              class="grid__btn | js-filter-btn"
+              data-filter="drinks"
+              >Drinks</a
+            >
+            <a
+              href="javascript:;"
+              class="grid__btn | js-filter-btn"
+              data-filter="sweets"
+              >Sweets</a
+            >
+            <a
+              href="javascript:;"
+              class="grid__btn | js-filter-btn"
+              data-filter="fruits"
+              >Fruits</a
+            >
+          </div>
+
+          <div class="grid__gallery">
+            <div class="grid__gallery-items">
+              <div
+                class="grid__gallery-item grid__gallery-item--big | js-filter-item"
+                data-category="lunch dinner"
+              >
                 <img
-                  loading="lazy"
-                  src="./src/images/blog-post-img-1.png"
-                  alt="Post image"
-                  class="blog-post__item-img"
+                  src="./src/images/gallery-item-1.png"
+                  alt="Gallery item"
+                  class="grid__gallery-item-img"
                 />
-              </div>
-
-              <div class="blog-post__content-box">
-                <div class="blog-post__content-top">
-                  <div class="blog-post__content-top-img-box">
-                    <img
-                      loading="lazy"
-                      src="./src/images/blog-post-author-1.png"
-                      alt="Author's image"
-                      class="blog-post__content-top-img"
-                    />
-                  </div>
-                  <span class="blog-post__content-top-text"
-                    >Julie Christie</span
-                  >
-                  <span class="blog-post__content-top-text"
-                    >October 17,2021</span
-                  >
-                  <span class="blog-post__content-top-text">3:33 pm</span>
-                  <span class="blog-post__content-top-text">2 comments</span>
-                </div>
-                <div class="blog-post__content-bottom">
-                  <h4 class="blog-post__content-bottom-title">
-                    Fruit and vegetables and protection against diseases
+                <div class="grid__gallery-item-content-box">
+                  <h4 class="grid__gallery-item-content-title">
+                    Premium Deep Sea Snow White Cod Fillet
                   </h4>
-                  <p class="blog-post__content-bottom-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                  <a
-                    href="single-post.html"
-                    class="blog-post__content-bottom-btn-link"
-                  >
-                    <span class="blog-post__content-bottom-btn-text"
-                      >Read More</span
-                    >
-                    <svg
-                      class="blog-post__content-bottom-btn-arrow"
-                      width="48"
-                      height="28"
-                      viewBox="0 0 48 28"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M34.0517 0.981934L31.3237 3.77L39.6221 12.0625H0.75V15.9375H39.6221L31.3257 24.2319L34.0517 27.0181L47.0659 14L34.0517 0.981934Z"
-                        fill="#233000"
-                      />
-                    </svg>
-                  </a>
+                  <span class="grid__gallery-item-content-text">Lunch</span>
+                  <span class="grid__gallery-item-content-text">Dinner</span>
                 </div>
               </div>
-            </div>
 
-            <div class="blog-post__item swiper-slide">
-              <div class="blog-post__item-img-box">
-                <a href="javascript;" class="blog-post__item-btn">
-                  <span class="blog-post__item-btn-text">Fashion</span>
-                </a>
+              <div
+                class="grid__gallery-item grid__gallery-item--small | js-filter-item"
+                data-category="drinks fruits"
+              >
                 <img
-                  loading="lazy"
-                  src="./src/images/blog-post-img-2.png"
-                  alt="Post image"
-                  class="blog-post__item-img"
+                  src="./src/images/gallery-item-2.png"
+                  alt="Gallery item"
+                  class="grid__gallery-item-img"
                 />
-              </div>
-
-              <div class="blog-post__content-box">
-                <div class="blog-post__content-top">
-                  <div class="blog-post__content-top-img-box">
-                    <img
-                      loading="lazy"
-                      src="./src/images/blog-post-author-2.png"
-                      alt="Author's image"
-                      class="blog-post__content-top-img"
-                    />
-                  </div>
-                  <span class="blog-post__content-top-text"
-                    >Dianne Russell</span
-                  >
-                  <span class="blog-post__content-top-text"
-                    >October 17,2021</span
-                  >
-                  <span class="blog-post__content-top-text">3:33 pm</span>
-                  <span class="blog-post__content-top-text">2 comments</span>
-                </div>
-                <div class="blog-post__content-bottom">
-                  <h4 class="blog-post__content-bottom-title">
-                    Asparagus Spring Salad with Rocket, Goat's Cheese
+                <div class="grid__gallery-item-content-box">
+                  <h4 class="grid__gallery-item-content-title">
+                    Option of natural wine available
                   </h4>
-                  <p class="blog-post__content-bottom-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                  <a
-                    href="single-post.html"
-                    class="blog-post__content-bottom-btn-link"
-                  >
-                    <span class="blog-post__content-bottom-btn-text"
-                      >Read More</span
-                    >
-                    <svg
-                      class="blog-post__content-bottom-btn-arrow"
-                      width="48"
-                      height="28"
-                      viewBox="0 0 48 28"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M34.0517 0.981934L31.3237 3.77L39.6221 12.0625H0.75V15.9375H39.6221L31.3257 24.2319L34.0517 27.0181L47.0659 14L34.0517 0.981934Z"
-                        fill="#233000"
-                      />
-                    </svg>
-                  </a>
+                  <span class="grid__gallery-item-content-text">Drinks</span>
+                  <span class="grid__gallery-item-content-text">Fruits</span>
                 </div>
               </div>
-            </div>
 
-            <div class="blog-post__item swiper-slide">
-              <div class="blog-post__item-img-box">
-                <a href="javascript;" class="blog-post__item-btn">
-                  <span class="blog-post__item-btn-text">Fashion</span>
-                </a>
+              <div
+                class="grid__gallery-item grid__gallery-item--small | js-filter-item"
+                data-category="lunch starters"
+              >
                 <img
-                  loading="lazy"
-                  src="./src/images/blog-post-img-3.png"
-                  alt="Post image"
-                  class="blog-post__item-img"
+                  src="./src/images/gallery-item-3.png"
+                  alt="Gallery item"
+                  class="grid__gallery-item-img"
                 />
-              </div>
-
-              <div class="blog-post__content-box">
-                <div class="blog-post__content-top">
-                  <div class="blog-post__content-top-img-box">
-                    <img
-                      loading="lazy"
-                      src="./src/images/blog-post-author-3.png"
-                      alt="Author's image"
-                      class="blog-post__content-top-img"
-                    />
-                  </div>
-                  <span class="blog-post__content-top-text"
-                    >Jennifer Tomas</span
-                  >
-                  <span class="blog-post__content-top-text"
-                    >October 17,2021</span
-                  >
-                  <span class="blog-post__content-top-text">3:33 pm</span>
-                  <span class="blog-post__content-top-text">2 comments</span>
-                </div>
-                <div class="blog-post__content-bottom">
-                  <h4 class="blog-post__content-bottom-title">
-                    7 Reasons to Start Your Day With Lemon Water
+                <div class="grid__gallery-item-content-box">
+                  <h4 class="grid__gallery-item-content-title">
+                    Best pumpkin for pumpkin soup
                   </h4>
-                  <p class="blog-post__content-bottom-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                  <a
-                    href="single-post.html"
-                    class="blog-post__content-bottom-btn-link"
-                  >
-                    <span class="blog-post__content-bottom-btn-text"
-                      >Read More</span
-                    >
-                    <svg
-                      class="blog-post__content-bottom-btn-arrow"
-                      width="48"
-                      height="28"
-                      viewBox="0 0 48 28"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M34.0517 0.981934L31.3237 3.77L39.6221 12.0625H0.75V15.9375H39.6221L31.3257 24.2319L34.0517 27.0181L47.0659 14L34.0517 0.981934Z"
-                        fill="#233000"
-                      />
-                    </svg>
-                  </a>
+                  <span class="grid__gallery-item-content-text">Lunch</span>
+                  <span class="grid__gallery-item-content-text">Starters</span>
                 </div>
               </div>
-            </div>
 
-            <div class="blog-post__item swiper-slide">
-              <div class="blog-post__item-img-box">
-                <a href="javascript;" class="blog-post__item-btn">
-                  <span class="blog-post__item-btn-text">Fashion</span>
-                </a>
+              <div
+                class="grid__gallery-item grid__gallery-item--big | js-filter-item"
+                data-category="dinner lunch"
+              >
                 <img
-                  loading="lazy"
-                  src="./src/images/blog-post-img-4.png"
-                  alt="Post image"
-                  class="blog-post__item-img"
+                  src="./src/images/gallery-item-4.png"
+                  alt="Gallery item"
+                  class="grid__gallery-item-img"
                 />
-              </div>
-
-              <div class="blog-post__content-box">
-                <div class="blog-post__content-top">
-                  <div class="blog-post__content-top-img-box">
-                    <img
-                      loading="lazy"
-                      src="./src/images/blog-post-author-4.png"
-                      alt="Author's image"
-                      class="blog-post__content-top-img"
-                    />
-                  </div>
-                  <span class="blog-post__content-top-text">Mark Webb</span>
-                  <span class="blog-post__content-top-text"
-                    >October 17,2021</span
-                  >
-                  <span class="blog-post__content-top-text">3:33 pm</span>
-                  <span class="blog-post__content-top-text">2 comments</span>
-                </div>
-                <div class="blog-post__content-bottom">
-                  <h4 class="blog-post__content-bottom-title">
-                    Three Ideas for Cooking Goat Meat at Home
+                <div class="grid__gallery-item-content-box">
+                  <h4 class="grid__gallery-item-content-title">
+                    Strip Steak With Rosemary Butter
                   </h4>
-                  <p class="blog-post__content-bottom-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                  <a
-                    href="single-post.html"
-                    class="blog-post__content-bottom-btn-link"
-                  >
-                    <span class="blog-post__content-bottom-btn-text"
-                      >Read More</span
-                    >
-                    <svg
-                      class="blog-post__content-bottom-btn-arrow"
-                      width="48"
-                      height="28"
-                      viewBox="0 0 48 28"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M34.0517 0.981934L31.3237 3.77L39.6221 12.0625H0.75V15.9375H39.6221L31.3257 24.2319L34.0517 27.0181L47.0659 14L34.0517 0.981934Z"
-                        fill="#233000"
-                      />
-                    </svg>
-                  </a>
+                  <span class="grid__gallery-item-content-text">Dinner</span>
+                  <span class="grid__gallery-item-content-text">Lunch</span>
                 </div>
               </div>
-            </div>
 
-            <div class="blog-post__item swiper-slide">
-              <div class="blog-post__item-img-box">
-                <a href="javascript;" class="blog-post__item-btn">
-                  <span class="blog-post__item-btn-text">Fashion</span>
-                </a>
+              <div
+                class="grid__gallery-item grid__gallery-item--medium | js-filter-item"
+                data-category="cold-dishes starters"
+              >
                 <img
-                  loading="lazy"
-                  src="./src/images/blog-post-img-5.png"
-                  alt="Post image"
-                  class="blog-post__item-img"
+                  src="./src/images/gallery-item-5.png"
+                  alt="Gallery item"
+                  class="grid__gallery-item-img"
                 />
-              </div>
-
-              <div class="blog-post__content-box">
-                <div class="blog-post__content-top">
-                  <div class="blog-post__content-top-img-box">
-                    <img
-                      loading="lazy"
-                      src="./src/images/blog-post-author-5.png"
-                      alt="Author's image"
-                      class="blog-post__content-top-img"
-                    />
-                  </div>
-                  <span class="blog-post__content-top-text"
-                    >Leslie Alexander</span
-                  >
-                  <span class="blog-post__content-top-text"
-                    >October 17,2021</span
-                  >
-                  <span class="blog-post__content-top-text">3:33 pm</span>
-                  <span class="blog-post__content-top-text">2 comments</span>
-                </div>
-                <div class="blog-post__content-bottom">
-                  <h4 class="blog-post__content-bottom-title">
-                    12 Sparkling Wines We're Loving This Summer
+                <div class="grid__gallery-item-content-box">
+                  <h4 class="grid__gallery-item-content-title">
+                    Braised Sliced Abalone,Fish Maw with Premium Seafood
                   </h4>
-                  <p class="blog-post__content-bottom-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                  <a
-                    href="single-post.html"
-                    class="blog-post__content-bottom-btn-link"
+                  <span class="grid__gallery-item-content-text"
+                    >Cold Dishes</span
                   >
-                    <span class="blog-post__content-bottom-btn-text"
-                      >Read More</span
-                    >
-                    <svg
-                      class="blog-post__content-bottom-btn-arrow"
-                      width="48"
-                      height="28"
-                      viewBox="0 0 48 28"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M34.0517 0.981934L31.3237 3.77L39.6221 12.0625H0.75V15.9375H39.6221L31.3257 24.2319L34.0517 27.0181L47.0659 14L34.0517 0.981934Z"
-                        fill="#233000"
-                      />
-                    </svg>
-                  </a>
+                  <span class="grid__gallery-item-content-text">Starters</span>
                 </div>
               </div>
-            </div>
 
-            <div class="blog-post__item swiper-slide">
-              <div class="blog-post__item-img-box">
-                <a href="javascript;" class="blog-post__item-btn">
-                  <span class="blog-post__item-btn-text">Fashion</span>
-                </a>
+              <div
+                class="grid__gallery-item grid__gallery-item--medium | js-filter-item"
+                data-category="starters dinner"
+              >
                 <img
-                  loading="lazy"
-                  src="./src/images/blog-post-img-6.png"
-                  alt="Post image"
-                  class="blog-post__item-img"
+                  src="./src/images/gallery-item-6.png"
+                  alt="Gallery item"
+                  class="grid__gallery-item-img"
                 />
+                <div class="grid__gallery-item-content-box">
+                  <h4 class="grid__gallery-item-content-title">
+                    Pan Fried Live Prawn with Superior Soy Sauce
+                  </h4>
+                  <span class="grid__gallery-item-content-text">Starters</span>
+                  <span class="grid__gallery-item-content-text">Dinner</span>
+                </div>
               </div>
 
-              <div class="blog-post__content-box">
-                <div class="blog-post__content-top">
-                  <div class="blog-post__content-top-img-box">
-                    <img
-                      loading="lazy"
-                      src="./src/images/blog-post-author-3.png"
-                      alt="Author's image"
-                      class="blog-post__content-top-img"
-                    />
-                  </div>
-                  <span class="blog-post__content-top-text"
-                    >Jennifer Tomas</span
-                  >
-                  <span class="blog-post__content-top-text"
-                    >October 17,2021</span
-                  >
-                  <span class="blog-post__content-top-text">3:33 pm</span>
-                  <span class="blog-post__content-top-text">2 comments</span>
-                </div>
-                <div class="blog-post__content-bottom">
-                  <h4 class="blog-post__content-bottom-title">
-                    The Best Style of Dough for Dumplings
+              <div
+                class="grid__gallery-item grid__gallery-item--medium | js-filter-item"
+                data-category="sweets"
+              >
+                <img
+                  src="./src/images/gallery-item-7.png"
+                  alt="Gallery item"
+                  class="grid__gallery-item-img"
+                />
+                <div class="grid__gallery-item-content-box">
+                  <h4 class="grid__gallery-item-content-title">
+                    Chocolate mousse
                   </h4>
-                  <p class="blog-post__content-bottom-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                  <a
-                    href="single-post.html"
-                    class="blog-post__content-bottom-btn-link"
-                  >
-                    <span class="blog-post__content-bottom-btn-text"
-                      >Read More</span
-                    >
-                    <svg
-                      class="blog-post__content-bottom-btn-arrow"
-                      width="48"
-                      height="28"
-                      viewBox="0 0 48 28"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M34.0517 0.981934L31.3237 3.77L39.6221 12.0625H0.75V15.9375H39.6221L31.3257 24.2319L34.0517 27.0181L47.0659 14L34.0517 0.981934Z"
-                        fill="#233000"
-                      />
-                    </svg>
-                  </a>
+                  <span class="grid__gallery-item-content-text">Sweets</span>
+                </div>
+              </div>
+
+              <div
+                class="grid__gallery-item grid__gallery-item--medium | js-filter-item"
+                data-category="fruits"
+              >
+                <img
+                  src="./src/images/gallery-item-8.png"
+                  alt="Gallery item"
+                  class="grid__gallery-item-img"
+                />
+                <div class="grid__gallery-item-content-box">
+                  <h4 class="grid__gallery-item-content-title">Fruit Salad</h4>
+
+                  <span class="grid__gallery-item-content-text">Fruits</span>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="blog-post__button-box">
-            <div class="blog-post__button-prev | js-blog-post-prev">Prev</div>
-            <div class="blog-post__pagination | js-blog-post-pagination"></div>
-            <div class="blog-post__button-next | js-blog-post-next">Next</div>
-          </div>
+          <a href="javascript:;" class="btn btn--white">Loading...</a>
         </div>
       </section>
     </main>

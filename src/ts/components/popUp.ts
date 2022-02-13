@@ -2,6 +2,8 @@ import * as $ from "jquery";
 import "magnific-popup";
 
 const popUp = () => {
+  const popup = document.querySelector(".popup-youtube");
+  if (!popup) return;
   $(".popup-youtube").magnificPopup({
     type: "iframe",
     mainClass: "mfp-fade",

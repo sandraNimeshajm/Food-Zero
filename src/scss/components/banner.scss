@@ -162,3 +162,17 @@
     }
   }
 }
+
+/* BANNER PORTFOLIO GRIDS */
+
+.banner-portfolio-grids {
+  background-image: url("/src/images/banner-portfolio-grids.jpg");
+
+  .banner__content {
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}

@@ -1,10 +1,11 @@
 import Swiper from "swiper/bundle";
 
 const slider = () => {
-  // const slides = document.querySelector(".js-testimonials-slider");
-  // const blogSlides = document.querySelector(".js-blog-post-slider");
+  const slides = document.querySelector(".js-testimonials-slider");
+  const blogSlides = document.querySelector(".js-blog-post-slider");
 
-  // if (!slides || !blogSlides) return;
+  // if (!slides) return;
+  // if (!blogSlides) return;
 
   const swiper = new Swiper(".js-testimonials-slider", {
     slidesPerView: 1,
