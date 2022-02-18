@@ -25,6 +25,11 @@
 .header__left {
   display: flex;
   align-items: center;
+
+  @include mq(991) {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .header__left-logo-box {
