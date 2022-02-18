@@ -1,25 +1,64 @@
 .diet {
   padding-bottom: 256px;
+
+  @include mq(1240) {
+    padding-bottom: 128px;
+  }
+
+  @include mq(991) {
+    padding-bottom: 84px;
+  }
+
+  @include mq(768) {
+    padding-bottom: 64px;
+  }
 }
 
 .diet__wrapper {
   display: flex;
   justify-content: space-between;
+
+  @include mq(1540) {
+    padding: 0 24px;
+  }
+
+  @include mq(1350) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .diet__left {
   margin-right: 24px;
+
+  @include mq(1350) {
+    margin-right: 0;
+    margin-bottom: 48px;
+    text-align: center;
+  }
 }
 
 .diet__left-img-box {
   max-width: 792px;
   width: 100%;
   margin-bottom: 54px;
+
+  @include mq(768) {
+    margin-bottom: 24px;
+  }
 }
 
 .diet__left-content {
   max-width: 565px;
   width: 100%;
+
+  @include mq(1350) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
 }
 
 .diet__left-title {
@@ -27,6 +66,10 @@
   max-width: 493px;
   width: 100%;
   margin-bottom: 54px;
+
+  @include mq(768) {
+    margin-bottom: 24px;
+  }
 }
 
 .diet__left-text {
@@ -41,6 +84,15 @@
 .diet__right-text {
   @extend .lato-24-normal;
   margin-bottom: 84px;
+
+  @include mq(1350) {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  @include mq(768) {
+    margin-bottom: 24px;
+  }
 }
 
 .diet__right-img-box {

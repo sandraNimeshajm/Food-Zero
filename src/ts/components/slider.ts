@@ -4,9 +4,6 @@ const slider = () => {
   const slides = document.querySelector(".js-testimonials-slider");
   const blogSlides = document.querySelector(".js-blog-post-slider");
 
-  // if (!slides) return;
-  // if (!blogSlides) return;
-
   const swiper = new Swiper(".js-testimonials-slider", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -20,24 +17,6 @@ const slider = () => {
     },
   });
 
-  const blogSlider = new Swiper(".js-blog-post-slider", {
-    slidesPerView: 2,
-    spaceBetween: 30,
-
-    navigation: {
-      nextEl: ".js-blog-post-next",
-      prevEl: ".js-blog-post-prev",
-    },
-
-    pagination: {
-      el: ".js-blog-post-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + "</span>";
-      },
-    },
-  });
-
   const allPostsSlider = new Swiper(".js-all-posts-slider", {
     slidesPerView: 2,
     spaceBetween: 20,
@@ -45,6 +24,29 @@ const slider = () => {
     navigation: {
       nextEl: ".js-all-posts-next",
       prevEl: ".js-all-posts-prev",
+    },
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 15,
+      },
+      1300: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+      1301: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
     },
   });
 };

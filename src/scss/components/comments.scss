@@ -1,6 +1,18 @@
 .comments {
   padding-bottom: 128px;
   background-color: $white;
+
+  @include mq(1240) {
+    padding: 84px;
+  }
+
+  @include mq(991) {
+    padding: 64px;
+  }
+
+  @include mq(768) {
+    padding: 48px;
+  }
 }
 
 .comments__title {
@@ -8,6 +20,14 @@
   color: $black;
   text-align: center;
   margin-bottom: 86px;
+
+  @include mq(991) {
+    margin-bottom: 48px;
+  }
+
+  @include mq(480) {
+    margin-bottom: 24px;
+  }
 }
 
 .comments__wrapper {
@@ -18,6 +38,18 @@
   color: $black;
   border-bottom: 4px dashed $black;
   padding-bottom: 128px;
+
+  @include mq(1240) {
+    padding-bottom: 84px;
+  }
+
+  @include mq(991) {
+    padding-bottom: 64px;
+  }
+
+  @include mq(768) {
+    padding-bottom: 48px;
+  }
 }
 
 .comments__item {
@@ -28,25 +60,33 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @include mq(768) {
+    margin-bottom: 24px;
+  }
 }
 
 .comments__item-left {
   display: flex;
 }
 
-.comments__item-left--sub-comment {
-  transform: translateX(116px);
+// .comments__item-left--sub-comment {
+//   transform: translateX(116px);
 
-  .comments__item-left-content-box {
-    max-width: 940px;
-    width: 100%;
-  }
-}
+//   .comments__item-left-content-box {
+//     max-width: 940px;
+//     width: 100%;
+//   }
+// }
 
 .comments__item-left-img-box {
   max-width: 82px;
   width: 100%;
   margin-right: 34px;
+
+  @include mq(480) {
+    margin-right: 16px;
+  }
 }
 
 .comments__item-left-content-text {

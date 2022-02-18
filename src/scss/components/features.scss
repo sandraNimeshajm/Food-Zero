@@ -2,13 +2,27 @@
   background-color: $white;
   color: $black;
   padding: 256px 0 128px;
+
+  @include mq(1240) {
+    padding: 128px 0 84px;
+  }
+
+  @include mq(991) {
+    padding: 84px 0 64px;
+  }
+
+  @include mq(768) {
+    padding: 64px 0 48px;
+  }
 }
 
 .features__items {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  margin: 0 auto;
   flex-wrap: wrap;
+  grid-gap: 30px;
 }
 
 .features__item {
@@ -42,6 +56,10 @@
 .features__item-content-title {
   @extend .rufina-48-bold;
   margin-bottom: 39px;
+
+  @include mq(1240) {
+    margin-bottom: 24px;
+  }
 }
 
 .features__item-content-text {

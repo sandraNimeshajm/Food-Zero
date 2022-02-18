@@ -1,6 +1,18 @@
 .cook {
   background-color: $green-lighter;
-  padding-top: 256px;
+  padding: 256px 0 64px;
+
+  @include mq(1240) {
+    padding: 128px 0 48px;
+  }
+
+  @include mq(991) {
+    padding: 84px 0 48px;
+  }
+
+  @include mq(768) {
+    padding: 48px 0 32px;
+  }
 }
 
 .cook__wrapper {
@@ -8,28 +20,37 @@
   justify-content: space-between;
   position: relative;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
+  @include mq(1240) {
+    flex-direction: column;
+    align-items: center;
   }
 
-  &::before {
+  .img-box {
+    position: absolute;
+    max-width: 503px;
+    width: 100%;
+
+    @include mq(1670) {
+      max-width: 350px;
+    }
+
+    @include mq(1550) {
+      max-width: 250px;
+    }
+
+    @include mq(991) {
+      max-width: 200px;
+    }
+  }
+
+  .img-box--left {
     top: 0;
     left: 0;
-    width: 406px;
-    height: 372px;
-    background: url("/src/images/cook-leaf-left.png");
-    background-repeat: no-repeat;
   }
 
-  &::after {
+  .img-box--right {
     bottom: 0;
     right: 0;
-    width: 503px;
-    height: 464px;
-    background: url("/src/images/cook-leaf-right.png");
-    background-repeat: no-repeat;
   }
 }
 
@@ -37,12 +58,21 @@
   max-width: 935px;
   width: 100%;
   margin-right: 24px;
+
+  @include mq(1240) {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
 }
 
 .cook__content-box {
   max-width: 649px;
   width: 100%;
   color: $black;
+
+  @include mq(1240) {
+    text-align: center;
+  }
 }
 
 .cook__content-title {

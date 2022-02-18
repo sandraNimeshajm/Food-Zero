@@ -1,6 +1,18 @@
 .comments-form {
   padding: 128px 0;
   background-color: $white;
+
+  @include mq(1240) {
+    padding: 84px 0;
+  }
+
+  @include mq(991) {
+    padding: 64px 0;
+  }
+
+  @include mq(768) {
+    padding: 48px 0;
+  }
 }
 
 .comments-form__wrapper {
@@ -16,6 +28,19 @@
   color: $black;
   text-align: center;
   margin-bottom: 96px;
+
+  @include mq(991) {
+    margin-bottom: 48px;
+  }
+
+  @include mq(768) {
+    margin-bottom: 24px;
+  }
+}
+
+.comments-form__items {
+  max-width: 1393px;
+  width: 100%;
 }
 
 .comments-form__item {
@@ -23,6 +48,10 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @include mq(991) {
+    margin-bottom: 24px;
   }
 }
 
@@ -33,13 +62,13 @@
 }
 
 .comment-form__item-textarea {
-  width: 1193px;
   height: 384px;
   resize: none;
 }
 
 .comment-form__item-textarea,
 .comment-form__item-input {
+  width: 100%;
   display: block;
   font-size: 24px;
   padding: 20px 10px;
@@ -59,6 +88,5 @@
 }
 
 .comment-form__item-input {
-  width: 1193px;
   height: 88px;
 }

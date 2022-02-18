@@ -1,6 +1,18 @@
 .all-posts {
   background-color: $white;
   padding-bottom: 128px;
+
+  @include mq(1240) {
+    padding-bottom: 84px;
+  }
+
+  @include mq(991) {
+    padding-bottom: 64px;
+  }
+
+  @include mq(768) {
+    padding-bottom: 48px;
+  }
 }
 
 .all-posts__item {
@@ -34,6 +46,14 @@
   position: relative;
   top: -261px;
   z-index: 20;
+
+  @include mq(1540) {
+    top: -220px;
+  }
+
+  @include mq(1300) {
+    display: none;
+  }
 
   .swiper-button-disabled {
     color: $grey-light;

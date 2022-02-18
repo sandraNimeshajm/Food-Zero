@@ -3,22 +3,54 @@
   background-color: $white;
   position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 60px;
-    left: 40%;
-    transform: translateX(-50%);
-    width: 355px;
-    height: 300px;
-    background-image: url("/src/images/about-tomato.png");
-    background-repeat: no-repeat;
+  @include mq(1240) {
+    padding: 128px 0 84px;
+  }
+
+  @include mq(991) {
+    padding: 84px 0 64px;
+  }
+
+  @include mq(768) {
+    padding: 64px 0 48px;
+  }
+}
+
+.our-story__image-box {
+  position: absolute;
+  top: 40px;
+  left: 43%;
+  transform: translateX(-50%);
+  max-width: 326px;
+  width: 100%;
+
+  @include mq(1200) {
+    max-width: 250px;
+    left: 45%;
+  }
+
+  @include mq(991) {
+    top: 0;
+  }
+
+  @include mq(768) {
+    max-width: 200px;
   }
 }
 
 .our-story__wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  @include mq(1600) {
+    padding: 0 24px;
+  }
+
+  @include mq(991) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .our-story__content-box {
@@ -26,6 +58,11 @@
   width: 100%;
   margin-right: 100px;
   color: $black;
+
+  @include mq(991) {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
 }
 
 .our-story__title {

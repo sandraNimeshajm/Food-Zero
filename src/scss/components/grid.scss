@@ -1,6 +1,18 @@
 .grid {
   padding: 128px 0;
   background-color: $white;
+
+  @include mq(1240) {
+    padding: 84px;
+  }
+
+  @include mq(991) {
+    padding: 64px;
+  }
+
+  @include mq(768) {
+    padding: 48px;
+  }
 }
 
 .grid__wrapper {
@@ -8,22 +20,29 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @include mq(1400) {
+    padding: 0 24px;
+  }
 }
 
 .grid__btn-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-gap: 48px;
   margin-bottom: 48px;
+
+  @include mq(1220) {
+    grid-gap: 24px;
+    margin-bottom: 24px;
+  }
 }
 
 .grid__btn {
   @extend .lato-34-normal;
   color: $black;
-  margin-right: 48px;
   cursor: pointer;
-  padding-bottom: 12px;
-
-  &:last-child {
-    margin-right: 0;
-  }
 
   &.active {
     color: $grey;
@@ -35,6 +54,15 @@
   flex-wrap: wrap;
   margin-bottom: 100px;
   grid-gap: 24px;
+
+  @include mq(1400) {
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+
+  @include mq(991) {
+    margin-bottom: 48px;
+  }
 }
 
 .grid__gallery-item {
@@ -66,6 +94,11 @@
   bottom: 64px;
   left: 42px;
   z-index: 2;
+
+  @include mq(768) {
+    bottom: 8px;
+    left: 10px;
+  }
 }
 
 .grid__gallery-item-content-title {

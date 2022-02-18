@@ -1,6 +1,18 @@
 .meal-category {
   padding: 128px 0;
   background-color: $white;
+
+  @include mq(1240) {
+    padding: 84px 0;
+  }
+
+  @include mq(991) {
+    padding: 64px 0;
+  }
+
+  @include mq(768) {
+    padding: 48px 0;
+  }
 }
 
 .meal-category__wrapper {
@@ -16,6 +28,14 @@
   color: $black;
   text-align: center;
   margin-bottom: 126px;
+
+  @include mq(1020) {
+    margin-bottom: 64px;
+  }
+
+  @include mq(1480) {
+    margin-bottom: 24px;
+  }
 }
 
 .meal-category__content-title {
@@ -28,6 +48,10 @@
   justify-content: center;
   flex-wrap: wrap;
   grid-gap: 60px;
+
+  @include mq(1020) {
+    grid-gap: 24px;
+  }
 }
 
 .meal-category__item {
@@ -50,12 +74,20 @@
   @extend .rufina-48-bold;
   color: $black;
   left: 48px;
+
+  @include mq(400) {
+    left: 24px;
+  }
 }
 
 .meal-category__item-tag-arrow {
   width: 46px;
   height: 26px;
   right: 48px;
+
+  @include mq(400) {
+    right: 24px;
+  }
 }
 
 .meal-category__item-tag-text,

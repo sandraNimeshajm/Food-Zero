@@ -1,6 +1,18 @@
 .form-reservation {
   background-color: $green-lighter;
   padding: 256px 0;
+
+  @include mq(1240) {
+    padding: 128px 0;
+  }
+
+  @include mq(991) {
+    padding: 84px 0;
+  }
+
+  @include mq(768) {
+    padding: 64px 0;
+  }
 }
 
 .form-reservation__wrapper {
@@ -16,6 +28,14 @@
   text-align: center;
   color: $black;
   margin-bottom: 132px;
+
+  @include mq(1500) {
+    margin-bottom: 48px;
+  }
+
+  @include mq(480) {
+    margin-bottom: 24px;
+  }
 }
 
 .form-reservation__content-title {
@@ -26,6 +46,15 @@
   display: flex;
   align-items: center;
   margin-bottom: 133px;
+
+  @include mq(1500) {
+    flex-direction: column;
+    margin-bottom: 48px;
+  }
+
+  @include mq(480) {
+    margin-bottom: 24px;
+  }
 }
 
 .form-reservation__item {
@@ -39,6 +68,19 @@
   border: 2px solid $black;
   margin-right: 48px;
   padding: 40px 30px;
+
+  @include mq(1500) {
+    margin-right: 0;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include mq(520) {
+    max-width: 250px;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -59,15 +101,26 @@
 .form-reservation--contact {
   position: relative;
 
-  &::before {
-    content: "";
+  .img-box {
+    max-width: 511px;
+    width: 100%;
     position: absolute;
     top: 100px;
-    left: 150px;
-    width: 511px;
-    height: 346px;
-    background-image: url("/src/images/contact-mint.png");
+    left: 350px;
+
+    @include mq(1510) {
+      left: 0;
+    }
+
+    @include mq(991) {
+      max-width: 350px;
+    }
+
+    @include mq(991) {
+      max-width: 250px;
+    }
   }
+
   .form-reservation__wrapper {
     align-items: stretch;
   }
@@ -78,6 +131,18 @@
     justify-content: center;
     align-items: flex-start;
     margin: 0 auto 132px;
+
+    @include mq(1500) {
+      margin-bottom: 48px;
+    }
+
+    @include mq(480) {
+      margin-bottom: 24px;
+    }
+
+    @include mq(620) {
+      align-items: center;
+    }
   }
 
   .form-reservation__items {
@@ -106,9 +171,17 @@
   .form-reservation__item--half-width {
     display: flex;
 
+    @include mq(1510) {
+      flex-direction: column;
+    }
+
     .form-reservation__item {
       max-width: 799px;
       width: 100%;
+
+      @include mq(1510) {
+        max-width: 100%;
+      }
     }
   }
 

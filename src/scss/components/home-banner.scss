@@ -1,52 +1,59 @@
 .home-banner {
-  height: 150vh;
   margin-bottom: 150px;
-  padding-top: 300px;
+  padding-top: 200px;
+
+  @include mq(1240) {
+    margin-bottom: 84px;
+  }
+
+  @include mq(991) {
+    margin-bottom: 64px;
+  }
+
+  @include mq(768) {
+    margin-bottom: 48px;
+  }
 }
 
 .home-banner__wrapper {
-  position: relative;
+  display: flex;
+  align-items: center;
+
+  @include mq(1560) {
+    flex-direction: column;
+  }
 }
 
 .home-banner__content {
   max-width: 1057px;
   width: 100%;
+  margin-right: 24px;
+
+  @include mq(1560) {
+    margin-right: 0;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .home-banner__content-title {
   margin-bottom: 50px;
+
+  @include mq(1560) {
+    margin-bottom: 24px;
+    text-align: center;
+  }
 }
 
 .home-banner__content-text {
   @extend .lato-24-normal;
   max-width: 565px;
   width: 100%;
-  margin-bottom: 50px;
-}
-
-.home-banner__content-scroll {
-  @extend .rufina-48-bold;
-  display: inline-block;
-  transform: rotate(90deg);
-  position: relative;
-  top: 50px;
-  left: -50px;
-
-  &::after {
-    content: "";
-    top: 50%;
-    left: 120%;
-    position: absolute;
-    width: 406px;
-    border: 2px dashed $white;
-  }
 }
 
 .home-banner__img-box {
-  max-width: 1138px;
+  max-width: 792px;
   width: 100%;
-  position: absolute;
-  top: 140px;
-  right: 100px;
-  z-index: -1;
 }

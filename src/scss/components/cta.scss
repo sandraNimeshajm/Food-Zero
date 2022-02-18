@@ -29,10 +29,20 @@
 
 .cta__title {
   margin-bottom: 18px;
+  text-align: center;
 }
 
 .cta__text {
   margin-bottom: 82px;
+  text-align: center;
+
+  @include mq(991) {
+    margin-bottom: 48px;
+  }
+
+  @include mq(480) {
+    margin-bottom: 24px;
+  }
 }
 
 .cta__link {

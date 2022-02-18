@@ -36,6 +36,10 @@
 
 .banner__content-title {
   margin-bottom: 50px;
+
+  @include mq(991) {
+    margin-bottom: 24px;
+  }
 }
 
 /* BANNER CONTACT */
@@ -46,6 +50,11 @@
   .banner__content {
     max-width: 915px;
     margin-bottom: 93px;
+
+    @include mq(420) {
+      margin-bottom: 24px;
+      text-align: center;
+    }
   }
 }
 
@@ -54,6 +63,19 @@
   right: 140px;
   max-width: 696px;
   width: 100%;
+
+  @include mq(1160) {
+    right: 40px;
+  }
+
+  @include mq(768) {
+    max-width: 350px;
+  }
+
+  @include mq(420) {
+    position: unset;
+    right: 0;
+  }
 }
 
 .banner__open-time-top {
@@ -63,10 +85,18 @@
   margin-bottom: 38px;
   border-bottom: 2px dashed $white;
   padding-bottom: 38px;
+
+  @include mq(420) {
+    flex-direction: column;
+  }
 }
 
 .banner__open-time-top-title {
   @extend .rufina-32-bold;
+
+  @include mq(420) {
+    margin-bottom: 16px;
+  }
 }
 
 .banner__open-time-top-text {
@@ -77,11 +107,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include mq(420) {
+    flex-direction: column;
+  }
 }
 
 .banner__open-time-bottom-item-text {
   @extend .lato-24-normal;
   display: block;
+
+  @include mq(420) {
+    margin-bottom: 16px;
+  }
 }
 
 /* BANNER ABOUT */
@@ -114,6 +152,12 @@
 
 .banner-blogs-one-column {
   background-image: url("/src/images/banner-blogs-one-column.jpg");
+
+  .banner__content {
+    @include mq(1440) {
+      align-items: flex-start;
+    }
+  }
 
   .banner__content-title {
     @extend .rufina-108-bold;

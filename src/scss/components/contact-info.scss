@@ -3,35 +3,75 @@
   padding: 256px 0 128px;
   position: relative;
 
-  &::after {
-    content: "";
+  @include mq(1240) {
+    padding: 120px 0 84px;
+  }
+
+  @include mq(991) {
+    padding: 120px 0 64px;
+  }
+
+  @include mq(768) {
+    padding: 120px 0 48px;
+  }
+
+  .img-box {
     position: absolute;
     top: 130px;
     left: 52%;
     transform: translateX(-50%);
-    width: 446px;
-    height: 391px;
-    background-image: url("/src/images/contact-orange.png");
-    z-index: 1;
+    max-width: 446px;
+    width: 100%;
+
+    @include mq(1770) {
+      left: 60%;
+    }
+
+    @include mq(1300) {
+      max-width: 350px;
+    }
+
+    @include mq(991) {
+      top: 0;
+    }
+
+    @include mq(768) {
+      max-width: 250px;
+    }
   }
 }
 
 .contact-info__wrapper {
   display: flex;
   align-items: flex-end;
+
+  @include mq(991) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .contact-info__img-box {
   max-width: 792px;
   width: 100%;
-  margin-right: 200px;
+  margin-right: 24px;
   position: relative;
   z-index: 2;
+
+  @include mq(991) {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
 }
 
 .contact-info__text-box {
   max-width: 507px;
   width: 100%;
+  margin-left: auto;
+
+  @include mq(991) {
+    margin-right: auto;
+  }
 }
 
 .contact-info__text {
@@ -46,12 +86,28 @@
 .contact-info--reverse {
   padding: 128px 0 192px;
 
+  @include mq(1240) {
+    padding: 84px 0 128px;
+  }
+
+  @include mq(991) {
+    padding: 64px 0 84px;
+  }
+
+  @include mq(768) {
+    padding: 48px 0 64px;
+  }
+
   &::after {
     display: none;
   }
 
   .contact-info__wrapper {
     align-items: center;
+
+    @include mq(991) {
+      flex-direction: column-reverse;
+    }
   }
 
   .contact-info__img-box {
@@ -61,9 +117,18 @@
   .contact-info__text-box {
     max-width: 748px;
     margin-right: 60px;
+    text-align: center;
+
+    @include mq(991) {
+      margin-right: 0;
+    }
   }
 
   .contact-info__text {
     margin-bottom: 53px;
+
+    @include mq(991) {
+      margin-bottom: 24px;
+    }
   }
 }

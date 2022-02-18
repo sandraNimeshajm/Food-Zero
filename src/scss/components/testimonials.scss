@@ -1,10 +1,24 @@
 .testimonials {
   background-color: $white;
   padding: 128px 0;
+
+  @include mq(1240) {
+    padding: 84px 0;
+  }
+
+  @include mq(991) {
+    padding: 64px 0;
+  }
+
+  @include mq(768) {
+    padding: 48px 0;
+  }
 }
 
 .testimonials__wrapper {
   max-width: 1645px;
+  width: 100%;
+  padding: 0 24px;
 }
 
 .testimonials__slider-item-top {
@@ -23,6 +37,14 @@
     background: url("/src/images/testimonials-quotation-marks.png");
     z-index: -1;
   }
+
+  @include mq(660) {
+    margin-bottom: 48px;
+  }
+
+  @include mq(480) {
+    margin-bottom: 24px;
+  }
 }
 
 .testimonials__slider-item-title {
@@ -34,6 +56,11 @@
   display: flex;
   align-items: center;
   color: $black;
+
+  @include mq(450) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .testimonials__slider-item-bottom-img {
@@ -65,11 +92,25 @@
 .testimonials__slider-pagination-number {
   position: absolute;
   bottom: 50px;
+
+  @include mq(660) {
+    bottom: 0;
+  }
+
+  svg {
+    @include mq(660) {
+      width: 32px;
+    }
+  }
 }
 
 .testimonials__slider-button-prev {
   right: 200px;
   cursor: pointer;
+
+  @include mq(450) {
+    right: 110px;
+  }
 }
 
 .testimonials__slider-button-next {
@@ -85,4 +126,9 @@
   @extend .rufina-32-bold;
   color: $black;
   right: 100px;
+
+  @include mq(450) {
+    right: 60px;
+    bottom: 7px;
+  }
 }
