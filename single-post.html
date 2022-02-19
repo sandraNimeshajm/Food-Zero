@@ -12,15 +12,13 @@
     <header class="header | js-header">
       <div class="header__wrapper wrapper">
         <div class="header__left">
-          <div class="header__left-logo-box">
-            <a href="index.html" class="header__left-logo-link">
-              <img
-                src="./src/images/header-logo.png"
-                alt="Header logo"
-                class="header__left-logo"
-              />
-            </a>
-          </div>
+          <a href="index.html" class="header__left-logo-link">
+            <img
+              src="./src/images/header-logo.png"
+              alt="Header logo"
+              class="header__left-logo"
+            />
+          </a>
 
           <div class="header__left-menu | js-menu-open">
             <span class="header__left-menu-line"></span>
@@ -330,11 +328,9 @@
       </section>
 
       <section class="all-posts">
-        <div
-          class="all-posts__wrapper wrapper swiper-container | js-all-posts-slider"
-        >
-          <div class="all-posts__items swiper-wrapper">
-            <div class="all-posts__item swiper-slide">
+        <div class="all-posts__wrapper">
+          <div class="all-posts__items">
+            <a href="single-post.html" class="all-posts__item">
               <img
                 src="./src/images/post-img-1.png"
                 alt="Post image"
@@ -343,9 +339,9 @@
               <h5 class="all-posts__title page-text">
                 7 Reasons to Start Your Day With Lemon Water
               </h5>
-            </div>
+            </a>
 
-            <div class="all-posts__item swiper-slide">
+            <a href="single-post.html" class="all-posts__item">
               <img
                 src="./src/images/post-img-2.png"
                 alt="Post image"
@@ -354,54 +350,10 @@
               <h5 class="all-posts__title page-text">
                 12 Sparkling Wines We're Loving This Summer
               </h5>
-            </div>
-
-            <div class="all-posts__item swiper-slide">
-              <img
-                src="./src/images/post-img-3.png"
-                alt="Post image"
-                class="all-posts__img"
-              />
-              <h5 class="all-posts__title page-text">
-                12 Sparkling Wines We're Loving This Summer
-              </h5>
-            </div>
-
-            <div class="all-posts__item swiper-slide">
-              <img
-                src="./src/images/post-img-4.png"
-                alt="Post image"
-                class="all-posts__img"
-              />
-              <h5 class="all-posts__title page-text">
-                12 Sparkling Wines We're Loving This Summer
-              </h5>
-            </div>
-
-            <div class="all-posts__item swiper-slide">
-              <img
-                src="./src/images/post-img-5.png"
-                alt="Post image"
-                class="all-posts__img"
-              />
-              <h5 class="all-posts__title page-text">
-                12 Sparkling Wines We're Loving This Summer
-              </h5>
-            </div>
-
-            <div class="all-posts__item swiper-slide">
-              <img
-                src="./src/images/post-img-6.png"
-                alt="Post image"
-                class="all-posts__img"
-              />
-              <h5 class="all-posts__title page-text">
-                12 Sparkling Wines We're Loving This Summer
-              </h5>
-            </div>
+            </a>
           </div>
           <div class="all-posts__btn-box">
-            <div class="all-posts__btn-prev | js-all-posts-prev">
+            <div class="all-posts__btn-prev">
               <svg
                 class="all-posts__btn-prev-arrow"
                 width="48"
@@ -417,7 +369,7 @@
               </svg>
               <span class="all-posts__btn-text">Previous</span>
             </div>
-            <div class="all-posts__btn-next | js-all-posts-next">
+            <div class="all-posts__btn-next">
               <svg
                 class="all-posts__btn-next-arrow"
                 width="48"
@@ -631,7 +583,7 @@
               <input
                 class="footer__top-subscribe-email"
                 type="email"
-                value="Email Address"
+                placeholder="Email Address"
               />
               <a
                 href="javascript:;"

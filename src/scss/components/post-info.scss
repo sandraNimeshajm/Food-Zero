@@ -14,6 +14,10 @@
     padding: 48px 0;
   }
 
+  @include mq(480) {
+    padding: 32px 0;
+  }
+
   .blog-post__content-top-text {
     &::after {
       background-color: $grey;
@@ -41,6 +45,10 @@
   @include mq(991) {
     margin-bottom: 32px;
   }
+
+  @include mq(480) {
+    margin-bottom: 24px;
+  }
 }
 
 .post-info__content-text--small {
@@ -53,6 +61,10 @@
   @include mq(991) {
     margin-bottom: 32px;
   }
+
+  @include mq(480) {
+    margin-bottom: 24px;
+  }
 }
 
 .post-info__content-text--big {
@@ -64,6 +76,10 @@
 
   @include mq(991) {
     margin-bottom: 32px;
+  }
+
+  @include mq(480) {
+    margin-bottom: 24px;
   }
 }
 
@@ -82,6 +98,10 @@
   @include mq(768) {
     flex-direction: column;
     align-items: center;
+  }
+
+  @include mq(480) {
+    margin-bottom: 24px;
   }
 }
 
@@ -105,6 +125,14 @@
   @include mq(1240) {
     margin-bottom: 32px;
   }
+
+  @include mq(768) {
+    margin-bottom: 24px;
+  }
+
+  @include mq(480) {
+    margin-bottom: 16px;
+  }
 }
 .post-info__content-quote {
   max-width: 992px;
@@ -117,6 +145,10 @@
 
   @include mq(991) {
     margin-bottom: 32px;
+  }
+
+  @include mq(480) {
+    margin-bottom: 24px;
   }
 }
 
@@ -131,7 +163,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 282px;
+    max-width: 282px;
+    width: 100%;
     height: 234px;
     background-image: url("/src/images/testimonials-quotation-marks.png");
   }
@@ -153,20 +186,24 @@
   @include mq(991) {
     margin-bottom: 32px;
   }
+
+  @include mq(480) {
+    margin-bottom: 24px;
+  }
 }
 
 .post-info__content-tags-title {
-  margin-right: 18px;
+  margin-right: 16px;
 
   @include mq(790) {
     margin-right: 0;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 }
 
 .post-info__content-tag {
   @extend .lato-18-normal;
-  margin-right: 18px;
+  margin-right: 16px;
   position: relative;
   padding: 10px 20px;
 
@@ -176,7 +213,7 @@
 
   @include mq(790) {
     margin-right: 0;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     width: 100%;
     text-align: center;
 
@@ -213,9 +250,17 @@
     margin-right: 24px;
   }
 
+  @include mq(768) {
+    max-width: 130px;
+  }
+
   @include mq(580) {
     margin-right: 0;
     margin-bottom: 24px;
+  }
+
+  @include mq(480) {
+    max-width: 100px;
   }
 }
 
@@ -230,4 +275,12 @@
 
 .post-info__content-author-text-title {
   margin-bottom: 28px;
+
+  @include mq(991) {
+    margin-bottom: 24px;
+  }
+
+  @include mq(480) {
+    margin-bottom: 16px;
+  }
 }

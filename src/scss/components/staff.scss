@@ -15,6 +15,10 @@
   @include mq(768) {
     padding: 48px 0 64px;
   }
+
+  @include mq(480) {
+    padding: 32px 0 48px;
+  }
 }
 
 .staff__item {
@@ -29,6 +33,10 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  @include mq(480) {
+    margin-bottom: 24px;
   }
 }
 
@@ -47,6 +55,10 @@
   color: $black;
   margin-bottom: 24px;
   text-align: center;
+
+  @include mq(480) {
+    margin-bottom: 16px;
+  }
 }
 
 .staff__item-left-text {
@@ -54,6 +66,10 @@
   color: $black;
   margin-bottom: 24px;
   text-align: center;
+
+  @include mq(480) {
+    margin-bottom: 16px;
+  }
 }
 
 .staff__item-left-img-box {

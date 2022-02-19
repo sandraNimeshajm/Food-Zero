@@ -13,6 +13,10 @@
   @include mq(768) {
     padding: 48px 0;
   }
+
+  @include mq(480) {
+    padding: 32px 0;
+  }
 }
 
 .testimonials__wrapper {
@@ -64,9 +68,22 @@
 }
 
 .testimonials__slider-item-bottom-img {
-  width: 170px;
+  max-width: 170px;
+  width: 100%;
   height: 170px;
   margin-right: 60px;
+
+  @include mq(768) {
+    max-width: 130px;
+    height: 130px;
+    margin-right: 24px;
+  }
+
+  @include mq(480) {
+    max-width: 100px;
+    height: 100px;
+    margin-right: 16px;
+  }
 }
 
 .testimonials__slider-item-bottom-name {
@@ -101,12 +118,20 @@
     @include mq(660) {
       width: 32px;
     }
+
+    @include mq(480) {
+      width: 24px;
+    }
   }
 }
 
 .testimonials__slider-button-prev {
   right: 200px;
   cursor: pointer;
+
+  @include mq(768) {
+    right: 150px;
+  }
 
   @include mq(450) {
     right: 110px;
@@ -127,8 +152,15 @@
   color: $black;
   right: 100px;
 
-  @include mq(450) {
-    right: 60px;
+  @include mq(768) {
+    right: 75px;
+  }
+
+  @include mq(660) {
     bottom: 7px;
+  }
+
+  @include mq(450) {
+    right: 55px;
   }
 }

@@ -33,6 +33,18 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    @include mq(991) {
+      margin-bottom: 32px;
+    }
+
+    @include mq(768) {
+      margin-bottom: 24px;
+    }
+
+    @include mq(480) {
+      margin-bottom: 16px;
+    }
   }
 }
 
@@ -67,6 +79,14 @@
     @include mq(1520) {
       margin-bottom: 64px;
     }
+
+    @include mq(991) {
+      margin-bottom: 32px;
+    }
+
+    @include mq(480) {
+      margin-bottom: 24px;
+    }
   }
 }
 
@@ -96,6 +116,14 @@
   .meal__content {
     @include mq(1520) {
       margin-bottom: 64px;
+    }
+
+    @include mq(991) {
+      margin-bottom: 32px;
+    }
+
+    @include mq(480) {
+      margin-bottom: 24px;
     }
   }
 }
@@ -135,6 +163,11 @@
   align-items: center;
   margin: 0 auto;
   margin-bottom: 200px;
+  text-align: center;
+
+  @include mq(991) {
+    margin-bottom: 32px;
+  }
 
   @include mq(768) {
     margin-bottom: 24px;
@@ -142,7 +175,7 @@
 }
 
 .meal__content-title {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .meal__menu {

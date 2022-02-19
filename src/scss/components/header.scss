@@ -32,10 +32,18 @@
   }
 }
 
-.header__left-logo-box {
+.header__left-logo-link {
   max-width: 250px;
   width: 100%;
   margin-right: 45px;
+
+  @include mq(991) {
+    max-width: 200px;
+  }
+
+  @include mq(768) {
+    max-width: 150px;
+  }
 
   @include mq(400) {
     margin-right: 24px;
@@ -82,14 +90,25 @@
 }
 
 .header__content-close-btn {
+  max-width: 32px;
+  width: 100%;
   position: absolute;
   top: 90px;
-  left: 64px;
+  right: 80px;
   z-index: 30;
   cursor: pointer;
 
+  @include mq(1400) {
+    max-width: 24px;
+  }
+
+  @include mq(1200) {
+    max-width: 20px;
+  }
+
   @include mq(480) {
     top: 60px;
+    max-width: 14px;
   }
 
   svg {
@@ -158,6 +177,18 @@
       border-bottom: 4px dashed $white;
       padding-bottom: 8px;
       margin-bottom: 38px;
+
+      @include mq(991) {
+        margin-bottom: 32px;
+      }
+
+      @include mq(768) {
+        margin-bottom: 24px;
+      }
+
+      @include mq(480) {
+        margin-bottom: 16px;
+      }
     }
   }
 
@@ -183,13 +214,12 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-
   @include mq(1140) {
     align-items: center;
   }
-
   @include mq(768) {
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -210,6 +240,10 @@
   @include mq(768) {
     margin-right: 0;
     margin-bottom: 48px;
+  }
+
+  @include mq(480) {
+    margin-bottom: 24px;
   }
 }
 
@@ -234,8 +268,23 @@
     background-color: $white;
     transition: background-color 0.3s;
 
-    @include mq(768) {
-      top: 12px;
+    @include mq(1400) {
+      top: 23px;
+      width: 10px;
+      height: 10px;
+    }
+
+    @include mq(1200) {
+      top: 15px;
+      width: 7px;
+      height: 7px;
+    }
+
+    @include mq(480) {
+      top: 7px;
+      left: -15px;
+      width: 4px;
+      height: 4px;
     }
   }
 
@@ -293,8 +342,22 @@
     top: 50%;
     right: -64px;
     width: 30px;
-    height: 12px;
+    height: 20px;
     transform: translateY(-50%) rotate(90deg);
     cursor: pointer;
+
+    @include mq(1400) {
+      height: 15px;
+    }
+
+    @include mq(1200) {
+      height: 10px;
+      right: -40px;
+    }
+
+    @include mq(480) {
+      height: 8px;
+      right: -30px;
+    }
   }
 }

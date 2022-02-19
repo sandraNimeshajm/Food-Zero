@@ -16,39 +16,6 @@ const slider = () => {
       prevEl: ".js-testimonials-prev",
     },
   });
-
-  const allPostsSlider = new Swiper(".js-all-posts-slider", {
-    slidesPerView: 2,
-    spaceBetween: 20,
-
-    navigation: {
-      nextEl: ".js-all-posts-next",
-      prevEl: ".js-all-posts-prev",
-    },
-
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-      640: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 1,
-        spaceBetween: 15,
-      },
-      1300: {
-        slidesPerView: 1,
-        spaceBetween: 30,
-      },
-      1301: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-    },
-  });
 };
 
 export default slider;

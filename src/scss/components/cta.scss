@@ -28,20 +28,24 @@
 }
 
 .cta__title {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   text-align: center;
 }
 
 .cta__text {
-  margin-bottom: 82px;
+  margin-bottom: 64px;
   text-align: center;
 
   @include mq(991) {
     margin-bottom: 48px;
   }
 
-  @include mq(480) {
+  @include mq(768) {
     margin-bottom: 24px;
+  }
+
+  @include mq(480) {
+    margin-bottom: 16px;
   }
 }
 
@@ -73,6 +77,16 @@
     height: 100px;
     background: rgba(255, 255, 255, 0.65);
     border-radius: 50%;
+
+    @include mq(768) {
+      width: 75px;
+      height: 75px;
+    }
+
+    @include mq(480) {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   &::after {
@@ -88,6 +102,16 @@
     background: $white;
     border-radius: 50%;
     transition: 0.5s;
+
+    @include mq(768) {
+      width: 75px;
+      height: 75px;
+    }
+
+    @include mq(480) {
+      width: 60px;
+      height: 60px;
+    }
   }
 }
 
@@ -102,6 +126,18 @@
   border-top: 14px solid transparent;
   border-bottom: 14px solid transparent;
   transition: box-shadow 0.3s;
+
+  @include mq(768) {
+    border-left: 16px solid $main;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+  }
+
+  @include mq(480) {
+    border-left: 14px solid $main;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
 }
 
 @keyframes pulse {

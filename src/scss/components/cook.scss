@@ -13,6 +13,10 @@
   @include mq(768) {
     padding: 48px 0 32px;
   }
+
+  @include mq(480) {
+    padding: 32px 0;
+  }
 }
 
 .cook__wrapper {

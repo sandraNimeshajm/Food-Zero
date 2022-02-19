@@ -13,6 +13,10 @@
   @include mq(768) {
     padding: 48px 0;
   }
+
+  @include mq(480) {
+    padding: 32px 0;
+  }
 }
 
 .meal-category__wrapper {
@@ -39,7 +43,7 @@
 }
 
 .meal-category__content-title {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .meal-category__items {
@@ -52,46 +56,63 @@
   @include mq(1020) {
     grid-gap: 24px;
   }
+
+  @include mq(480) {
+    grid-gap: 16px;
+  }
 }
 
 .meal-category__item {
   max-width: 470px;
   width: 100%;
   position: relative;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 
   &:last-child {
     margin-right: 0;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }
 
 .meal-category__item-tag {
-  position: relative;
+  position: absolute;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  top: 48px;
+  padding: 0 48px;
+
+  @include mq(480) {
+    padding: 0 24px;
+    top: 24px;
+  }
 }
 
 .meal-category__item-tag-text {
   @extend .rufina-48-bold;
   color: $black;
-  left: 48px;
-
-  @include mq(400) {
-    left: 24px;
-  }
 }
 
 .meal-category__item-tag-arrow {
-  width: 46px;
-  height: 26px;
-  right: 48px;
+  max-width: 46px;
+  width: 100%;
+  height: auto;
 
-  @include mq(400) {
-    right: 24px;
+  @include mq(768) {
+    max-width: 32px;
   }
-}
 
-.meal-category__item-tag-text,
-.meal-category__item-tag-arrow {
-  position: absolute;
-  top: 48px;
+  @include mq(480) {
+    max-width: 24px;
+  }
 }

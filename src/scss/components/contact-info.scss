@@ -15,6 +15,10 @@
     padding: 120px 0 48px;
   }
 
+  @include mq(480) {
+    padding: 120px 0 32px;
+  }
+
   .img-box {
     position: absolute;
     top: 130px;
@@ -98,6 +102,10 @@
     padding: 48px 0 64px;
   }
 
+  @include mq(480) {
+    padding: 32px 0 48px;
+  }
+
   &::after {
     display: none;
   }
@@ -129,6 +137,10 @@
 
     @include mq(991) {
       margin-bottom: 24px;
+    }
+
+    @include mq(480) {
+      margin-bottom: 16px;
     }
   }
 }

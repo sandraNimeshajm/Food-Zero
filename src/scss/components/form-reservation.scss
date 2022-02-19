@@ -13,6 +13,10 @@
   @include mq(768) {
     padding: 64px 0;
   }
+
+  @include mq(480) {
+    padding: 32px 0;
+  }
 }
 
 .form-reservation__wrapper {
@@ -39,7 +43,7 @@
 }
 
 .form-reservation__content-title {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .form-reservation__items {
@@ -78,8 +82,19 @@
     }
   }
 
+  @include mq(1240) {
+    height: 64px;
+  }
+
+  @include mq(768) {
+    height: 32px;
+    padding: 30px;
+  }
+
   @include mq(520) {
     max-width: 250px;
+    height: 16px;
+    padding: 24px;
   }
 
   &:last-child {
@@ -112,12 +127,20 @@
       left: 0;
     }
 
+    @include mq(1240) {
+      top: 0;
+    }
+
     @include mq(991) {
       max-width: 350px;
     }
 
-    @include mq(991) {
+    @include mq(768) {
       max-width: 250px;
+    }
+
+    @include mq(480) {
+      max-width: 150px;
     }
   }
 
@@ -134,6 +157,10 @@
 
     @include mq(1500) {
       margin-bottom: 48px;
+    }
+
+    @include mq(991) {
+      margin-bottom: 32px;
     }
 
     @include mq(480) {
@@ -153,6 +180,18 @@
   .form-reservation__item {
     justify-content: space-between;
     margin-bottom: 46px;
+
+    @include mq(991) {
+      margin-bottom: 32px;
+    }
+
+    @include mq(768) {
+      margin-bottom: 24px;
+    }
+
+    @include mq(480) {
+      margin-bottom: 16px;
+    }
   }
 
   .form-reservation__item-date,

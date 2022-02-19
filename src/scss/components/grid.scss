@@ -3,15 +3,19 @@
   background-color: $white;
 
   @include mq(1240) {
-    padding: 84px;
+    padding: 84px 0;
   }
 
   @include mq(991) {
-    padding: 64px;
+    padding: 64px 0;
   }
 
   @include mq(768) {
-    padding: 48px;
+    padding: 48px 0;
+  }
+
+  @include mq(480) {
+    padding: 32px 0;
   }
 }
 
@@ -63,6 +67,15 @@
   @include mq(991) {
     margin-bottom: 48px;
   }
+
+  @include mq(768) {
+    margin-bottom: 32px;
+  }
+
+  @include mq(480) {
+    margin-bottom: 24px;
+    grid-gap: 16px;
+  }
 }
 
 .grid__gallery-item {
@@ -103,7 +116,7 @@
 
 .grid__gallery-item-content-title {
   @extend .rufina-48-bold;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .grid__gallery-item-content-text {

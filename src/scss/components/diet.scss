@@ -12,6 +12,10 @@
   @include mq(768) {
     padding-bottom: 64px;
   }
+
+  @include mq(480) {
+    padding-bottom: 32px;
+  }
 }
 
 .diet__wrapper {
@@ -36,6 +40,14 @@
     margin-bottom: 48px;
     text-align: center;
   }
+
+  @include mq(991) {
+    margin-bottom: 32px;
+  }
+
+  @include mq(480) {
+    margin-bottom: 24px;
+  }
 }
 
 .diet__left-img-box {
@@ -45,6 +57,10 @@
 
   @include mq(768) {
     margin-bottom: 24px;
+  }
+
+  @include mq(480) {
+    margin-bottom: 16px;
   }
 }
 
@@ -70,6 +86,10 @@
   @include mq(768) {
     margin-bottom: 24px;
   }
+
+  @include mq(480) {
+    margin-bottom: 16px;
+  }
 }
 
 .diet__left-text {
@@ -92,6 +112,10 @@
 
   @include mq(768) {
     margin-bottom: 24px;
+  }
+
+  @include mq(480) {
+    margin-bottom: 16px;
   }
 }
 

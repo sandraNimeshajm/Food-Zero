@@ -13,10 +13,35 @@
   @include mq(768) {
     padding-bottom: 48px;
   }
+
+  @include mq(480) {
+    padding-bottom: 32px;
+  }
+}
+
+.all-posts__items {
+  display: flex;
+  align-items: center;
+
+  @include mq(991) {
+    flex-direction: column;
+  }
 }
 
 .all-posts__item {
+  max-width: 960px;
+  width: 100%;
   position: relative;
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include mq(991) {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
 
   &::before {
     content: "";
@@ -37,6 +62,7 @@
   max-width: 650px;
   width: 100%;
   text-align: center;
+  color: $white;
 }
 
 .all-posts__btn-box {
@@ -44,7 +70,7 @@
   align-items: center;
   justify-content: space-around;
   position: relative;
-  top: -261px;
+  top: -260px;
   z-index: 20;
 
   @include mq(1540) {
@@ -52,6 +78,10 @@
   }
 
   @include mq(1300) {
+    top: -180px;
+  }
+
+  @include mq(991) {
     display: none;
   }
 
