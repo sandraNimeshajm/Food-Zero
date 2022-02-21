@@ -80,6 +80,10 @@
   @include mq(768) {
     max-width: 100px;
   }
+
+  @include mq(480) {
+    max-width: 70px;
+  }
 }
 
 .footer__top-subscribe {
@@ -164,5 +168,43 @@
 
   @include mq(600) {
     margin-bottom: 16px;
+  }
+}
+
+@include mq(1921, min) {
+  .footer {
+    padding: 6.66667vw 0 3.33333vw;
+  }
+
+  .footer__top {
+    padding-bottom: 6.66667vw;
+    &::after {
+      border-bottom: 0.10417vw dashed $white;
+    }
+  }
+
+  .footer__top-logo-box {
+    max-width: 9.79167vw;
+    margin-right: 1.25vw;
+  }
+
+  .footer__top-subscribe-title {
+    margin-bottom: 2.86458vw;
+  }
+
+  .footer__top-subscribe-box {
+    margin-bottom: 0.83333vw;
+  }
+
+  .footer__top-subscribe-email {
+    max-width: 27.23958vw;
+    height: 4.32292vw;
+    border: 0.10417vw solid $white;
+    padding: 2.08333vw 1.5625vw;
+    margin-right: 1.45833vw;
+  }
+
+  .footer__bottom {
+    margin-top: 2.5vw;
   }
 }

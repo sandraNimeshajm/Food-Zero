@@ -158,7 +158,7 @@
   font-style: normal;
   font-size: 32px;
 
-  @include mq(1400) {
+  @include mq(1440) {
     font-size: 24px;
   }
 
@@ -282,4 +282,66 @@
   font-weight: normal;
   font-style: normal;
   font-size: 14px;
+}
+
+@include mq(1921, min) {
+  .rufina-118-bold,
+  .page-title {
+    font-size: 6.14583vw;
+  }
+
+  .rufina-108-bold,
+  .section-title {
+    font-size: 5.625vw;
+  }
+
+  .rufina-88-bold {
+    font-size: 4.58333vw;
+  }
+
+  .rufina-68-bold {
+    font-size: 3.54167vw;
+  }
+
+  .rufina-48-bold {
+    font-size: 2.5vw;
+  }
+
+  .rufina-32-bold,
+  .page-text {
+    font-size: 1.66667vw;
+  }
+
+  .rufina-26-bold {
+    font-size: 1.35417vw;
+  }
+
+  .lato-38-bold {
+    font-size: 1.97917vw;
+  }
+
+  .lato-34-normal {
+    font-size: 1.77083vw;
+  }
+
+  .lato-24-normal,
+  .section-text {
+    font-size: 1.25vw;
+  }
+
+  .lato-22-normal {
+    font-size: 1.14583vw;
+  }
+
+  .lato-20-normal {
+    font-size: 1.04167vw;
+  }
+
+  .lato-18-normal {
+    font-size: 0.9375vw;
+  }
+
+  .lato-14-normal {
+    font-size: 0.72917vw;
+  }
 }

@@ -16,6 +16,14 @@
   }
 }
 
+.header__right-btn {
+  &.not-top {
+    @include hover {
+      color: $green-light;
+    }
+  }
+}
+
 .header__wrapper {
   display: flex;
   align-items: center;
@@ -23,6 +31,8 @@
 }
 
 .header__left {
+  max-width: 446px;
+  width: 100%;
   display: flex;
   align-items: center;
 
@@ -43,6 +53,10 @@
 
   @include mq(768) {
     max-width: 150px;
+  }
+
+  @include mq(480) {
+    max-width: 100px;
   }
 
   @include mq(400) {
@@ -87,11 +101,19 @@
       }
     }
   }
+
+  @include mq(768) {
+    max-width: 35px;
+    height: 20px;
+  }
+
+  @include mq(480) {
+    max-width: 22px;
+    height: 14px;
+  }
 }
 
 .header__content-close-btn {
-  max-width: 32px;
-  width: 100%;
   position: absolute;
   top: 90px;
   right: 80px;
@@ -106,12 +128,17 @@
     max-width: 20px;
   }
 
+  @include mq(768) {
+    top: 10px;
+  }
+
   @include mq(480) {
-    top: 60px;
     max-width: 14px;
   }
 
   svg {
+    width: 32px;
+    height: 32px;
     fill: $white;
 
     path {
@@ -127,6 +154,15 @@
   display: block;
   margin-top: 12px;
 
+  @include mq(768) {
+    margin-top: 9px;
+  }
+
+  @include mq(480) {
+    height: 1px;
+    margin-top: 6px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -134,6 +170,10 @@
     height: 2px;
     top: 0;
     background-color: $white;
+
+    @include mq(480) {
+      height: 1px;
+    }
   }
 
   &::after {
@@ -143,6 +183,10 @@
     height: 2px;
     bottom: 0;
     background-color: $white;
+
+    @include mq(480) {
+      height: 1px;
+    }
   }
 }
 
@@ -184,6 +228,7 @@
 
       @include mq(768) {
         margin-bottom: 24px;
+        border-bottom: 2px dashed $white;
       }
 
       @include mq(480) {
@@ -213,10 +258,8 @@
   max-width: 1482px;
   display: flex;
   justify-content: space-around;
-  align-items: flex-end;
-  @include mq(1140) {
-    align-items: center;
-  }
+  align-items: center;
+
   @include mq(768) {
     flex-direction: column;
     align-items: flex-start;
@@ -358,6 +401,92 @@
     @include mq(480) {
       height: 8px;
       right: -30px;
+    }
+  }
+}
+
+@include mq(1921, min) {
+  .header {
+    padding: 0.625vw 0;
+  }
+
+  .header__left {
+    max-width: 23.22917vw;
+  }
+
+  .header__left-logo-link {
+    max-width: 13.02083vw;
+    margin-right: 2.34375vw;
+  }
+
+  .header__right-info {
+    margin-right: 1.35417vw;
+  }
+
+  .header__left-menu {
+    max-width: 2.39583vw;
+    height: 1.45833vw;
+  }
+
+  .header__content-close-btn {
+    top: 4.6875vw;
+    right: 4.16667vw;
+
+    svg {
+      width: 1.66667vw;
+      height: 1.66667vw;
+    }
+  }
+
+  .header__left-menu-line {
+    height: 0.10417vw;
+    margin-top: 0.625vw;
+    &::before {
+      height: 0.10417vw;
+    }
+    &::after {
+      height: 0.10417vw;
+    }
+  }
+
+  .header__content {
+    padding: 10.41667vw 5.20833vw;
+    .contact {
+      .contact__title {
+        border-bottom: 0.20833vw dashed $white;
+        padding-bottom: 0.41667vw;
+        margin-bottom: 1.97917vw;
+      }
+    }
+  }
+
+  .header__content-wrapper {
+    max-width: 77.1875vw;
+  }
+
+  .nav__items {
+    margin-right: 1.25vw;
+  }
+
+  .nav__item {
+    margin-bottom: 1.45833vw;
+    &::before {
+      top: 1.5625vw;
+      left: -1.5625vw;
+      width: 0.625vw;
+      height: 0.625vw;
+    }
+  }
+
+  .nav__subitem {
+    margin-bottom: 0.3125vw;
+  }
+
+  .nav__subitems-expanding {
+    svg {
+      right: -3.33333vw;
+      width: 1.5625vw;
+      height: 1.04167vw;
     }
   }
 }

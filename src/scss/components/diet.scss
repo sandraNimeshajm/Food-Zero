@@ -123,3 +123,39 @@
   max-width: 508px;
   width: 100%;
 }
+
+@include mq(1921, min) {
+  .diet {
+    padding-bottom: 13.33333vw;
+  }
+
+  .diet__left {
+    margin-right: 1.25vw;
+  }
+
+  .diet__left-img-box {
+    max-width: 41.25vw;
+    margin-bottom: 2.8125vw;
+  }
+
+  .diet__left-content {
+    max-width: 29.42708vw;
+  }
+
+  .diet__left-title {
+    max-width: 25.67708vw;
+    margin-bottom: 2.8125vw;
+  }
+
+  .diet__right {
+    max-width: 26.45833vw;
+  }
+
+  .diet__right-text {
+    margin-bottom: 4.375vw;
+  }
+
+  .diet__right-img-box {
+    max-width: 26.45833vw;
+  }
+}

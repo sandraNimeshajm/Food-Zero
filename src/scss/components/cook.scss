@@ -82,3 +82,28 @@
 .cook__content-title {
   margin-bottom: 16px;
 }
+
+@include mq(1921, min) {
+  .cook {
+    padding: 13.33333vw 0 3.33333vw;
+  }
+
+  .cook__wrapper {
+    .img-box {
+      max-width: 26.19792vw;
+    }
+  }
+
+  .cook__img-box {
+    max-width: 48.69792vw;
+    margin-right: 1.25vw;
+  }
+
+  .cook__content-box {
+    max-width: 33.80208vw;
+  }
+
+  .cook__content-title {
+    margin-bottom: 0.83333vw;
+  }
+}

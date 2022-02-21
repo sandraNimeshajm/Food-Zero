@@ -6,7 +6,7 @@ const slider = () => {
 
   const swiper = new Swiper(".js-testimonials-slider", {
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 50,
 
     pagination: {
       el: ".testimonials__slider-pagination",

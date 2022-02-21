@@ -106,3 +106,31 @@
 .features__item-content-text {
   @extend .lato-24-normal;
 }
+
+@include mq(1921, min) {
+  .features {
+    padding: 13.33333vw 0 6.66667vw;
+  }
+
+  .features__items {
+    grid-gap: 1.5625vw;
+  }
+
+  .features__item-img-box {
+    max-width: 13.54167vw;
+    height: 13.54167vw;
+    margin-bottom: 1.66667vw;
+  }
+
+  .features__item-img {
+    max-width: 7.8125vw;
+  }
+
+  .features__item-content-box {
+    max-width: 26.45833vw;
+  }
+
+  .features__item-content-title {
+    margin-bottom: 1.66667vw;
+  }
+}

@@ -198,3 +198,44 @@
     margin-bottom: 24px;
   }
 }
+
+@include mq(1921, min) {
+  .meal {
+    padding: 6.66667vw 0 7.29167vw;
+    .menu__item {
+      margin-bottom: 3.02083vw;
+    }
+  }
+
+  .meal-starters {
+    .img-box {
+      max-width: 23.4375vw;
+    }
+  }
+
+  .meal-mains {
+    .menu__items {
+      margin-right: 5.20833vw;
+    }
+  }
+
+  .meal-pastries-and-drinks {
+    .img-box {
+      max-width: 18.22917vw;
+    }
+  }
+
+  .meal__content {
+    max-width: 48.02083vw;
+    margin-bottom: 10.41667vw;
+  }
+
+  .meal__content-title {
+    margin-bottom: 0.83333vw;
+  }
+
+  .meal__menu-img-box {
+    max-width: 41.25vw;
+    margin-right: 5.20833vw;
+  }
+}

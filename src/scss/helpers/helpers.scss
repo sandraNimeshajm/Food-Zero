@@ -36,30 +36,51 @@
 .contact__info {
   color: $white;
   text-decoration: none;
+  cursor: pointer;
+  padding-bottom: 2px;
+  background: linear-gradient(
+    to bottom,
+    rgba($white, 1) 0%,
+    rgba($white, 1) 98%
+  );
+  background-size: 0 2px;
+  background-repeat: no-repeat;
+  background-position: left 100%;
+  transition: background-size 0.3s;
+
+  @include hover {
+    background-size: 100% 2px;
+  }
 }
 
 .social__items {
+  max-width: 194px;
+  width: 100%;
   display: flex;
   align-items: center;
 }
 
 .social__item {
-  max-width: 28px;
-  width: 100%;
-  height: 28px;
   margin-right: 24px;
 
   &:last-child {
     margin-right: 0;
   }
 
+  @include mq(768) {
+    max-width: 24px;
+  }
+
   @include mq(480) {
+    max-width: 20px;
     margin-right: 16px;
   }
 }
 
 .social__item-link {
   svg {
+    width: 28px;
+    height: 28px;
     transition: transform 0.3s;
 
     @include hover {
@@ -74,4 +95,39 @@
 
 .grey {
   color: $grey;
+}
+
+@include mq(1921, min) {
+  .contact {
+    max-width: 10.9375vw;
+    margin-right: 1.25vw;
+  }
+
+  .contact__title {
+    margin-bottom: 2.86458vw;
+  }
+
+  .contact__info-item {
+    margin-bottom: 1.25vw;
+  }
+
+  .contact__info {
+    padding-bottom: 0.10417vw;
+    background-size: 0 0.10417vw;
+  }
+
+  .social__items {
+    max-width: 10.10417vw;
+  }
+
+  .social__item-link {
+    svg {
+      width: 1.45833vw;
+      height: 1.45833vw;
+    }
+  }
+
+  .social__item {
+    margin-right: 1.25vw;
+  }
 }

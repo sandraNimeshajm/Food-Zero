@@ -244,3 +244,56 @@
     max-width: 327px;
   }
 }
+
+@include mq(1921, min) {
+  .form-reservation {
+    padding: 13.33333vw 0;
+  }
+  .form-reservation__content {
+    max-width: 52.5vw;
+    margin-bottom: 6.875vw;
+  }
+  .form-reservation__content-title {
+    margin-bottom: 0.83333vw;
+  }
+  .form-reservation__items {
+    margin-bottom: 6.92708vw;
+  }
+  .form-reservation__item {
+    max-width: 26.875vw;
+    height: 5vw;
+    border: 0.10417vw solid $black;
+    margin-right: 2.5vw;
+    padding: 2.08333vw 1.5625vw;
+    .form-reservation__item-date,
+    .form-reservation__item-time,
+    .form-reservation__item-person {
+      width: 20.10417vw;
+    }
+  }
+  .form-reservation--contact {
+    .img-box {
+      max-width: 26.61458vw;
+      top: 5.20833vw;
+      left: 18.22917vw;
+    }
+
+    .form-reservation__content {
+      margin: 0 auto 6.875vw;
+    }
+
+    .form-reservation__item {
+      margin-bottom: 2.39583vw;
+    }
+
+    .form-reservation__item--half-width {
+      .form-reservation__item {
+        max-width: 41.61458vw;
+      }
+    }
+
+    .form-reservation__btn {
+      max-width: 17.03125vw;
+    }
+  }
+}

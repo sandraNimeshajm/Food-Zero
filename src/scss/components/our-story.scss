@@ -81,3 +81,26 @@
   max-width: 792px;
   width: 100%;
 }
+
+@include mq(1921, min) {
+  .our-story {
+    padding: 10.20833vw 0 6.66667vw;
+    .img-box {
+      top: 2.08333vw;
+      max-width: 16.97917vw;
+    }
+  }
+
+  .our-story__content-box {
+    max-width: 33.07292vw;
+    margin-right: 5.20833vw;
+  }
+
+  .our-story__title {
+    margin-bottom: 0.83333vw;
+  }
+
+  .our-story__img-box {
+    max-width: 41.25vw;
+  }
+}

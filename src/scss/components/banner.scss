@@ -244,3 +244,68 @@
     margin: 0 auto;
   }
 }
+
+@include mq(1921, min) {
+  .banner__content {
+    max-width: 40.625vw;
+  }
+
+  .banner__content-title {
+    margin-bottom: 2.60417vw;
+  }
+
+  .banner-contact {
+    .banner__content {
+      max-width: 47.65625vw;
+      margin-bottom: 4.84375vw;
+    }
+  }
+
+  .banner__open-time {
+    right: 7.29167vw;
+    max-width: 36.25vw;
+  }
+
+  .banner__open-time-top {
+    margin-bottom: 1.97917vw;
+    border-bottom: 0.10417vw dashed $white;
+    padding-bottom: 1.97917vw;
+  }
+
+  .banner-about {
+    .banner__content {
+      max-width: 47.65625vw;
+    }
+  }
+
+  .banner--small {
+    height: 44.27083vw;
+    .banner__content {
+      max-width: 67.91667vw;
+    }
+  }
+
+  .banner-single-post {
+    .banner__wrapper {
+      transform: translateY(4.16667vw);
+    }
+
+    .blog-post__item-btn {
+      top: -3.125vw;
+      border: 0.10417vw solid $white;
+      max-width: 10.57292vw;
+    }
+
+    .blog-post__content-top {
+      .blog-post__content-top-img-box {
+        max-width: 5vw;
+      }
+    }
+  }
+
+  .banner-portfolio-grids {
+    .banner__content {
+      max-width: 67.70833vw;
+    }
+  }
+}

@@ -144,3 +144,34 @@
     }
   }
 }
+
+@include mq(1921, min) {
+  .contact-info {
+    padding: 13.33333vw 0 6.66667vw;
+    .img-box {
+      top: 6.77083vw;
+      max-width: 23.22917vw;
+    }
+  }
+
+  .contact-info__img-box {
+    max-width: 41.25vw;
+    margin-right: 1.25vw;
+  }
+
+  .contact-info__text-box {
+    max-width: 26.40625vw;
+  }
+
+  .contact-info--reverse {
+    padding: 6.66667vw 0 10vw;
+    .contact-info__text-box {
+      max-width: 38.95833vw;
+      margin-right: 3.125vw;
+    }
+
+    .contact-info__text {
+      margin-bottom: 2.76042vw;
+    }
+  }
+}

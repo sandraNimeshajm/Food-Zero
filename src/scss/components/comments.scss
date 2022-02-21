@@ -53,6 +53,7 @@
 
   @include mq(768) {
     padding-bottom: 48px;
+    border-bottom: 2px dashed $black;
   }
 
   @include mq(480) {
@@ -115,5 +116,37 @@
 
   @include hover {
     color: $grey;
+  }
+}
+
+@include mq(1921, min) {
+  .comments {
+    padding-bottom: 6.66667vw;
+  }
+
+  .comments__title {
+    margin-bottom: 4.47917vw;
+  }
+
+  .comments__wrapper {
+    max-width: 72.60417vw;
+  }
+
+  .comments__items {
+    border-bottom: 0.20833vw dashed $black;
+    padding-bottom: 6.66667vw;
+  }
+
+  .comments__item {
+    margin-bottom: 2.5vw;
+  }
+
+  .comments__item-left-img-box {
+    max-width: 4.27083vw;
+    margin-right: 1.77083vw;
+  }
+
+  .comments__item-left-content-text {
+    margin-bottom: 0.83333vw;
   }
 }

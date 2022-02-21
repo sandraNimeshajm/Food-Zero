@@ -133,3 +133,40 @@
     }
   }
 }
+
+@include mq(1921, min) {
+  .staff {
+    padding-top: 6.66667vw;
+    padding-bottom: 13.33333vw;
+    padding: 6.66667vw 0 13.33333vw;
+  }
+
+  .staff__item-left {
+    max-width: 37.8125vw;
+    margin-right: 5.20833vw;
+  }
+
+  .staff__item-left-title {
+    margin-bottom: 1.25vw;
+  }
+
+  .staff__item-left-text {
+    margin-bottom: 1.25vw;
+  }
+
+  .staff__item-left-img-box {
+    max-width: 37.8125vw;
+  }
+
+  .staff__item-right-text {
+    max-width: 26.5625vw;
+    transform: translateY(8.07292vw);
+  }
+
+  .staff__item--reverse {
+    margin-top: -20.83333vw;
+    .staff__item-right {
+      margin-right: 5.20833vw;
+    }
+  }
+}

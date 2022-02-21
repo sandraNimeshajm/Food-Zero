@@ -115,3 +115,44 @@
     font-size: 12px;
   }
 }
+
+@include mq(1921, min) {
+  .menu {
+    padding: 6.66667vw 0 13.33333vw;
+    .img-box {
+      max-width: 45.83333vw;
+    }
+  }
+
+  .menu__content {
+    max-width: 27.70833vw;
+  }
+
+  .menu__content-title {
+    margin-bottom: 0.83333vw;
+  }
+
+  .menu__items {
+    grid-gap: 6.25vw;
+    transform: translateY(3.64583vw);
+  }
+
+  .menu__item {
+    max-width: 36.45833vw;
+  }
+
+  .menu__item-price {
+    margin-bottom: 1.875vw;
+    top: -3.64583vw;
+  }
+
+  .menu__item-title {
+    margin-bottom: 1.25vw;
+    border-top: 0.20833vw dashed $black;
+    padding-top: 1.25vw;
+  }
+
+  .menu__item-text {
+    margin-bottom: 1.66667vw;
+  }
+}

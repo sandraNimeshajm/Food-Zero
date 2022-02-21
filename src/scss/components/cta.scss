@@ -149,3 +149,38 @@
     box-shadow: rgba(255, 255, 255, 0) 0 0 0 30px;
   }
 }
+
+@include mq(1921, min) {
+  .cta__wrapper {
+    padding-top: 10.20833vw;
+    padding-bottom: 10.20833vw;
+  }
+
+  .cta__title {
+    margin-bottom: 0.83333vw;
+  }
+
+  .cta__text {
+    margin-bottom: 3.33333vw;
+  }
+
+  .cta__link {
+    width: 5.20833vw;
+    height: 5.20833vw;
+    &::before {
+      width: 5.20833vw;
+      height: 5.20833vw;
+    }
+    &::after {
+      width: 5.20833vw;
+      height: 5.20833vw;
+    }
+  }
+
+  .cta__icon {
+    left: 0.15625vw;
+    border-left: 1.04167vw solid $main;
+    border-top: 0.72917vw solid transparent;
+    border-bottom: 0.72917vw solid transparent;
+  }
+}

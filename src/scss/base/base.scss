@@ -4,6 +4,11 @@
   padding: 0 100px;
   margin: 0 auto;
 
+  @include mq(1921, min) {
+    max-width: 96.04167vw;
+    padding: 0 5.20833vw;
+  }
+
   @include mq(1200) {
     padding: 0 24px;
   }

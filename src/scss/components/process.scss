@@ -196,3 +196,55 @@
 .process__content-text {
   @extend .lato-24-normal;
 }
+
+@include mq(1921, min) {
+  .process {
+    padding: 13.33333vw 0 16.66667vw;
+    .img-box {
+      max-width: 23.95833vw;
+    }
+  }
+
+  .process__title-box {
+    margin-bottom: 9.0625vw;
+  }
+
+  .process__item {
+    margin: 0 auto 5.20833vw;
+  }
+
+  .process__item--slice {
+    .process__img-box {
+      max-width: 41.25vw;
+    }
+  }
+
+  .process__img-box {
+    max-width: 33.85417vw;
+    margin-right: 5.20833vw;
+  }
+
+  .process__content-box {
+    max-width: 32.08333vw;
+  }
+
+  .process__item--pickled {
+    .process__img-box {
+      margin-bottom: 2.39583vw;
+    }
+    .process__content-text {
+      max-width: 21.61458vw;
+    }
+  }
+
+  .process__item--bake {
+    margin-top: -33.85417vw;
+    .process__content-box {
+      margin-bottom: 2.39583vw;
+    }
+  }
+
+  .process__content-title {
+    margin-bottom: 1.25vw;
+  }
+}

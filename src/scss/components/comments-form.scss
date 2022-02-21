@@ -126,3 +126,44 @@
     height: 16px;
   }
 }
+
+@include mq(1921, min) {
+  .comments-form {
+    padding: 6.66667vw 0;
+  }
+
+  .comments-form__wrapper {
+    max-width: 72.55208vw;
+  }
+
+  .comments-form__title {
+    margin-bottom: 5vw;
+  }
+
+  .comments-form__items {
+    max-width: 72.55208vw;
+  }
+
+  .comments-form__item {
+    margin-bottom: 3.33333vw;
+  }
+
+  .comment-form__item-title {
+    margin-bottom: 0.83333vw;
+  }
+
+  .comment-form__item-textarea {
+    height: 20vw;
+  }
+
+  .comment-form__item-textarea,
+  .comment-form__item-input {
+    font-size: 1.25vw;
+    padding: 1.04167vw 0.52083vw;
+    border: 0.10417vw solid $black;
+  }
+
+  .comment-form__item-input {
+    height: 4.58333vw;
+  }
+}
