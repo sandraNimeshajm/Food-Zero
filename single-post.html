@@ -206,14 +206,22 @@
       <section class="banner banner--small banner-single-post">
         <div class="banner__wrapper wrapper">
           <div class="banner__content">
-            <a href="javascript:;" class="blog-post__item-btn">
+            <a
+              href="javascript:;"
+              class="blog-post__item-btn"
+              data-transition="fade-up"
+            >
               <span class="blog-post__item-btn-text">Fashion</span>
             </a>
-            <h3 class="banner__content-title">
+            <h3 class="banner__content-title | js-wordwrap">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit
             </h3>
 
-            <div class="blog-post__content-top">
+            <div
+              class="blog-post__content-top"
+              data-transition="fade-up"
+              data-transition-delay="550"
+            >
               <div class="blog-post__content-top-img-box">
                 <img
                   loading="lazy"
@@ -234,7 +242,7 @@
       <section class="post-info">
         <div class="post-info__wrapper wrapper">
           <div class="post-info__content">
-            <p class="post-info__content-text">
+            <p class="post-info__content-text" data-transition="fade-up">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
               lorem id penatibus imperdiet. Turpis egestas ultricies purus
               auctor tincidunt lacus nunc. Convallis pellentesque quis fringilla
@@ -244,7 +252,10 @@
               auctor tincidunt lacus nunc.
             </p>
             <div class="post-info__content-items">
-              <div class="post-info__content-item post-info__content-item--big">
+              <div
+                class="post-info__content-item post-info__content-item--big"
+                data-transition="reveal-left"
+              >
                 <img
                   src="./src/images/single-post-img-1.png"
                   alt="Single post image"
@@ -255,6 +266,7 @@
               <div class="post-info__content-item-wrapper">
                 <div
                   class="post-info__content-item post-info__content-item--small"
+                  data-transition="reveal-left"
                 >
                   <img
                     src="./src/images/single-post-img-2.png"
@@ -264,6 +276,7 @@
                 </div>
                 <div
                   class="post-info__content-item post-info__content-item--small"
+                  data-transition="reveal-left"
                 >
                   <img
                     src="./src/images/single-post-img-3.png"
@@ -273,7 +286,10 @@
                 </div>
               </div>
             </div>
-            <p class="post-info__content-text post-info__content-text--small">
+            <p
+              class="post-info__content-text post-info__content-text--small"
+              data-transition="fade-up"
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
               lorem id penatibus imperdiet. Turpis egestas ultricies purus
               auctor tincidunt lacus nunc. Convallis pellentesque quis fringilla
@@ -281,13 +297,19 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </p>
             <div class="post-info__content-quote">
-              <h3 class="post-info__content-quote-title">
+              <h3
+                class="post-info__content-quote-title"
+                data-transition="fade-up"
+              >
                 “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
                 lorem id penatibus imperdiet. Turpis egestas ultricies purus
                 auctor tincidunt lacus nunc.
               </h3>
             </div>
-            <p class="post-info__content-text post-info__content-text--big">
+            <p
+              class="post-info__content-text post-info__content-text--big"
+              data-transition="fade-up"
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
               lorem id penatibus imperdiet. Turpis egestas ultricies purus
               auctor tincidunt lacus nunc. Convallis pellentesque quis fringilla
@@ -396,9 +418,9 @@
 
       <section class="comments">
         <div class="comments__wrapper wrapper">
-          <h4 class="comments__title">4 comments</h4>
+          <h4 class="comments__title | js-wordwrap">4 comments</h4>
           <div class="comments__items">
-            <div class="comments__item">
+            <div class="comments__item" data-transition="fade-up">
               <div class="comments__item-left">
                 <div class="comments__item-left-img-box">
                   <img
@@ -427,36 +449,7 @@
               </div>
             </div>
 
-            <!-- <div class="comments__item"> -->
-            <!-- <div class="comments__item-left comments__item-left--sub-comment">
-                <div class="comments__item-left-img-box">
-                  <img
-                    src="./src/images/blog-post-author-3.png"
-                    alt="Author's image"
-                    class="comments__item-left-img"
-                  />
-                </div>
-                <div class="comments__item-left-content-box">
-                  <p class="comments__item-left-content-text bold">
-                    Jennifer Tomas
-                  </p>
-                  <p class="comments__item-left-content-text grey">
-                    March 12,2020,7:08 pm
-                  </p>
-                  <p class="comments__item-left-content-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Purus lorem id penatibus imperdiet.
-                  </p>
-                </div>
-              </div> -->
-            <!-- <div class="comments__item-right">
-                <a href="javascript:;" class="comments__item-right-btn"
-                  >Reply</a
-                >
-              </div> -->
-            <!-- </div> -->
-
-            <div class="comments__item">
+            <div class="comments__item" data-transition="fade-up">
               <div class="comments__item-left">
                 <div class="comments__item-left-img-box">
                   <img
@@ -485,7 +478,7 @@
               </div>
             </div>
 
-            <div class="comments__item">
+            <div class="comments__item" data-transition="fade-up">
               <div class="comments__item-left">
                 <div class="comments__item-left-img-box">
                   <img
@@ -517,7 +510,9 @@
 
       <section class="comments-form">
         <div class="comments-form__wrapper wrapper">
-          <h5 class="comments-form__title page-text">Leave A Reply</h5>
+          <h5 class="comments-form__title page-text" data-transition="fade-up">
+            Leave A Reply
+          </h5>
           <form action="" class="comments-form__items">
             <div class="comments-form__item">
               <label class="comment-form__item-title" for="comment"

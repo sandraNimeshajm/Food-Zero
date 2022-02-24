@@ -206,16 +206,16 @@
       <section class="home-banner">
         <div class="home-banner__wrapper wrapper">
           <div class="home-banner__content">
-            <h1 class="home-banner__content-title page-title">
+            <h1 class="home-banner__content-title page-title | js-wordwrap">
               Healthy Eating is important part of lifestyle
             </h1>
-            <p class="home-banner__content-text">
+            <p class="home-banner__content-text" data-transition="fade-up">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque
               congue arcu
             </p>
           </div>
 
-          <div class="home-banner__img-box">
+          <div class="home-banner__img-box" data-transition="reveal-left">
             <img
               src="./src/images/home-banner-img.png"
               alt="Banner image"
@@ -228,7 +228,11 @@
       <section class="diet">
         <div class="diet__wrapper wrapper">
           <div class="diet__left">
-            <div class="diet__left-img-box">
+            <div
+              class="diet__left-img-box"
+              data-transition="reveal-left"
+              data-transition-delay="500"
+            >
               <img
                 src="./src/images/diet-img-left.png"
                 alt="Diet food"
@@ -237,8 +241,10 @@
             </div>
 
             <div class="diet__left-content">
-              <h3 class="diet__left-title">Start to plan your diet today</h3>
-              <p class="diet__left-text">
+              <h3 class="diet__left-title | js-wordwrap">
+                Start to plan your diet today
+              </h3>
+              <p class="diet__left-text" data-transition="fade-up">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque
                 congue arcu
               </p>
@@ -246,11 +252,11 @@
           </div>
 
           <div class="diet__right">
-            <p class="diet__right-text">
+            <p class="diet__right-text" data-transition="fade-up">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque
               congue arcu
             </p>
-            <div class="diet__right-img-box">
+            <div class="diet__right-img-box" data-transition="reveal-left">
               <img
                 src="./src/images/diet-img-right.png"
                 alt="Diet food"
@@ -268,15 +274,20 @@
         </div>
         <div class="menu__wrapper wrapper">
           <div class="menu__content">
-            <h2 class="menu__content-title section-title">Our Menu</h2>
-            <p class="menu__content-text section-text">
+            <h2 class="menu__content-title section-title | js-wordwrap">
+              Our Menu
+            </h2>
+            <p
+              class="menu__content-text section-text"
+              data-transition="fade-up"
+            >
               This is a section of your menu. Give your section a brief
               description
             </p>
           </div>
 
           <div class="menu__items">
-            <div class="menu__item">
+            <div class="menu__item" data-transition="fade-up">
               <span class="menu__item-price">$20</span>
               <h3 class="menu__item-title">Deep Sea Snow White Cod Fillet</h3>
               <p class="menu__item-text">
@@ -284,7 +295,7 @@
               </p>
             </div>
 
-            <div class="menu__item">
+            <div class="menu__item" data-transition="fade-up">
               <span class="menu__item-price">$22</span>
               <h3 class="menu__item-title">Steak With Rosemary Butter</h3>
               <p class="menu__item-text">
@@ -292,7 +303,7 @@
               </p>
             </div>
 
-            <div class="menu__item">
+            <div class="menu__item" data-transition="fade-up">
               <span class="menu__item-price">$18</span>
               <h3 class="menu__item-title">Cucumber Salad</h3>
               <p class="menu__item-text">
@@ -300,7 +311,7 @@
               </p>
             </div>
 
-            <div class="menu__item">
+            <div class="menu__item" data-transition="fade-up">
               <span class="menu__item-price">$90</span>
               <h3 class="menu__item-title">Natural Wine Pairing</h3>
               <p class="menu__item-text">
@@ -316,7 +327,7 @@
           <div class="img-box img-box--left">
             <img src="./src/images/cook-leaf-left.png" alt="Leaf" />
           </div>
-          <div class="cook__img-box">
+          <div class="cook__img-box" data-transition="reveal-left">
             <img
               loading="lazy"
               src="./src/images/cook-img.png"
@@ -326,8 +337,13 @@
           </div>
 
           <div class="cook__content-box">
-            <h2 class="cook__content-title section-title">Excellent cook</h2>
-            <p class="cook__content-text section-text">
+            <h2 class="cook__content-title section-title | js-wordwrap">
+              Excellent cook
+            </h2>
+            <p
+              class="cook__content-text section-text"
+              data-transition="fade-up"
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
               lorem id penatibus imperdiet. Turpis egestas ultricies purus
               auctor tincidunt lacus nunc.
@@ -343,7 +359,7 @@
         <div class="features__wrapper wrapper">
           <div class="features__items">
             <div class="features__item">
-              <div class="features__item-img-box">
+              <div class="features__item-img-box" data-transition="zoom-in">
                 <img
                   loading="lazy"
                   src="./src/images/svg/features-item-fish.svg"
@@ -353,8 +369,16 @@
               </div>
 
               <div class="features__item-content-box">
-                <h4 class="features__item-content-title">Premium Quality</h4>
-                <p class="features__item-content-text">
+                <h4
+                  class="features__item-content-title"
+                  data-transition="fade-up"
+                >
+                  Premium Quality
+                </h4>
+                <p
+                  class="features__item-content-text"
+                  data-transition="fade-up"
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque
                   congue arcu
                 </p>
@@ -362,7 +386,7 @@
             </div>
 
             <div class="features__item">
-              <div class="features__item-img-box">
+              <div class="features__item-img-box" data-transition="zoom-in">
                 <img
                   loading="lazy"
                   src="./src/images/svg/features-item-carrot.svg"
@@ -372,10 +396,16 @@
               </div>
 
               <div class="features__item-content-box">
-                <h4 class="features__item-content-title">
+                <h4
+                  class="features__item-content-title"
+                  data-transition="fade-up"
+                >
                   Seasonal Vegetables
                 </h4>
-                <p class="features__item-content-text">
+                <p
+                  class="features__item-content-text"
+                  data-transition="fade-up"
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque
                   congue arcu
                 </p>
@@ -383,7 +413,7 @@
             </div>
 
             <div class="features__item">
-              <div class="features__item-img-box">
+              <div class="features__item-img-box" data-transition="zoom-in">
                 <img
                   loading="lazy"
                   src="./src/images/svg/features-item-fruit.svg"
@@ -393,8 +423,16 @@
               </div>
 
               <div class="features__item-content-box">
-                <h4 class="features__item-content-title">Fresh Fruit</h4>
-                <p class="features__item-content-text">
+                <h4
+                  class="features__item-content-title"
+                  data-transition="fade-up"
+                >
+                  Fresh Fruit
+                </h4>
+                <p
+                  class="features__item-content-text"
+                  data-transition="fade-up"
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque
                   congue arcu
                 </p>
@@ -408,7 +446,7 @@
         <div class="blog-post__wrapper wrapper">
           <div class="blog-post__items">
             <div class="blog-post__item">
-              <div class="blog-post__item-img-box">
+              <div class="blog-post__item-img-box" data-transition="zoom-in">
                 <a href="javascript:;" class="blog-post__item-btn">
                   <span class="blog-post__item-btn-text">Fashion</span>
                 </a>
@@ -420,7 +458,7 @@
                 />
               </div>
 
-              <div class="blog-post__content-box">
+              <div class="blog-post__content-box" data-transition="fade-up">
                 <div class="blog-post__content-top">
                   <div class="blog-post__content-top-img-box">
                     <img
@@ -472,7 +510,7 @@
             </div>
 
             <div class="blog-post__item">
-              <div class="blog-post__item-img-box">
+              <div class="blog-post__item-img-box" data-transition="zoom-in">
                 <a href="javascript:;" class="blog-post__item-btn">
                   <span class="blog-post__item-btn-text">Fashion</span>
                 </a>
@@ -484,7 +522,7 @@
                 />
               </div>
 
-              <div class="blog-post__content-box">
+              <div class="blog-post__content-box" data-transition="fade-up">
                 <div class="blog-post__content-top">
                   <div class="blog-post__content-top-img-box">
                     <img
@@ -541,10 +579,15 @@
       <section class="form-reservation">
         <div class="form-reservation__wrapper wrapper">
           <div class="form-reservation__content">
-            <h2 class="form-reservation__content-title section-title">
+            <h2
+              class="form-reservation__content-title section-title | js-wordwrap"
+            >
               Make a reservation
             </h2>
-            <p class="form-reservation__content-text section-text">
+            <p
+              class="form-reservation__content-text section-text"
+              data-transition="fade-up"
+            >
               Get in touch with restaurant
             </p>
           </div>
@@ -553,6 +596,7 @@
             <div class="form-reservation__item">
               <input
                 class="form-reservation__item-date"
+                placeholder="2022-02-02"
                 type="date"
                 id="date"
                 name="date"
@@ -563,7 +607,11 @@
             </div>
 
             <div class="form-reservation__item">
-              <select class="form-reservation__item-time" name="time">
+              <select
+                class="form-reservation__item-time"
+                name="time"
+                placeholder="11:00 am"
+              >
                 <option>11:00 am</option>
                 <option>12:00 pm</option>
                 <option>1:00 pm</option>
@@ -578,7 +626,11 @@
             </div>
 
             <div class="form-reservation__item">
-              <select class="form-reservation__item-person" name="person">
+              <select
+                class="form-reservation__item-person"
+                name="person"
+                placeholder="1 person"
+              >
                 <option>1 person</option>
                 <option>2 persons</option>
                 <option>3 persons</option>
@@ -594,16 +646,21 @@
       <section class="meal-category">
         <div class="meal-category__wrapper wrapper">
           <div class="meal-category__content">
-            <h2 class="meal-category__content-title section-title">
+            <h2
+              class="meal-category__content-title section-title | js-wordwrap"
+            >
               Calories Energy Balance
             </h2>
-            <p class="meal-category__content-text section-text">
+            <p
+              class="meal-category__content-text section-text"
+              data-transition="fade-up"
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
 
           <div class="meal-category__items">
-            <div class="meal-category__item">
+            <div class="meal-category__item" data-transition="reveal-left">
               <a href="javascript:;" class="meal-category__item-tag">
                 <span class="meal-category__item-tag-text">Starters</span>
                 <svg
@@ -629,7 +686,7 @@
               />
             </div>
 
-            <div class="meal-category__item">
+            <div class="meal-category__item" data-transition="reveal-left">
               <a href="javascript:;" class="meal-category__item-tag">
                 <span class="meal-category__item-tag-text">Mains</span>
                 <svg
@@ -654,7 +711,7 @@
               />
             </div>
 
-            <div class="meal-category__item">
+            <div class="meal-category__item" data-transition="reveal-left">
               <a href="javascript:;" class="meal-category__item-tag">
                 <span class="meal-category__item-tag-text">Soups</span>
                 <svg
@@ -690,7 +747,10 @@
                 class="swiper-slide testimonials__slider-item | js-testimonials-slide"
               >
                 <div class="swiper-slide testimonials__slider-item-top">
-                  <h3 class="testimonials__slider-item-title">
+                  <h3
+                    class="testimonials__slider-item-title"
+                    data-transition="fade-up"
+                  >
                     “ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Purus lorem id penatibus imperdiet. Turpis egestas ultricies
                     purus Lorem ipsum dolor sit amet.
@@ -716,7 +776,7 @@
                 class="swiper-slide testimonials__slider-item | js-testimonials-slide"
               >
                 <div class="swiper-slide testimonials__slider-item-top">
-                  <h3 class="testimonials__slider-item-title">
+                  <h3 class="testimonials__slider-item-title |">
                     “ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Purus lorem id penatibus imperdiet. Turpis egestas ultricies
                     purus Lorem ipsum dolor sit amet.
@@ -742,7 +802,7 @@
                 class="swiper-slide testimonials__slider-item | js-testimonials-slide"
               >
                 <div class="swiper-slide testimonials__slider-item-top">
-                  <h3 class="testimonials__slider-item-title">
+                  <h3 class="testimonials__slider-item-title |">
                     “ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Purus lorem id penatibus imperdiet. Turpis egestas ultricies
                     purus Lorem ipsum dolor sit amet.

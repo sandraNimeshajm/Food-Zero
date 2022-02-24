@@ -25,12 +25,6 @@
   }
 }
 
-.footer__wrapper {
-  @include mq(1450) {
-    padding: 0 24px;
-  }
-}
-
 .footer__top {
   display: flex;
   align-items: center;
@@ -73,6 +67,10 @@
     margin-bottom: 24px;
   }
 
+  @include mq(1440) {
+    max-width: 150px;
+  }
+
   @include mq(991) {
     max-width: 130px;
   }
@@ -82,7 +80,7 @@
   }
 
   @include mq(480) {
-    max-width: 70px;
+    max-width: 85px;
   }
 }
 
@@ -155,6 +153,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  .social__items {
+    justify-content: center;
+  }
 
   @include mq(600) {
     flex-direction: column;

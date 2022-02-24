@@ -45,7 +45,6 @@
     "webpack-remove-empty-scripts": "^0.7.1"
   },
   "dependencies": {
-    "gsap": "^3.7.1",
     "jquery": "^3.6.0",
     "magnific-popup": "^1.1.0",
     "swiper": "^6.8.4",

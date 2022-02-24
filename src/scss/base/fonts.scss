@@ -41,7 +41,7 @@
   font-style: normal;
   font-size: 118px;
 
-  @include mq(1400) {
+  @include mq(1440) {
     font-size: 96px;
   }
 
@@ -65,7 +65,7 @@
   font-style: normal;
   font-size: 108px;
 
-  @include mq(1400) {
+  @include mq(1440) {
     font-size: 64px;
   }
 
@@ -88,7 +88,7 @@
   font-style: normal;
   font-size: 88px;
 
-  @include mq(1400) {
+  @include mq(1440) {
     font-size: 64px;
   }
 
@@ -115,7 +115,7 @@
   font-style: normal;
   font-size: 68px;
 
-  @include mq(1400) {
+  @include mq(1440) {
     font-size: 48px;
   }
 
@@ -177,7 +177,7 @@
   font-style: normal;
   font-size: 26px;
 
-  @include mq(1400) {
+  @include mq(1440) {
     font-size: 24px;
   }
 
@@ -215,7 +215,7 @@
   font-style: normal;
   font-size: 34px;
 
-  @include mq(1040) {
+  @include mq(1440) {
     font-size: 24px;
   }
 
@@ -231,7 +231,11 @@
   font-style: normal;
   font-size: 24px;
 
-  @include mq(1400) {
+  @include mq(1440) {
+    font-size: 20px;
+  }
+
+  @include mq(991) {
     font-size: 16px;
   }
 

@@ -83,6 +83,16 @@
     height: 28px;
     transition: transform 0.3s;
 
+    @include mq(768) {
+      width: 24px;
+      height: 24px;
+    }
+
+    @include mq(480) {
+      width: 20px;
+      height: 20px;
+    }
+
     @include hover {
       transform: scale(1.5);
     }

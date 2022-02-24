@@ -69,6 +69,7 @@
   position: absolute;
   top: 12px;
   right: 12px;
+  z-index: 10;
 
   @include mq(768) {
     padding: 7px 32px;
@@ -106,6 +107,10 @@
 .blog-post__content-box {
   max-width: 610px;
   width: 100%;
+
+  @include mq(1280) {
+    margin: 0 auto;
+  }
 }
 
 .blog-post__content-top {
@@ -245,6 +250,12 @@
     max-width: 1220px;
     width: 100%;
   }
+
+  .blog-post__item-img-box {
+    @include mq(1280) {
+      margin: 0 auto 68px;
+    }
+  }
 }
 
 /* BLOG POST ONE COLUMN */
@@ -314,6 +325,12 @@
     @include mq(1300) {
       align-items: center;
       padding: 0 24px;
+    }
+  }
+
+  .blog-post__item-img-box {
+    @include mq(1280) {
+      margin: 0 auto 68px;
     }
   }
 

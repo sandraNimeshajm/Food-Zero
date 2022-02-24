@@ -105,6 +105,10 @@
     margin-bottom: 16px;
     padding-top: 16px;
   }
+
+  @include mq(768) {
+    border-top: 2px dashed $black;
+  }
 }
 
 .menu__item-text {

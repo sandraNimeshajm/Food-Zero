@@ -47,7 +47,7 @@
   width: 100%;
   margin-right: 45px;
 
-  @include mq(991) {
+  @include mq(1440) {
     max-width: 200px;
   }
 
@@ -134,12 +134,28 @@
 
   @include mq(480) {
     max-width: 14px;
+    top: 50px;
   }
 
   svg {
     width: 32px;
     height: 32px;
     fill: $white;
+
+    @include mq(1400) {
+      width: 24px;
+      height: 24px;
+    }
+
+    @include mq(1200) {
+      width: 20px;
+      height: 20px;
+    }
+
+    @include mq(480) {
+      width: 14px;
+      height: 14px;
+    }
 
     path {
       fill: $white;
@@ -204,6 +220,10 @@
   right: -180%;
   padding: 200px 100px;
   transition: right 0.3s;
+
+  .social__items {
+    justify-content: flex-start;
+  }
 
   .contact {
     margin-right: 0;
@@ -401,6 +421,7 @@
     @include mq(480) {
       height: 8px;
       right: -30px;
+      top: 8px;
     }
   }
 }

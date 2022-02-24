@@ -10,7 +10,7 @@
   text-decoration: none;
   text-align: center;
 
-  background-size: 785px;
+  background-size: 800px;
   background-repeat: no-repeat;
   background-position: 0%;
   transition: background 0.3s, color 0.3s;
@@ -87,7 +87,7 @@
 @include mq(1921, min) {
   .btn {
     padding: 1.04167vw 2.39583vw;
-    background-size: 40.88542vw;
+    background-size: 41.66667vw;
   }
 
   .btn--ghost {

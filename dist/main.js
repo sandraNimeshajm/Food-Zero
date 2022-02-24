@@ -1063,6 +1063,17 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n
 
 /***/ }),
 
+/***/ "./src/ts/components/intersection.ts":
+/*!*******************************************!*\
+  !*** ./src/ts/components/intersection.ts ***!
+  \*******************************************/
+/***/ (function(__unused_webpack_module, exports) {
+
+"use strict";
+eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nvar intersection = function () {\r\n    var elementsTransition = document.querySelectorAll(\"[data-transition]\");\r\n    var elementsWords = document.querySelectorAll(\".js-wordwrap\");\r\n    var animate = function (el) {\r\n        el.classList.add(\"show\");\r\n        if (el.getAttribute(\"data-transition-delay\")) {\r\n            el.style.transitionDelay =\r\n                el.getAttribute(\"data-transition-delay\") + \"ms\";\r\n        }\r\n        if (el.classList.contains(\"show\")) {\r\n            var children = el.querySelectorAll(\"[data-transition]\");\r\n            console.log(children);\r\n            if (children) {\r\n                children.forEach(function (element) {\r\n                    element.classList.add(\"show\");\r\n                    if (element.getAttribute(\"data-transition-delay\")) {\r\n                        element.style.transitionDelay =\r\n                            element.getAttribute(\"data-transition-delay\") + \"ms\";\r\n                    }\r\n                });\r\n            }\r\n        }\r\n    };\r\n    var myObserver = new IntersectionObserver(function (entries, observer) {\r\n        entries.forEach(function (entry) {\r\n            if (!(entry.boundingClientRect.y > 0)) {\r\n                animate(entry.target);\r\n            }\r\n            // return if the element is not intersecting on initial load\r\n            if (!entry.isIntersecting) {\r\n                return;\r\n            }\r\n            // call animation function\r\n            animate(entry.target);\r\n            // disable observer for that element if you want animation to happen only once\r\n            observer.unobserve(entry.target);\r\n        });\r\n    }, {\r\n        // trigger intersection when top of the element is 100px inside of the screen\r\n        rootMargin: \"0px 0px -100px 0px\",\r\n    });\r\n    elementsWords.forEach(function (el) {\r\n        myObserver.observe(el);\r\n    });\r\n    elementsTransition.forEach(function (el) {\r\n        myObserver.observe(el);\r\n    });\r\n};\r\nexports[\"default\"] = intersection;\r\n\n\n//# sourceURL=webpack://food-zero/./src/ts/components/intersection.ts?");
+
+/***/ }),
+
 /***/ "./src/ts/components/popUp.ts":
 /*!************************************!*\
   !*** ./src/ts/components/popUp.ts ***!
@@ -1107,6 +1118,17 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n
 
 /***/ }),
 
+/***/ "./src/ts/components/wordSplit.ts":
+/*!****************************************!*\
+  !*** ./src/ts/components/wordSplit.ts ***!
+  \****************************************/
+/***/ (function(__unused_webpack_module, exports) {
+
+"use strict";
+eval("\r\nvar __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {\r\n    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {\r\n        if (ar || !(i in from)) {\r\n            if (!ar) ar = Array.prototype.slice.call(from, 0, i);\r\n            ar[i] = from[i];\r\n        }\r\n    }\r\n    return to.concat(ar || Array.prototype.slice.call(from));\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nvar wordSplit = function () {\r\n    var wordWrap = document.querySelectorAll(\".js-wordwrap\");\r\n    wordWrap.forEach(function (el) {\r\n        function wrap_words(el, prepend, append) {\r\n            var retVal = \"\";\r\n            function processHTMLElement(node) {\r\n                if (node.innerHTML === \"\") {\r\n                    return node;\r\n                }\r\n                else {\r\n                    return wrap_words(node, prepend, append);\r\n                }\r\n            }\r\n            function processText(node) {\r\n                var trimmed = node.nodeValue.trim();\r\n                var words = trimmed.split(\" \");\r\n                if (trimmed === \"\") {\r\n                    return node.nodeValue;\r\n                }\r\n                return words\r\n                    .map(function (word) {\r\n                    return \"\" + prepend + word + append;\r\n                })\r\n                    .join(\" \");\r\n            }\r\n            __spreadArray([], el.childNodes, true).forEach(function (node) {\r\n                if (node instanceof HTMLElement) {\r\n                    retVal += \" \" + processHTMLElement(node).outerHTML + \" \";\r\n                }\r\n                else {\r\n                    retVal += processText(node);\r\n                }\r\n            });\r\n            el.innerHTML = retVal;\r\n            return el;\r\n        }\r\n        wrap_words(el, '<span class=\"word-wrap-word\"><span>', \"</span></span>\");\r\n        var count = 0;\r\n        var initialDelay = 0;\r\n        var wordWrapItem = el.querySelectorAll(\".word-wrap-word\");\r\n        wordWrapItem.forEach(function (wrapWord) {\r\n            count++;\r\n            wrapWord.querySelector(\"span\").style.animationDelay = \" \" + (initialDelay + count * 0.08 + \"s\") + \" \";\r\n        });\r\n    });\r\n};\r\nexports[\"default\"] = wordSplit;\r\n\n\n//# sourceURL=webpack://food-zero/./src/ts/components/wordSplit.ts?");
+
+/***/ }),
+
 /***/ "./src/ts/components/year.ts":
 /*!***********************************!*\
   !*** ./src/ts/components/year.ts ***!
@@ -1125,7 +1147,7 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nvar stickyHeader_1 = __webpack_require__(/*! ./components/stickyHeader */ \"./src/ts/components/stickyHeader.ts\");\r\nvar hamburgerMenu_1 = __webpack_require__(/*! ./components/hamburgerMenu */ \"./src/ts/components/hamburgerMenu.ts\");\r\nvar dropDownMenu_1 = __webpack_require__(/*! ./components/dropDownMenu */ \"./src/ts/components/dropDownMenu.ts\");\r\nvar slider_1 = __webpack_require__(/*! ./components/slider */ \"./src/ts/components/slider.ts\");\r\nvar sliderPagination_1 = __webpack_require__(/*! ./components/sliderPagination */ \"./src/ts/components/sliderPagination.ts\");\r\nvar year_1 = __webpack_require__(/*! ./components/year */ \"./src/ts/components/year.ts\");\r\nvar popUp_1 = __webpack_require__(/*! ./components/popUp */ \"./src/ts/components/popUp.ts\");\r\nvar filterItems_1 = __webpack_require__(/*! ./components/filterItems */ \"./src/ts/components/filterItems.ts\");\r\n(0, stickyHeader_1.default)();\r\n(0, hamburgerMenu_1.default)();\r\n(0, dropDownMenu_1.default)();\r\n(0, slider_1.default)();\r\n(0, sliderPagination_1.default)();\r\n(0, year_1.default)();\r\n(0, popUp_1.default)();\r\n(0, filterItems_1.default)();\r\n\n\n//# sourceURL=webpack://food-zero/./src/ts/main.ts?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nvar stickyHeader_1 = __webpack_require__(/*! ./components/stickyHeader */ \"./src/ts/components/stickyHeader.ts\");\r\nvar hamburgerMenu_1 = __webpack_require__(/*! ./components/hamburgerMenu */ \"./src/ts/components/hamburgerMenu.ts\");\r\nvar dropDownMenu_1 = __webpack_require__(/*! ./components/dropDownMenu */ \"./src/ts/components/dropDownMenu.ts\");\r\nvar slider_1 = __webpack_require__(/*! ./components/slider */ \"./src/ts/components/slider.ts\");\r\nvar sliderPagination_1 = __webpack_require__(/*! ./components/sliderPagination */ \"./src/ts/components/sliderPagination.ts\");\r\nvar year_1 = __webpack_require__(/*! ./components/year */ \"./src/ts/components/year.ts\");\r\nvar popUp_1 = __webpack_require__(/*! ./components/popUp */ \"./src/ts/components/popUp.ts\");\r\nvar filterItems_1 = __webpack_require__(/*! ./components/filterItems */ \"./src/ts/components/filterItems.ts\");\r\nvar intersection_1 = __webpack_require__(/*! ./components/intersection */ \"./src/ts/components/intersection.ts\");\r\nvar wordSplit_1 = __webpack_require__(/*! ./components/wordSplit */ \"./src/ts/components/wordSplit.ts\");\r\n(0, stickyHeader_1.default)();\r\n(0, hamburgerMenu_1.default)();\r\n(0, dropDownMenu_1.default)();\r\n(0, slider_1.default)();\r\n(0, sliderPagination_1.default)();\r\n(0, year_1.default)();\r\n(0, popUp_1.default)();\r\n(0, filterItems_1.default)();\r\n(0, intersection_1.default)();\r\n(0, wordSplit_1.default)();\r\n\n\n//# sourceURL=webpack://food-zero/./src/ts/main.ts?");
 
 /***/ })
 

@@ -6,6 +6,8 @@ import sliderPagination from "./components/sliderPagination";
 import year from "./components/year";
 import popUp from "./components/popUp";
 import filterItems from "./components/filterItems";
+import intersection from "./components/intersection";
+import wordSplit from "./components/wordSplit";
 
 stickyHeader();
 hamburgerMenu();
@@ -15,3 +17,5 @@ sliderPagination();
 year();
 popUp();
 filterItems();
+intersection();
+wordSplit();

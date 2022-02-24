@@ -1,6 +1,6 @@
 # Food-Zero
 
-Responsive restaurant website created using HTML5, SCSS and Vanilla JS.
+Responsive restaurant website created using HTML5, SCSS and JavaSscript.
 
 Check out [Live Demo](https://sandranimeshajm.github.io/Food-Zero/)
 

@@ -12,6 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: animationFadeOut1 2s forwards ease;
 
   &::after {
     content: "";

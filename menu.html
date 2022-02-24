@@ -206,8 +206,14 @@
       <section class="banner">
         <div class="banner__wrapper wrapper">
           <div class="banner__content">
-            <h1 class="page-title banner__content-title">View Our New Menu</h1>
-            <p class="banner__content-text page-text">
+            <h1 class="page-title banner__content-title | js-wordwrap">
+              View Our New Menu
+            </h1>
+            <p
+              class="banner__content-text page-text"
+              data-transition="fade-up"
+              data-transition-delay="500"
+            >
               The freshest ingredients for you every day
             </p>
           </div>
@@ -219,22 +225,27 @@
         </div>
         <div class="meal__wrapper wrapper">
           <div class="meal__content">
-            <h2 class="meal__content-title section-title">Starters</h2>
-            <p class="meal__content-text section-text">
+            <h2 class="meal__content-title section-title | js-wordwrap">
+              Starters
+            </h2>
+            <p
+              class="meal__content-text section-text"
+              data-transition="fade-up"
+            >
               This is a section of your menu. Give your section a brief
               description
             </p>
           </div>
 
           <div class="meal__menu">
-            <div class="meal__menu-img-box">
+            <div class="meal__menu-img-box" data-transition="reveal-left">
               <img
                 src="./src/images/meal-starters.png"
                 alt="Meal starters"
                 class="meal__menu-img"
               />
             </div>
-            <div class="menu__items">
+            <div class="menu__items" data-transition="fade-up">
               <div class="menu__item">
                 <span class="menu__item-price">$20</span>
                 <h3 class="menu__item-title">Grilled Okra and Tomatoes</h3>
@@ -266,15 +277,20 @@
       <section class="meal meal-mains">
         <div class="meal__wrapper wrapper">
           <div class="meal__content">
-            <h2 class="meal__content-title section-title">Mains</h2>
-            <p class="meal__content-text section-text">
+            <h2 class="meal__content-title section-title | js-wordwrap">
+              Mains
+            </h2>
+            <p
+              class="meal__content-text section-text"
+              data-transition="fade-up"
+            >
               This is a section of your menu. Give your section a brief
               description
             </p>
           </div>
 
           <div class="meal__menu">
-            <div class="menu__items">
+            <div class="menu__items" data-transition="fade-up">
               <div class="menu__item">
                 <span class="menu__item-price">$20</span>
                 <h3 class="menu__item-title">Deep Sea Snow White Cod Fillet</h3>
@@ -300,7 +316,7 @@
               </div>
             </div>
 
-            <div class="meal__menu-img-box">
+            <div class="meal__menu-img-box" data-transition="reveal-left">
               <img
                 src="./src/images/meal-mains.png"
                 alt="Meal starters"
@@ -317,22 +333,27 @@
         </div>
         <div class="meal__wrapper wrapper">
           <div class="meal__content">
-            <h2 class="meal__content-title section-title">Pastries & Drinks</h2>
-            <p class="meal__content-text section-text">
+            <h2 class="meal__content-title section-title | js-wordwrap">
+              Pastries & Drinks
+            </h2>
+            <p
+              class="meal__content-text section-text"
+              data-transition="fade-up"
+            >
               This is a section of your menu. Give your section a brief
               description
             </p>
           </div>
 
           <div class="meal__menu">
-            <div class="meal__menu-img-box">
+            <div class="meal__menu-img-box" data-transition="reveal-left">
               <img
                 src="./src/images/meal-pastries-and-drinks.png"
                 alt="Meal starters"
                 class="meal__menu-img"
               />
             </div>
-            <div class="menu__items">
+            <div class="menu__items" data-transition="fade-up">
               <div class="menu__item">
                 <span class="menu__item-price">$158</span>
                 <h3 class="menu__item-title">Wine Pairing</h3>
@@ -364,10 +385,15 @@
       <section class="form-reservation">
         <div class="form-reservation__wrapper wrapper">
           <div class="form-reservation__content">
-            <h2 class="form-reservation__content-title section-title">
+            <h2
+              class="form-reservation__content-title section-title | js-wordwrap"
+            >
               Make a reservation
             </h2>
-            <p class="form-reservation__content-text section-text">
+            <p
+              class="form-reservation__content-text section-text"
+              data-transition="fade-up"
+            >
               Get in touch with restaurant
             </p>
           </div>
@@ -376,6 +402,7 @@
             <div class="form-reservation__item">
               <input
                 class="form-reservation__item-date"
+                placeholder="2022-02-02"
                 type="date"
                 id="date"
                 name="date"
@@ -386,7 +413,11 @@
             </div>
 
             <div class="form-reservation__item">
-              <select class="form-reservation__item-time" name="time">
+              <select
+                class="form-reservation__item-time"
+                name="time"
+                placeholder="11:00 am"
+              >
                 <option>11:00 am</option>
                 <option>12:00 pm</option>
                 <option>1:00 pm</option>
@@ -401,7 +432,11 @@
             </div>
 
             <div class="form-reservation__item">
-              <select class="form-reservation__item-person" name="person">
+              <select
+                class="form-reservation__item-person"
+                name="person"
+                placeholder="1 person"
+              >
                 <option>1 person</option>
                 <option>2 persons</option>
                 <option>3 persons</option>
