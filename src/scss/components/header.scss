@@ -36,7 +36,7 @@
   display: flex;
   align-items: center;
 
-  @include mq(991) {
+  @include mq(480) {
     width: 100%;
     justify-content: space-between;
   }
@@ -393,35 +393,48 @@
   transition: height 0.3s;
 }
 
-.nav__subitems-expanding {
+.nav__item-has-children {
   &[data-open="opened"] {
     svg {
-      transform: rotate(-90deg);
+      transform: rotate(-180deg);
     }
   }
 
-  svg {
+  .nav__subitems-expanding {
     position: absolute;
     top: 50%;
-    right: -64px;
-    width: 30px;
-    height: 20px;
+    right: -75px;
+    max-width: 30px;
+    width: 100%;
     transform: translateY(-50%) rotate(90deg);
     cursor: pointer;
 
-    @include mq(1400) {
-      height: 15px;
-    }
-
     @include mq(1200) {
-      height: 10px;
       right: -40px;
     }
 
     @include mq(480) {
-      height: 8px;
       right: -30px;
       top: 8px;
+    }
+  }
+
+  svg {
+    height: 20px;
+    path {
+      stroke: $white;
+    }
+
+    @include mq(1440) {
+      height: 15px;
+    }
+
+    @include mq(1200) {
+      height: 12px;
+    }
+
+    @include mq(480) {
+      height: 8px;
     }
   }
 }
@@ -504,8 +517,12 @@
   }
 
   .nav__subitems-expanding {
+    right: -3.90625vw;
+    max-width: 1.5625vw;
+  }
+
+  .nav__subitems-expanding {
     svg {
-      right: -3.33333vw;
       width: 1.5625vw;
       height: 1.04167vw;
     }

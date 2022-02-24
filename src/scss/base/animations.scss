@@ -9,6 +9,14 @@
     margin-right: 16px;
     overflow: hidden;
     vertical-align: top;
+
+    @include mq(1440) {
+      margin-right: 8px;
+    }
+
+    @include mq(768) {
+      margin-right: 5px;
+    }
   }
 }
 

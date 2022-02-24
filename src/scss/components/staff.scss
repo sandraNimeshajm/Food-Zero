@@ -55,6 +55,7 @@
   color: $black;
   margin-bottom: 24px;
   text-align: center;
+  justify-content: center;
 
   @include mq(480) {
     margin-bottom: 16px;

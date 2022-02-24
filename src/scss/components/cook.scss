@@ -81,6 +81,10 @@
 
 .cook__content-title {
   margin-bottom: 16px;
+
+  @include mq(1240) {
+    justify-content: center;
+  }
 }
 
 @include mq(1921, min) {

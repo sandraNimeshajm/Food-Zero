@@ -58,6 +58,7 @@
   @include mq(1560) {
     margin-bottom: 24px;
     text-align: center;
+    justify-content: center;
   }
 
   @include mq(768) {

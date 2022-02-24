@@ -19,8 +19,12 @@ const menu = (): void => {
   });
 
   const expandingElements = document.querySelectorAll(
-    ".js-nav-subitems-expanding"
+    ".js-nav__item-link-has-children"
   );
+
+  // const expandingElements = document.querySelectorAll(
+  //   ".js-nav-subitems-expanding"
+  // );
 
   expandingElements.forEach((el) => {
     el.addEventListener("click", (e) => {
@@ -37,7 +41,7 @@ const menu = (): void => {
 
       if (el.getAttribute("data-open") === "closed") {
         let height = 0;
-        let liParent = el.parentElement.parentElement;
+        let liParent = el.parentElement;
         liParent
           .querySelectorAll(":scope > .js-nav-subitems > .js-nav-subitem")
           .forEach((li) => {

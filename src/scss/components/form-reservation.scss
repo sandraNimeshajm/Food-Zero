@@ -44,6 +44,7 @@
 
 .form-reservation__content-title {
   margin-bottom: 16px;
+  justify-content: center;
 }
 
 .form-reservation__items {
@@ -105,6 +106,8 @@
   .form-reservation__item-time,
   .form-reservation__item-person {
     @extend .lato-24-normal;
+    color: $black;
+    text-align: left;
     width: 386px;
     border: 0;
     background-color: transparent;

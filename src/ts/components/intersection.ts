@@ -12,7 +12,6 @@ const intersection = () => {
 
     if (el.classList.contains("show")) {
       const children = el.querySelectorAll("[data-transition]");
-      console.log(children);
 
       if (children) {
         children.forEach((element) => {

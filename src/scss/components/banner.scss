@@ -64,6 +64,12 @@
       margin-bottom: 16px;
       text-align: center;
     }
+
+    .banner__content-title {
+      @include mq(420) {
+        justify-content: center;
+      }
+    }
   }
 }
 

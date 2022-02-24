@@ -52,7 +52,11 @@
                   <a href="menu.html" class="nav__item-link">Menu</a>
                 </li>
                 <li class="nav__item | js-nav__item-has-children">
-                  <a href="javascript:;" class="nav__item-link">Blogs </a>
+                  <a
+                    href="javascript:;"
+                    class="nav__item-link nav__item-has-children | js-nav__item-link-has-children"
+                    >Blogs
+                  </a>
 
                   <ul class="nav__subitems | js-nav-subitems">
                     <li class="nav__subitem | js-nav-subitem">
@@ -596,7 +600,6 @@
             <div class="form-reservation__item">
               <input
                 class="form-reservation__item-date"
-                placeholder="2022-02-02"
                 type="date"
                 id="date"
                 name="date"
@@ -607,11 +610,7 @@
             </div>
 
             <div class="form-reservation__item">
-              <select
-                class="form-reservation__item-time"
-                name="time"
-                placeholder="11:00 am"
-              >
+              <select class="form-reservation__item-time" name="time">
                 <option>11:00 am</option>
                 <option>12:00 pm</option>
                 <option>1:00 pm</option>
@@ -626,11 +625,7 @@
             </div>
 
             <div class="form-reservation__item">
-              <select
-                class="form-reservation__item-person"
-                name="person"
-                placeholder="1 person"
-              >
+              <select class="form-reservation__item-person" name="person">
                 <option>1 person</option>
                 <option>2 persons</option>
                 <option>3 persons</option>

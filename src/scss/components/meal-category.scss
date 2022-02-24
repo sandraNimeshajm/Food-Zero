@@ -26,6 +26,7 @@
 }
 
 .meal-category__content {
+  max-width: 1101px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -47,6 +48,7 @@
 
 .meal-category__content-title {
   margin-bottom: 16px;
+  justify-content: center;
 }
 
 .meal-category__items {
@@ -126,6 +128,7 @@
   }
 
   .meal-category__content {
+    max-width: 57.34375vw;
     margin-bottom: 6.5625vw;
   }
 
