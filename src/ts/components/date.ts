@@ -1,9 +1,11 @@
 //@ts-nocheck
 
 const date = () => {
-  document.getElementById("date-picker").value = new Date()
-    .toISOString()
-    .substring(0, 10);
+  const datePicker = document.getElementById("date-picker");
+
+  if (!datePicker) return;
+
+  datePicker.value = new Date().toISOString().substring(0, 10);
 };
 
 export default date;
