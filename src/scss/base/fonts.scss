@@ -34,86 +34,32 @@
   font-display: swap;
 }
 
-.rufina-118-bold,
+.rufina-64-bold,
 .page-title {
   font-family: "Rufina";
   font-weight: bold;
   font-style: normal;
-  font-size: 118px;
+  font-size: 64px;
 
   @include mq(1440) {
-    font-size: 96px;
+    font-size: 56px;
   }
 
   @include mq(1200) {
-    font-size: 64px;
-  }
-
-  @include mq(768) {
     font-size: 48px;
   }
 
-  @include mq(480) {
+  @include mq(768) {
     font-size: 32px;
   }
 }
 
-.rufina-108-bold,
+.rufina-56-bold,
 .section-title {
   font-family: "Rufina";
   font-weight: bold;
   font-style: normal;
-  font-size: 108px;
-
-  @include mq(1440) {
-    font-size: 64px;
-  }
-
-  @include mq(1200) {
-    font-size: 48px;
-  }
-
-  @include mq(768) {
-    font-size: 32px;
-  }
-
-  @include mq(480) {
-    font-size: 24px;
-  }
-}
-
-.rufina-88-bold {
-  font-family: "Rufina";
-  font-weight: bold;
-  font-style: normal;
-  font-size: 88px;
-
-  @include mq(1440) {
-    font-size: 64px;
-  }
-
-  @include mq(1200) {
-    font-size: 48px;
-  }
-
-  @include mq(768) {
-    font-size: 32px;
-  }
-
-  @include mq(480) {
-    font-size: 24px;
-  }
-
-  @include mq(380) {
-    font-size: 16px;
-  }
-}
-
-.rufina-68-bold {
-  font-family: "Rufina";
-  font-weight: bold;
-  font-style: normal;
-  font-size: 68px;
+  font-size: 56px;
 
   @include mq(1440) {
     font-size: 48px;
@@ -125,10 +71,6 @@
 
   @include mq(768) {
     font-size: 24px;
-  }
-
-  @include mq(480) {
-    font-size: 16px;
   }
 }
 
@@ -138,15 +80,53 @@
   font-style: normal;
   font-size: 48px;
 
-  @include mq(1520) {
+  @include mq(1440) {
     font-size: 32px;
+  }
+
+  @include mq(1200) {
+    font-size: 24px;
+  }
+
+  @include mq(768) {
+    font-size: 16px;
+  }
+}
+
+.rufina-44-bold {
+  font-family: "Rufina";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 44px;
+
+  @include mq(1440) {
+    font-size: 32px;
+  }
+
+  @include mq(1200) {
+    font-size: 24px;
+  }
+
+  @include mq(768) {
+    font-size: 16px;
+  }
+}
+
+.rufina-38-bold {
+  font-family: "Rufina";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 38px;
+
+  @include mq(1520) {
+    font-size: 30px;
   }
 
   @include mq(991) {
     font-size: 24px;
   }
 
-  @include mq(480) {
+  @include mq(768) {
     font-size: 16px;
   }
 }
@@ -163,10 +143,6 @@
   }
 
   @include mq(768) {
-    font-size: 20px;
-  }
-
-  @include mq(480) {
     font-size: 16px;
   }
 }
@@ -178,27 +154,23 @@
   font-size: 26px;
 
   @include mq(1440) {
-    font-size: 24px;
-  }
-
-  @include mq(1200) {
     font-size: 20px;
   }
 
-  @include mq(768) {
+  @include mq(1200) {
     font-size: 16px;
   }
 
-  @include mq(480) {
+  @include mq(768) {
     font-size: 14px;
   }
 }
 
-.lato-38-bold {
+.lato-32-bold {
   font-family: "Lato";
   font-weight: bold;
   font-style: normal;
-  font-size: 38px;
+  font-size: 32px;
 
   @include mq(991) {
     font-size: 24px;
@@ -209,17 +181,17 @@
   }
 }
 
-.lato-34-normal {
+.lato-30-normal {
   font-family: "Lato";
   font-weight: normal;
   font-style: normal;
-  font-size: 34px;
+  font-size: 30px;
 
   @include mq(1440) {
     font-size: 24px;
   }
 
-  @include mq(480) {
+  @include mq(768) {
     font-size: 16px;
   }
 }
@@ -239,7 +211,7 @@
     font-size: 16px;
   }
 
-  @include mq(480) {
+  @include mq(768) {
     font-size: 14px;
   }
 }
@@ -253,6 +225,10 @@
   @include mq(991) {
     font-size: 16px;
   }
+
+  @include mq(768) {
+    font-size: 14px;
+  }
 }
 
 .lato-20-normal {
@@ -263,6 +239,10 @@
 
   @include mq(991) {
     font-size: 16px;
+  }
+
+  @include mq(768) {
+    font-size: 14px;
   }
 }
 
@@ -276,7 +256,7 @@
     font-size: 16px;
   }
 
-  @include mq(480) {
+  @include mq(768) {
     font-size: 14px;
   }
 }
@@ -289,28 +269,27 @@
 }
 
 @include mq(1921, min) {
-  .rufina-118-bold,
+  .rufina-64-bold,
   .page-title {
-    font-size: 6.14583vw;
+    font-size: 3.33333vw;
   }
 
-  .rufina-108-bold,
+  .rufina-56-bold,
   .section-title {
-    font-size: 5.625vw;
-  }
-
-  .rufina-88-bold {
-    font-size: 4.58333vw;
-  }
-
-  .rufina-68-bold {
-    font-size: 3.54167vw;
+    font-size: 2.91667vw;
   }
 
   .rufina-48-bold {
     font-size: 2.5vw;
   }
 
+  .rufina-44-bold {
+    font-size: 2.29167vw;
+  }
+
+  .rufina-38-bold {
+    font-size: 1.97917vw;
+  }
   .rufina-32-bold,
   .page-text {
     font-size: 1.66667vw;
@@ -320,12 +299,12 @@
     font-size: 1.35417vw;
   }
 
-  .lato-38-bold {
-    font-size: 1.97917vw;
+  .lato-32-bold {
+    font-size: 1.66667vw;
   }
 
-  .lato-34-normal {
-    font-size: 1.77083vw;
+  .lato-30-normal {
+    font-size: 1.5625vw;
   }
 
   .lato-24-normal,

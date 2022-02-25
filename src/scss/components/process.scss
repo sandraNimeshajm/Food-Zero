@@ -1,22 +1,22 @@
 .process {
   background-color: $white;
-  padding: 256px 0 320px;
+  padding: 128px 0;
   position: relative;
 
   @include mq(1240) {
-    padding: 128px 0 256px;
+    padding: 84px 0;
   }
 
   @include mq(991) {
-    padding: 84px 0 128px;
+    padding: 64px 0;
   }
 
   @include mq(768) {
-    padding: 64px 0 84px;
+    padding: 48px 0;
   }
 
   @include mq(480) {
-    padding: 32px 0 48px;
+    padding: 32px 0;
   }
 
   .img-box {
@@ -186,7 +186,7 @@
 }
 
 .process__content-title {
-  @extend .rufina-88-bold;
+  @extend .rufina-38-bold;
   margin-bottom: 24px;
 
   @include mq(480) {
@@ -200,7 +200,8 @@
 
 @include mq(1921, min) {
   .process {
-    padding: 13.33333vw 0 16.66667vw;
+    padding: 6.66667vw 0;
+
     .img-box {
       max-width: 23.95833vw;
     }

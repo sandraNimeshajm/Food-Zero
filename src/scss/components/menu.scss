@@ -1,23 +1,23 @@
 .menu {
   background-color: $white;
   color: $black;
-  padding: 128px 0 256px;
+  padding: 128px 0;
   position: relative;
 
   @include mq(1240) {
-    padding: 84px 0 128px;
+    padding: 84px 0;
   }
 
   @include mq(991) {
-    padding: 64px 0 84px;
+    padding: 64px 0;
   }
 
   @include mq(768) {
-    padding: 48px 0 84px;
+    padding: 48px 0;
   }
 
   @include mq(480) {
-    padding: 32px 0 84px;
+    padding: 32px 0;
   }
 
   .img-box {
@@ -79,12 +79,12 @@
 }
 
 .menu__item-price {
-  @extend .rufina-48-bold;
+  @extend .rufina-38-bold;
   display: block;
   margin-bottom: 36px;
   position: absolute;
   right: 0;
-  top: -70px;
+  top: -50px;
 
   @include mq(1520) {
     top: -45px;
@@ -96,7 +96,7 @@
 }
 
 .menu__item-title {
-  @extend .rufina-68-bold;
+  @extend .rufina-44-bold;
   margin-bottom: 24px;
   border-top: 4px dashed $black;
   padding-top: 24px;
@@ -122,7 +122,8 @@
 
 @include mq(1921, min) {
   .menu {
-    padding: 6.66667vw 0 13.33333vw;
+    padding: 6.66667vw 0;
+
     .img-box {
       max-width: 45.83333vw;
     }
@@ -147,7 +148,7 @@
 
   .menu__item-price {
     margin-bottom: 1.875vw;
-    top: -3.64583vw;
+    top: -2.60417vw;
   }
 
   .menu__item-title {

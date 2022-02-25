@@ -1,18 +1,18 @@
 .our-story {
-  padding: 196px 0 128px;
+  padding: 128px 0;
   background-color: $white;
   position: relative;
 
   @include mq(1240) {
-    padding: 128px 0 84px;
+    padding: 84px 0;
   }
 
   @include mq(991) {
-    padding: 84px 0 64px;
+    padding: 64px 0;
   }
 
   @include mq(768) {
-    padding: 64px 0 48px;
+    padding: 48px 0;
   }
 
   @include mq(480) {
@@ -84,7 +84,8 @@
 
 @include mq(1921, min) {
   .our-story {
-    padding: 10.20833vw 0 6.66667vw;
+    padding: 6.66667vw 0;
+
     .img-box {
       top: 2.08333vw;
       max-width: 16.97917vw;

@@ -1,18 +1,18 @@
 .features {
   background-color: $white;
   color: $black;
-  padding: 256px 0 128px;
+  padding: 128px 0;
 
   @include mq(1240) {
-    padding: 128px 0 84px;
+    padding: 84px 0;
   }
 
   @include mq(991) {
-    padding: 84px 0 64px;
+    padding: 64px 0;
   }
 
   @include mq(768) {
-    padding: 64px 0 48px;
+    padding: 48px 0;
   }
 
   @include mq(480) {
@@ -91,7 +91,7 @@
 }
 
 .features__item-content-title {
-  @extend .rufina-48-bold;
+  @extend .rufina-38-bold;
   margin-bottom: 32px;
 
   @include mq(1240) {
@@ -109,7 +109,7 @@
 
 @include mq(1921, min) {
   .features {
-    padding: 13.33333vw 0 6.66667vw;
+    padding: 6.66667vw 0;
   }
 
   .features__items {

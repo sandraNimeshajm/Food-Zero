@@ -16,7 +16,7 @@
   transition: background 0.3s, color 0.3s;
 
   @include mq(1440) {
-    padding: 12px 20px;
+    padding: 10px 15px;
   }
 
   &:focus,

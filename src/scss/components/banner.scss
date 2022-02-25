@@ -191,7 +191,7 @@
   }
 
   .banner__content-title {
-    @extend .rufina-108-bold;
+    @extend .rufina-56-bold;
   }
 }
 
@@ -205,7 +205,9 @@
   }
 
   .banner__content-title {
-    @extend .rufina-88-bold;
+    @extend .rufina-48-bold;
+    justify-content: flex-start;
+    width: 100%;
   }
 
   .banner__content {

@@ -1,17 +1,17 @@
 .form-reservation {
   background-color: $green-lighter;
-  padding: 256px 0;
+  padding: 128px 0;
 
   @include mq(1240) {
-    padding: 128px 0;
-  }
-
-  @include mq(991) {
     padding: 84px 0;
   }
 
-  @include mq(768) {
+  @include mq(991) {
     padding: 64px 0;
+  }
+
+  @include mq(768) {
+    padding: 48px 0;
   }
 
   @include mq(480) {
@@ -124,25 +124,18 @@
     width: 100%;
     position: absolute;
     top: 100px;
-    left: 350px;
+    left: 0;
 
-    @include mq(1510) {
-      left: 0;
-    }
-
-    @include mq(1240) {
+    @include mq(1440) {
+      max-width: 350px;
       top: 0;
     }
 
     @include mq(991) {
-      max-width: 350px;
-    }
-
-    @include mq(768) {
       max-width: 250px;
     }
 
-    @include mq(480) {
+    @include mq(768) {
       max-width: 150px;
     }
   }
@@ -155,7 +148,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin: 0 auto 132px;
 
     @include mq(1500) {
@@ -250,7 +243,7 @@
 
 @include mq(1921, min) {
   .form-reservation {
-    padding: 13.33333vw 0;
+    padding: 6.66667vw 0;
   }
   .form-reservation__content {
     max-width: 52.5vw;
@@ -277,8 +270,7 @@
   .form-reservation--contact {
     .img-box {
       max-width: 26.61458vw;
-      top: 5.20833vw;
-      left: 18.22917vw;
+      top: 0;
     }
 
     .form-reservation__content {

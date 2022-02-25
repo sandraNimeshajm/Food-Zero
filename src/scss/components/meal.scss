@@ -1,7 +1,7 @@
 .meal {
   background-color: $white;
   color: $black;
-  padding: 128px 0 140px;
+  padding: 128px 0;
   position: relative;
 
   @include mq(1240) {
@@ -201,7 +201,8 @@
 
 @include mq(1921, min) {
   .meal {
-    padding: 6.66667vw 0 7.29167vw;
+    padding: 6.66667vw 0;
+
     .menu__item {
       margin-bottom: 3.02083vw;
     }

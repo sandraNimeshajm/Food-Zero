@@ -1,21 +1,21 @@
 .testimonials {
   background-color: $white;
-  padding: 128px 0;
+  padding-bottom: 128px;
 
   @include mq(1240) {
-    padding: 84px 0;
+    padding-bottom: 84px;
   }
 
   @include mq(991) {
-    padding: 64px 0;
+    padding-bottom: 64px;
   }
 
   @include mq(768) {
-    padding: 48px 0;
+    padding-bottom: 48px;
   }
 
   @include mq(480) {
-    padding: 32px 0;
+    padding-bottom: 32px;
   }
 }
 
@@ -53,7 +53,7 @@
 }
 
 .testimonials__slider-item-title {
-  @extend .rufina-48-bold;
+  @extend .rufina-38-bold;
   color: $black;
 }
 
@@ -112,7 +112,7 @@
   bottom: 50px;
 
   @include mq(660) {
-    bottom: 0;
+    bottom: 7px;
   }
 
   svg {
@@ -168,7 +168,7 @@
 
 @include mq(1921, min) {
   .testimonials {
-    padding: 6.66667vw 0;
+    padding-bottom: 6.66667vw;
   }
 
   .testimonials__wrapper {

@@ -1,22 +1,22 @@
 .contact-info {
   background-color: $white;
-  padding: 256px 0 128px;
+  padding: 128px 0;
   position: relative;
 
   @include mq(1240) {
-    padding: 120px 0 84px;
+    padding-bottom: 84px;
   }
 
   @include mq(991) {
-    padding: 120px 0 64px;
+    padding-bottom: 64px;
   }
 
   @include mq(768) {
-    padding: 120px 0 48px;
+    padding-bottom: 48px;
   }
 
   @include mq(480) {
-    padding: 120px 0 32px;
+    padding-bottom: 32px;
   }
 
   .img-box {
@@ -147,7 +147,8 @@
 
 @include mq(1921, min) {
   .contact-info {
-    padding: 13.33333vw 0 6.66667vw;
+    padding: 6.66667vw 0;
+
     .img-box {
       top: 6.77083vw;
       max-width: 23.22917vw;

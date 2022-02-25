@@ -1,23 +1,21 @@
 .staff {
   background-color: $white;
-  padding-top: 128px;
-  padding-bottom: 256px;
-  padding: 128px 0 256px;
+  padding-bottom: 128px;
 
   @include mq(1240) {
-    padding: 84px 0 128px;
+    padding-bottom: 84px;
   }
 
   @include mq(991) {
-    padding: 64px 0 84px;
+    padding-bottom: 64px;
   }
 
   @include mq(768) {
-    padding: 48px 0 64px;
+    padding-bottom: 48px;
   }
 
   @include mq(480) {
-    padding: 32px 0 48px;
+    padding-bottom: 32px;
   }
 }
 
@@ -51,7 +49,7 @@
 }
 
 .staff__item-left-title {
-  @extend .rufina-68-bold;
+  @extend .rufina-44-bold;
   color: $black;
   margin-bottom: 24px;
   text-align: center;
@@ -137,9 +135,7 @@
 
 @include mq(1921, min) {
   .staff {
-    padding-top: 6.66667vw;
-    padding-bottom: 13.33333vw;
-    padding: 6.66667vw 0 13.33333vw;
+    padding-bottom: 6.66667vw;
   }
 
   .staff__item-left {

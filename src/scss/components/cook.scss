@@ -1,17 +1,17 @@
 .cook {
   background-color: $green-lighter;
-  padding: 256px 0 64px;
+  padding: 128px 0;
 
   @include mq(1240) {
-    padding: 128px 0 48px;
+    padding: 84px 0;
   }
 
   @include mq(991) {
-    padding: 84px 0 48px;
+    padding: 64px 0;
   }
 
   @include mq(768) {
-    padding: 48px 0 32px;
+    padding: 48px 0;
   }
 
   @include mq(480) {
@@ -89,7 +89,7 @@
 
 @include mq(1921, min) {
   .cook {
-    padding: 13.33333vw 0 3.33333vw;
+    padding: 6.66667vw 0;
   }
 
   .cook__wrapper {

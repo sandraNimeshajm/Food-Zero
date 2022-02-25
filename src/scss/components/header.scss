@@ -48,15 +48,15 @@
   margin-right: 45px;
 
   @include mq(1440) {
-    max-width: 200px;
-  }
-
-  @include mq(768) {
     max-width: 150px;
   }
 
-  @include mq(480) {
+  @include mq(768) {
     max-width: 100px;
+  }
+
+  @include mq(480) {
+    max-width: 75px;
   }
 
   @include mq(400) {
@@ -218,7 +218,7 @@
   position: absolute;
   top: 0;
   right: -180%;
-  padding: 200px 100px;
+  padding: 24px;
   transition: right 0.3s;
 
   .social__items {
@@ -311,7 +311,7 @@
 }
 
 .nav__item {
-  @extend .rufina-68-bold;
+  @extend .rufina-44-bold;
   text-transform: uppercase;
   margin-bottom: 28px;
   position: relative;
@@ -323,27 +323,27 @@
   &::before {
     content: "";
     position: absolute;
-    top: 30px;
+    top: 20px;
     left: -30px;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: $white;
     transition: background-color 0.3s;
 
-    @include mq(1400) {
-      top: 23px;
-      width: 10px;
-      height: 10px;
+    @include mq(1440) {
+      top: 15px;
+      width: 8px;
+      height: 8px;
     }
 
     @include mq(1200) {
-      top: 15px;
+      top: 12px;
       width: 7px;
       height: 7px;
     }
 
-    @include mq(480) {
+    @include mq(768) {
       top: 7px;
       left: -15px;
       width: 4px;
@@ -393,49 +393,47 @@
   transition: height 0.3s;
 }
 
-.nav__item-has-children {
+.nav__subitems-expanding {
+  position: absolute;
+  top: 50%;
+  right: -75px;
+  max-width: 30px;
+  width: 100%;
+  transform: translateY(-50%) rotate(90deg);
+  cursor: pointer;
+
   &[data-open="opened"] {
     svg {
       transform: rotate(-180deg);
     }
   }
 
-  .nav__subitems-expanding {
-    position: absolute;
-    top: 50%;
-    right: -75px;
-    max-width: 30px;
-    width: 100%;
-    transform: translateY(-50%) rotate(90deg);
-    cursor: pointer;
-
-    @include mq(1200) {
-      right: -40px;
-    }
-
-    @include mq(480) {
-      right: -30px;
-      top: 8px;
-    }
+  @include mq(1200) {
+    right: -40px;
   }
 
-  svg {
-    height: 20px;
-    path {
-      stroke: $white;
-    }
+  @include mq(480) {
+    right: -30px;
+    top: 8px;
+  }
+}
 
-    @include mq(1440) {
-      height: 15px;
-    }
+svg {
+  height: 20px;
+  path {
+    stroke: $white;
+  }
 
-    @include mq(1200) {
-      height: 12px;
-    }
+  @include mq(1440) {
+    height: 15px;
+  }
 
-    @include mq(480) {
-      height: 8px;
-    }
+  @include mq(1200) {
+    height: 12px;
+  }
+
+  @include mq(480) {
+    height: 8px;
   }
 }
 
@@ -484,7 +482,8 @@
   }
 
   .header__content {
-    padding: 10.41667vw 5.20833vw;
+    padding: 1.25vw;
+
     .contact {
       .contact__title {
         border-bottom: 0.20833vw dashed $white;
@@ -505,7 +504,7 @@
   .nav__item {
     margin-bottom: 1.45833vw;
     &::before {
-      top: 1.5625vw;
+      top: 1.04167vw;
       left: -1.5625vw;
       width: 0.625vw;
       height: 0.625vw;

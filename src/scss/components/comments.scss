@@ -3,24 +3,24 @@
   background-color: $white;
 
   @include mq(1240) {
-    padding: 84px;
+    padding-bottom: 84px;
   }
 
   @include mq(991) {
-    padding: 64px;
+    padding-bottom: 64px;
   }
 
   @include mq(768) {
-    padding: 48px;
+    padding-bottom: 48px;
   }
 
   @include mq(480) {
-    padding: 32px;
+    padding-bottom: 32px;
   }
 }
 
 .comments__title {
-  @extend .rufina-48-bold;
+  @extend .rufina-38-bold;
   color: $black;
   text-align: center;
   margin-bottom: 86px;

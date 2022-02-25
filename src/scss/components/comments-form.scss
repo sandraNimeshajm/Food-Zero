@@ -1,21 +1,21 @@
 .comments-form {
-  padding: 128px 0;
+  padding-bottom: 128px;
   background-color: $white;
 
   @include mq(1240) {
-    padding: 84px 0;
+    padding-bottom: 84px;
   }
 
   @include mq(991) {
-    padding: 64px 0;
+    padding-bottom: 64px;
   }
 
   @include mq(768) {
-    padding: 48px 0;
+    padding-bottom: 48px;
   }
 
   @include mq(480) {
-    padding: 32px 0;
+    padding-bottom: 32px;
   }
 }
 
@@ -129,7 +129,7 @@
 
 @include mq(1921, min) {
   .comments-form {
-    padding: 6.66667vw 0;
+    padding-bottom: 6.66667vw;
   }
 
   .comments-form__wrapper {

@@ -21,10 +21,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 196px;
-  padding-bottom: 196px;
+  padding: 196px 0;
   position: relative;
   z-index: 10;
+
+  @include mq(1240) {
+    padding: 84px 0;
+  }
+
+  @include mq(991) {
+    padding: 64px 0;
+  }
+
+  @include mq(768) {
+    padding: 48px 0;
+  }
+
+  @include mq(480) {
+    padding: 32px 0;
+  }
 }
 
 .cta__title {
@@ -153,8 +168,7 @@
 
 @include mq(1921, min) {
   .cta__wrapper {
-    padding-top: 10.20833vw;
-    padding-bottom: 10.20833vw;
+    padding: 10.20833vw 0;
   }
 
   .cta__title {

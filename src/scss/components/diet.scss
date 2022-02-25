@@ -1,16 +1,16 @@
 .diet {
-  padding-bottom: 256px;
+  padding-bottom: 128px;
 
   @include mq(1240) {
-    padding-bottom: 128px;
-  }
-
-  @include mq(991) {
     padding-bottom: 84px;
   }
 
-  @include mq(768) {
+  @include mq(991) {
     padding-bottom: 64px;
+  }
+
+  @include mq(768) {
+    padding-bottom: 48px;
   }
 
   @include mq(480) {
@@ -78,7 +78,7 @@
 }
 
 .diet__left-title {
-  @extend .rufina-68-bold;
+  @extend .rufina-44-bold;
 
   margin-bottom: 54px;
 
@@ -129,7 +129,7 @@
 
 @include mq(1921, min) {
   .diet {
-    padding-bottom: 13.33333vw;
+    padding-bottom: 6.66667vw;
   }
 
   .diet__left {
