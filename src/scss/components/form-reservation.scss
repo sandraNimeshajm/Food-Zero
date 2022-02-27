@@ -124,12 +124,11 @@
     max-width: 511px;
     width: 100%;
     position: absolute;
-    top: 100px;
+    top: 0;
     left: 0;
 
     @include mq(1440) {
       max-width: 350px;
-      top: 0;
     }
 
     @include mq(991) {
@@ -271,7 +270,6 @@
   .form-reservation--contact {
     .img-box {
       max-width: 26.61458vw;
-      top: 0;
     }
 
     .form-reservation__content {

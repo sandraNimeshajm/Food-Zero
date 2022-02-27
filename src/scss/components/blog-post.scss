@@ -229,17 +229,17 @@
 }
 
 .blog-post__content-bottom-btn-arrow {
-  max-width: 46px;
+  max-width: 32px;
   width: 100%;
   height: auto;
   transition: transform 0.3s;
 
   @include mq(991) {
-    max-width: 32px;
+    max-width: 24px;
   }
 
   @include mq(480) {
-    max-width: 24px;
+    max-width: 20px;
   }
 }
 
@@ -472,7 +472,7 @@
   }
 
   .blog-post__content-bottom-btn-arrow {
-    max-width: 2.39583vw;
+    max-width: 1.66667vw;
   }
 
   .blog-post-home {

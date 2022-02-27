@@ -128,13 +128,13 @@
     max-width: 20px;
   }
 
-  @include mq(768) {
+  @include mq(991) {
     top: 10px;
   }
 
   @include mq(480) {
     max-width: 14px;
-    top: 50px;
+    top: 20px;
   }
 
   svg {
@@ -152,9 +152,9 @@
       height: 20px;
     }
 
-    @include mq(480) {
-      width: 14px;
-      height: 14px;
+    @include mq(768) {
+      width: 16px;
+      height: 16px;
     }
 
     path {
@@ -221,6 +221,10 @@
   padding: 100px 200px;
   transition: right 0.3s;
 
+  @include mq(530) {
+    padding: 50px;
+  }
+
   .social__items {
     justify-content: flex-start;
   }
@@ -280,7 +284,7 @@
   justify-content: space-around;
   align-items: center;
 
-  @include mq(768) {
+  @include mq(991) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -300,7 +304,7 @@
 .nav__items {
   margin-right: 24px;
 
-  @include mq(768) {
+  @include mq(991) {
     margin-right: 0;
     margin-bottom: 48px;
   }
@@ -482,7 +486,7 @@ svg {
   }
 
   .header__content {
-    padding: 1.25vw;
+    padding: 5.20833vw 10.41667vw;
 
     .contact {
       .contact__title {

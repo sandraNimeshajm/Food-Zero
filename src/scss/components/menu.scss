@@ -12,14 +12,6 @@
     padding: 64px 0;
   }
 
-  @include mq(768) {
-    padding: 48px 0;
-  }
-
-  @include mq(480) {
-    padding: 32px 0;
-  }
-
   .img-box {
     position: absolute;
     top: 0;

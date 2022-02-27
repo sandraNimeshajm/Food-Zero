@@ -57,11 +57,11 @@
     margin-bottom: 93px;
 
     @include mq(991) {
-      margin-bottom: 24px;
+      margin-bottom: 48px;
     }
 
     @include mq(420) {
-      margin-bottom: 16px;
+      margin-bottom: 24px;
       text-align: center;
     }
 
